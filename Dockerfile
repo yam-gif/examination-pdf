@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # アプリケーションコードをコピー
 COPY . .
 
-# Flask 実行設定
-ENV PORT=5000
-EXPOSE 5000
-CMD ["python", "app.py"]
+
+# gunicorn で起動（Render の PORT をそのまま使用）
+CMD ["gunicorn", "-b", "0.0.0.0:${PORT:-10000}", "app:app"]
+

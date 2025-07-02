@@ -131,5 +131,14 @@ def add_problem():
     return jsonify(ok=True)
 
 # ----------------------------------------------------------------------
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    import os
+
+    # 環境変数 PORT があればそれを、なければローカル開発用に2956番を使う
+    port = int(os.environ.get("PORT", 2956))
+
+    # デバッグは FLASK_DEBUG=1 あるいは FLASK_ENV=development で制御
+    debug_flag = os.environ.get("FLASK_DEBUG", "0") == "1"
+
+    # 全インターフェイスをバインドして起動
+    app.run(host="0.0.0.0", port=port, debug=debug_flag)
