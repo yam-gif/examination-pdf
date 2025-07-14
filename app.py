@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, jsonify
 import yaml
 import random
 import threading
+import os
+import base64
+import requests
 from jinja2 import Environment, FileSystemLoader
 
 YAML_PATH = 'problems.yaml'
@@ -17,16 +20,39 @@ def load_problems():
     """YAML から全問題を読み込む。空の場合は空リストを返す。"""
     try:
         with open(YAML_PATH, encoding='utf-8') as fp:
-            data = yaml.safe_load(fp) or []
+            return yaml.safe_load(fp) or []
     except FileNotFoundError:
-        data = []
-    return data
+        return []
 
 
 def write_problems(problems):
     """問題リストを YAML に保存する。"""
+    text = yaml.safe_dump(problems, allow_unicode=True, sort_keys=False)
     with open(YAML_PATH, 'w', encoding='utf-8') as fp:
-        yaml.safe_dump(problems, fp, allow_unicode=True, sort_keys=False)
+        fp.write(text)
+    return text
+
+
+def push_to_github(content_text):
+    """GitHub API を使って problems.yaml をリモートに更新."""
+    token = os.environ['GITHUB_TOKEN']
+    repo  = os.environ['GITHUB_REPO']  # "ユーザ名/リポ名"
+    path  = YAML_PATH                # "problems.yaml"
+    # 最新のファイル SHA を取得
+    url_get = f"https://api.github.com/repos/{repo}/contents/{path}"
+    headers = {"Authorization": f"token {token}"}
+    r = requests.get(url_get, headers=headers)
+    r.raise_for_status()
+    sha = r.json()['sha']
+
+    # 更新用の PUT
+    payload = {
+        "message": "Add new problem via web UI",
+        "content": base64.b64encode(content_text.encode('utf-8')).decode('utf-8'),
+        "sha": sha
+    }
+    r2 = requests.put(url_get, json=payload, headers=headers)
+    r2.raise_for_status()
 
 
 def refresh_sets():
@@ -35,7 +61,6 @@ def refresh_sets():
     ALL_SUBJECTS     = sorted({p['subject']    for p in ALL_PROBLEMS})
     ALL_CATEGORIES   = sorted({p['category']   for p in ALL_PROBLEMS})
     ALL_DIFFICULTIES = sorted({p.get('difficulty') for p in ALL_PROBLEMS if p.get('difficulty')})
-
 
 # 初期ロード
 ALL_PROBLEMS = load_problems()
@@ -64,7 +89,6 @@ def index():
         selected_categories   = [],
         selected_difficulties = []
     )
-
 
 @app.route('/generate', methods=['POST'])
 def generate():
@@ -106,10 +130,9 @@ def generate():
         selected_difficulties = sel_diffs
     )
 
-
 @app.route('/add_problem', methods=['POST'])
 def add_problem():
-    """フォームから受け取った 1 問を YAML に追記し、メモリ上の一覧も更新。"""
+    """フォームから受け取った 1 問を YAML ＋ GitHub に追記。"""
     new = {
         'subject'   : request.form.get('subject', '').strip(),
         'category'  : request.form.get('category', '').strip(),
@@ -122,23 +145,23 @@ def add_problem():
     if not all(new.values()):
         return jsonify(ok=False, msg='全フィールド必須です'), 400
 
-    # ---- 追記 (排他制御) ----
+    # ---- ローカル保存＋メモリ更新 ----
     with lock:
         ALL_PROBLEMS.append(new)
-        write_problems(ALL_PROBLEMS)
+        text = write_problems(ALL_PROBLEMS)
         refresh_sets()
+
+    # ---- GitHub リモートにも反映 ----
+    try:
+        push_to_github(text)
+    except Exception as e:
+        print("GitHub push failed:", e)
 
     return jsonify(ok=True)
 
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
-    import os
-
-    # 環境変数 PORT があればそれを、なければローカル開発用に2956番を使う
+    # PaaS 環境の PORT またはローカルの 2956 を使用
     port = int(os.environ.get("PORT", 2956))
-
-    # デバッグは FLASK_DEBUG=1 あるいは FLASK_ENV=development で制御
     debug_flag = os.environ.get("FLASK_DEBUG", "0") == "1"
-
-    # 全インターフェイスをバインドして起動
     app.run(host="0.0.0.0", port=port, debug=debug_flag)
