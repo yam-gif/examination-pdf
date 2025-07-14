@@ -2,3 +2,4 @@ Flask
 gunicorn
 PyYAML
 Jinja2
+requests
