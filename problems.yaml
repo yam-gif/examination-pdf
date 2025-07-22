@@ -1869,3 +1869,55 @@
     sqrt{2})~~~\\cdots \\ctext{2}\r\n\\end{align*}\r\n$\\ctext{1},\\ctext{2}$より,\r\
     \n\\begin{equation*}\r\n    \\displaystyle \\int_0^2 \\frac{\\:2x+1\\:}{ \\:\\\
     sqrt{x^2+4}\\:} \\ dx= 4(\\sqrt2-1)+\\log(1+\\sqrt{2})\r\n\\end{equation*}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\n以下の問いに答えよ。（答えのみで良い）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            白玉1個と黒玉3個が入った箱がある。この箱から無作為に玉を一つ取り出すとき,\
+    \ 白玉である確率を求めよ。ただし, 黒玉は区別できないものとする。\r\n\r\n        \\item \r\n            男子5人,\
+    \ 女子4人の中から3人の委員を選ぶとき, 選ばれた3人の生徒が男女混合である確率を求めよ。\r\n            \r\n        \\item\r\
+    \n            1個のサイコロを3回投げるとき, 目の最大値が4となる確率と, 目の最小値が2となる確率を求めよ。\r\n          \
+    \  \r\n        \\item\r\n            赤玉4個, 白玉2個, 青玉6個入っている袋から, 同時に3個の玉を取り出すとき,\
+    \ 3個とも同じ色である確率を求めよ。\r\n            \r\n        \\item\r\n            サイコロを1回投げたときに出る目の期待値を求めよ。\r\
+    \n    \\end{enumerate}"
+  answer: "\\section{}\r\n以下の問いに答えよ。（答えのみで良い）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            白玉1個と黒玉3個が入った箱がある。この箱から無作為に玉を一つ取り出すとき,\
+    \ 白玉である確率を求めよ。ただし, 黒玉は区別できないものとする。\r\n\r\n        \\item \r\n            男子5人,\
+    \ 女子4人の中から3人の委員を選ぶとき, 選ばれた3人の生徒が男女混合である確率を求めよ。\r\n            \r\n        \\item\r\
+    \n            1個のサイコロを3回投げるとき, 目の最大値が4となる確率と, 目の最小値が2となる確率を求めよ。\r\n          \
+    \  \r\n        \\item\r\n            赤玉4個, 白玉2個, 青玉6個入っている袋から, 同時に3個の玉を取り出すとき,\
+    \ 3個とも同じ色である確率を求めよ。\r\n            \r\n        \\item\r\n            サイコロを1回投げたときに出る目の期待値を求めよ。\r\
+    \n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n    \\item\r\
+    \n        $\\bunsu{1}{4}$\r\n        \r\n    \\item\r\n        $\\bunsu{5}{6}$\r\
+    \n\r\n    \\item \r\n        最大値が4：$\\bunsu{37}{216}$, 最小値が2：$\\bunsu{61}{216}$\r\
+    \n\r\n    \\item \r\n        $\\bunsu{6}{55}$\r\n\r\n    \\item\r\n        $\\\
+    bunsu{7}{2}$\r\n\\end{enumerate}\r\n\r\n\\haiten（20点）\\\\\r\n(3)各2点, 他各4点, \\\\\
+    \r\n\r\n\\kouhyou\\\\\r\n一般的な確率の問題。特に難しいことはない。\r\n\r\n\\newpage\r\n\\kaisetsu\r\
+    \n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n\
+    \            4個の玉のうち, 1つが白玉であるから確率は$\\bunsu{1}{4}$\\\\\r\n            ※小学生に「黒い玉か白い玉が出るか,\
+    \ だから答えは$\\bunsu{1}{2}$！」と言われても反論できますか?\r\n\r\n        \\item \r\n           \
+    \ 求める確率は, 委員が「すべて男子」または「すべて女子」である場合の余事象である。\\\\\r\n            すべて男子の場合の数は$\\\
+    combination{5}{3} = 10$通り, 全て女子の場合の数は$\\combination{4}{1} = 4$通りであるから, 求める確率は\r\
+    \n                \\begin{equation*}\r\n                    1 - \\bunsu{10 + 4}{{}_9\
+    \ \\mathrm{C}_3} = 1 - \\bunsu{14}{84} = \\bunsu{5}{6}\r\n                \\end{equation*}\r\
+    \n                    \r\n        \\item\r\n            3個のサイコロの目の出方は$6^3 = 216$通り。\r\
+    \n            目の最大値が4となるのは, 目の出方の最大値が4以下である$4^3$通りのうち, 目の出方の最大値が3以下である$3^3$通りを引いた\r\
+    \n                \\begin{equation*}\r\n                    4^3 - 3^3 = 37 \\\
+    : 通り\r\n                \\end{equation*}\r\n            である。したがって目の最大値が4となる確率は$\\\
+    bunsu{37}{216}$\r\n            \r\n            目の最小値が2となる確率も同様に考える。目の最小値が2以上となる$5^3$通りから,\
+    \ 目の最小値が3以上となる$4^3$通りを引いた\r\n                \\begin{equation*}\r\n          \
+    \          5^3 - 4^3 = 61 \\: 通り\r\n                \\end{equation*}\r\n     \
+    \       であるから目の最小値が2となる確率は$\\bunsu{61}{216}$\r\n                    \r\n     \
+    \   \\item\r\n            求める確率は「赤玉が3個取り出される」または「青玉が3個取り出される」場合である。\r\n      \
+    \      前者の確率は\r\n                \\begin{equation*}\r\n                    \\\
+    bunsu{\\combination{4}{3}}{\\combination{12}{3}}\r\n                \\end{equation*}\r\
+    \n            であり, 後者の確率は\r\n                \\begin{equation*}\r\n          \
+    \          \\bunsu{\\combination{6}{3}}{\\combination{12}{3}}\r\n            \
+    \    \\end{equation*}\r\n            である。これらは互いに排反（同時に起きない）から, 求める確率は\r\n    \
+    \            \\begin{equation*}\r\n                    \\bunsu{\\combination{4}{3}\
+    \ + \\combination{6}{3}}{\\combination{12}{3}} = \\bunsu{6}{55}\r\n          \
+    \      \\end{equation*}\r\n\r\n        \\item \r\n            定義通りに計算するのみ。\r\n\
+    \                \\begin{equation*}\r\n                    \\bunsu{1}{6} \\cdot\
+    \ (1 + 2 + 3 + 4 + 5 + 6) = \\bunsu{7}{2}\r\n                \\end{equation*}\r\
+    \n    \\end{enumerate}"
