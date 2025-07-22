@@ -894,3 +894,70 @@
     \                    \\begin{equation*}\r\n                        216 - (3^3\
     \ + 2 \\times 3^2 \\times 3) = 135 \\: 通り\r\n                    \\end{equation*}\r\
     \n                ※4の倍数となる場合を考えても良いが場合分けがややこしいため, 余事象で考えている。 \r\n        \\end{enumerate}"
+- subject: 数学A
+  category: 場合の数
+  difficulty: 入門
+  body: "\\section{}\r\n同じ大きさの5枚の正方形の板を一列に並べて下図のような掲示板を作り, 壁に固定する。赤色, 緑色, 青色のペンキを用いて,\
+    \ 隣り合う正方形どうしが異なる色となるように塗り分ける。ただし, 塗り分ける際には, 2色のペンキで塗り分けることがあっても良いものとする。\\\\\r\n\
+    \    \\begin{center}\r\n        \\begin{tikzpicture}{scale = 1.0}\r\n        \
+    \    \\draw[thick] (0, 0)--(0, 1)--(5, 1)--(5, 0)--cycle;\r\n            \\draw[thick]\
+    \ (1, 0)--(1, 1);\r\n            \\draw[thick] (2, 0)--(2, 1);\r\n           \
+    \ \\draw[thick] (3, 0)--(3, 1);\r\n            \\draw[thick] (4, 0)--(4, 1);\r\
+    \n        \\end{tikzpicture}\r\n    \\end{center}\r\n    \r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            塗り分け方は全部で何通りか。\r\n   \
+    \     \r\n        \\item\r\n            赤色で塗られる正方形が3枚であるのは何通りか。\r\n\r\n      \
+    \  \\item \r\n            赤色で塗られる正方形が1枚であるのは何通りか。\r\n\r\n        \\item\r\n  \
+    \          赤色で塗られる正方形が2枚であるのは何通りか。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n同じ大きさの5枚の正方形の板を一列に並べて下図のような掲示板を作り, 壁に固定する。赤色, 緑色, 青色のペンキを用いて,\
+    \ 隣り合う正方形どうしが異なる色となるように塗り分ける。ただし, 塗り分ける際には, 2色のペンキで塗り分けることがあっても良いものとする。\\\\\r\n\
+    \    \\begin{center}\r\n        \\begin{tikzpicture}{scale = 1.0}\r\n        \
+    \    \\draw[thick] (0, 0)--(0, 1)--(5, 1)--(5, 0)--cycle;\r\n            \\draw[thick]\
+    \ (1, 0)--(1, 1);\r\n            \\draw[thick] (2, 0)--(2, 1);\r\n           \
+    \ \\draw[thick] (3, 0)--(3, 1);\r\n            \\draw[thick] (4, 0)--(4, 1);\r\
+    \n        \\end{tikzpicture}\r\n    \\end{center}\r\n    \r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            塗り分け方は全部で何通りか。\r\n   \
+    \     \r\n        \\item\r\n            赤色で塗られる正方形が3枚であるのは何通りか。\r\n\r\n      \
+    \  \\item \r\n            赤色で塗られる正方形が1枚であるのは何通りか。\r\n\r\n        \\item\r\n  \
+    \          赤色で塗られる正方形が2枚であるのは何通りか。\r\n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\n     \
+    \   \\item\r\n            48通り\r\n    \r\n        \\item\r\n            4通り\r\n\
+    \r\n        \\item\r\n            16通り\r\n\r\n        \\item\r\n            26通り\r\
+    \n    \\end{enumerate}\r\n    \r\n\\haiten（20点）\\\\\r\n各5点, 解答不備一つにつき1点減点\\\\\r\
+    \n\r\n\\kouhyou\\\\\r\n    2015年センター試験本試の問題。高々48通りしかないので, 数え上げるのも有力な手法。\\\\\r\n\
+    \    『場合の数』は「漏れなく・ダブりなく」数えられれば方法はなんでも良い。\\\\\r\n\r\n\\newpage\r\n\\kaisetsu\\\\\
+    \r\n    掲示板の左から順にA, B, C, D, Eと名前を付ける。\r\n        \\begin{center}\r\n        \
+    \    \\begin{tikzpicture}{scale = 1.0}\r\n                \\draw[thick] (0, 0)--(0,\
+    \ 1)--(5, 1)--(5, 0)--cycle;\r\n                \\draw[thick] (1, 0)--(1, 1);\r\
+    \n                \\draw[thick] (2, 0)--(2, 1);\r\n                \\draw[thick]\
+    \ (3, 0)--(3, 1);\r\n                \\draw[thick] (4, 0)--(4, 1);\r\n       \
+    \         \\node at(0.5, 0.5){A};\r\n                \\node at(1.5, 0.5){B};\r\
+    \n                \\node at(2.5, 0.5){C};\r\n                \\node at(3.5, 0.5){D};\r\
+    \n                \\node at(4.5, 0.5){E};\r\n            \\end{tikzpicture}\r\n\
+    \        \\end{center}\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\
+    \n        \\item\r\n            Aに塗る色は3通りあり, B～Eはそれぞれ左隣に塗られる色以外の2通りの色の塗り方がある。\r\
+    \n                \\begin{equation*}\r\n                    3 \\times 2^4 = 48\
+    \ \\: 通り\r\n                \\end{equation*}\r\n    \r\n        \\item\r\n   \
+    \         赤色で3枚塗られるとき, 塗られる板はA, C, Eに決まる。B, Dには緑色, 青色のどちらを塗っても良いから\r\n       \
+    \         \\begin{equation*}\r\n                    2^2 = 4 \\: 通り\r\n       \
+    \         \\end{equation*}\r\n\r\n        \\item\r\n            掲示板の対称性から, Aに塗られるときの場合の数とEに塗られるときの場合の数,\
+    \ Bに塗られるときの場合の数とDに塗られるときの場合の数はそれぞれ等しい。赤色で塗られる位置によって場合分けをする。\r\n              \
+    \  \\begin{enumerate}[left = 0pt]\r\n                    \\item[(i)]\r\n     \
+    \                   AまたはEに塗られるとき\\\\\r\n                        残り4枚に緑色と青色を交互に塗る方法が2通りある。したがって,\
+    \ このときの場合の数は\r\n                            \\begin{equation*}\r\n           \
+    \                     2 \\times 2 = 4 \\: 通り\r\n                            \\\
+    end{equation*}\r\n\r\n                    \\item[(ii)]\r\n                   \
+    \     BまたはDに塗られるとき\\\\\r\n                        Bに赤色で塗ったとき, Aには緑色または青色を塗る2通りの方法があり,\
+    \ C～Eには緑色と青色を交互に塗る2通りの方法がある。これはDに赤色で塗ったときも同様。したがって, このときの場合の数は\r\n           \
+    \                 \\begin{equation*}\r\n                                \\underbrace{2}_{\\\
+    text{端の色}} \\times \\underbrace{2}_{\\text{残りの3か所}} \\times \\underbrace{2}_{\\\
+    text{B or D}} = 8 \\: 通り\r\n                            \\end{equation*}\r\n\r\
+    \n                    \\item[(iii)]\r\n                        Cに塗られるとき\\\\\r\n\
+    \                        AとB, DとEのそれぞれに緑色と青色を交互に塗るから\r\n                     \
+    \       \\begin{equation*}\r\n                                2 \\times 2 = 4\
+    \ \\: 通り\r\n                            \\end{equation*}\r\n                \\\
+    end{enumerate}\r\n            以上より, 1枚の正方形に赤色が塗られる場合の数は\r\n                \\\
+    begin{equation*}\r\n                    4 + 8 + 4 = 16 \\: 通り\r\n            \
+    \    \\end{equation*}\r\n\r\n        \\item\r\n            赤色で塗られる正方形の枚数は0～3枚のいずれかである。\\\
+    \\\r\n            0枚のとき, 緑色, 青色を交互に塗る方法だから2通りである。したがって余事象を考えることで\r\n         \
+    \       \\begin{equation*}\r\n                    48 - (2 + 16 + 4) = 26 \\: 通り\r\
+    \n                \\end{equation*}\r\n            と求まる。\r\n    \\end{enumerate}"
