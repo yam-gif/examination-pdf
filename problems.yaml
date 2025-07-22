@@ -2854,71 +2854,135 @@
 - subject: 数学A
   category: 図形の性質
   difficulty: 入門
-  body: "\\section{}\r\n    \\begin{wrapfigure}[6]{R}{0pt}\r\n        \\begin{tikzpicture}[scale\
-    \ = 2]\r\n            \\coordinate[label = above:A](A) at (0,1);             \
-    \   \r\n            \\coordinate[label = below left:B](B) at (-0.866, -0.5);\r\
-    \n            \\coordinate[label = below:C](C) at (0.5, -0.866);\r\n         \
-    \   \\coordinate[label = below right:D](D) at (0.866, -0.5);\r\n            \\\
-    coordinate[label = left:E](E) at (0.35, -0.3);\r\n            \\draw (B)--(D);\r\
-    \n            \\draw (A)--(C);\r\n            \\draw (E)--(D);\r\n           \
-    \ \\draw[very thick] (A)--(B)--(C)--(D)--cycle;\r\n        \\end{tikzpicture}\r\
-    \n    \\end{wrapfigure}\r\n    \r\n    四角形ABCDは$\\kaku{C} = 120^{\\circ}, \\:\
-    \ \\rm AB = BD = DA, \\: BC < AC$を満たしている。線分AC上に$\\rm CD = CE$となる点Eをとる。\r\n\r\n\
-    \    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n\
-    \            四角形ABCDは円に内接していることを示せ。\r\n\r\n        \\item\r\n            \\tsankaku{CDE}は正三角形であることを示せ。\r\
-    \n\r\n        \\item\r\n            $\\sankaku{BCD} \\equiv \\sankaku{AED}$であることを示せ。\r\
-    \n\r\n        \\item\r\n            $\\rm BC + CD = AC$であることを示せ。\r\n\r\n     \
-    \   \\item\r\n            $\\rm AC \\cdot BD = AB \\cdot CD + BC \\cdot DA$であることを示せ。\r\
+  body: "\\section{}\r\n1辺の長さが$a$の正四面体OABCを考える。\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            1辺の長さが$a$の正三角形の一つの頂点から,\
+    \ 対辺に対して垂直に下した垂線の長さを\\\\求めよ。\r\n\r\n        \\item\r\n            $\\sankaku{ABC}$の面積$S$を求めよ。\r\
+    \n\r\n        \\item\r\n            正四面体OABCの高さ$h$を求めよ。\r\n\r\n        \\item\r\
+    \n            正四面体OABCの体積$V$を求めよ。\r\n\r\n        \\item\r\n            正四面体OABCに内接する球の体積$W$を求めよ。\r\
     \n    \\end{enumerate}"
-  answer: "\\section{}\r\n    \\begin{wrapfigure}[6]{R}{0pt}\r\n        \\begin{tikzpicture}[scale\
-    \ = 2]\r\n            \\coordinate[label = above:A](A) at (0,1);             \
-    \   \r\n            \\coordinate[label = below left:B](B) at (-0.866, -0.5);\r\
-    \n            \\coordinate[label = below:C](C) at (0.5, -0.866);\r\n         \
-    \   \\coordinate[label = below right:D](D) at (0.866, -0.5);\r\n            \\\
-    coordinate[label = left:E](E) at (0.35, -0.3);\r\n            \\draw (B)--(D);\r\
-    \n            \\draw (A)--(C);\r\n            \\draw (E)--(D);\r\n           \
-    \ \\draw[very thick] (A)--(B)--(C)--(D)--cycle;\r\n        \\end{tikzpicture}\r\
-    \n    \\end{wrapfigure}\r\n    \r\n    四角形ABCDは$\\kaku{C} = 120^{\\circ}, \\:\
-    \ \\rm AB = BD = DA, \\: BC < AC$を満たしている。線分AC上に$\\rm CD = CE$となる点Eをとる。\r\n\r\n\
-    \    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n\
-    \            四角形ABCDは円に内接していることを示せ。\r\n\r\n        \\item\r\n            \\tsankaku{CDE}は正三角形であることを示せ。\r\
-    \n\r\n        \\item\r\n            $\\sankaku{BCD} \\equiv \\sankaku{AED}$であることを示せ。\r\
-    \n\r\n        \\item\r\n            $\\rm BC + CD = AC$であることを示せ。\r\n\r\n     \
-    \   \\item\r\n            $\\rm AC \\cdot BD = AB \\cdot CD + BC \\cdot DA$であることを示せ。\r\
+  answer: "\\section{}\r\n1辺の長さが$a$の正四面体OABCを考える。\r\n    \\begin{enumerate}[left =\
+    \ 0pt, label = (\\arabic*)]\r\n        \\item\r\n            1辺の長さが$a$の正三角形の一つの頂点から,\
+    \ 対辺に対して垂直に下した垂線の長さを\\\\求めよ。\r\n\r\n        \\item\r\n            $\\sankaku{ABC}$の面積$S$を求めよ。\r\
+    \n\r\n        \\item\r\n            正四面体OABCの高さ$h$を求めよ。\r\n\r\n        \\item\r\
+    \n            正四面体OABCの体積$V$を求めよ。\r\n\r\n        \\item\r\n            正四面体OABCに内接する球の体積$W$を求めよ。\r\
     \n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
-    \\\r\n\\kai\\\\\r\n解説参照\\\\\r\n\r\n\\haiten（25点）\r\n    \\begin{enumerate}[left\
-    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n            適当な論証に3点\r\n\r\n\
-    \        \\item\r\n            円周角の定理を用いて等しい角の組を導いて3点\\\\\r\n            適当な帰結に2点,\
-    \ 計5点\r\n\r\n        \\item\r\n            \\ctext{1}を導いて2点\\\\\r\n          \
-    \  \\ctext{2}を導いて2点\\\\\r\n            \\ctext{3}を導いて3点\\\\\r\n            適当な帰結に3点,\
-    \ 計10点\r\n\r\n        \\item\r\n            適当な論証に2点\r\n\r\n        \\item\r\n\
-    \            (4)を用いた式変形に2点\\\\\r\n            適当な数式の処理に3点, 計5点\r\n    \\end{enumerate}\r\
-    \n\r\n\\kouhyou\\\\\r\nトレミーの定理（(4)の結論）を導出する問題。本問は与えられている三角形が正三角形となっているが, トレミーの定理は一般の三角形から張られる四角形に対して成立する。\r\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\bunsu{\\sqrt{3}}{2}a$\r\n    \r\n        \\item\
+    \ \r\n            $S = \\bunsu{\\sqrt{3}}{4}a^2$\r\n    \r\n        \\item\r\n\
+    \            $h = \\bunsu{\\sqrt{6}}{3}a$\r\n    \r\n        \\item\r\n      \
+    \      $V = \\bunsu{\\sqrt{2}}{12}a^3$\r\n    \r\n        \\item\r\n         \
+    \   $W = \\bunsu{\\sqrt{6}}{216}\\pi a^3$\r\n    \\end{enumerate}\r\n\r\n\\haiten（20点）\r\
+    \n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n\
+    \            垂線を下ろした足が中点になることを述べて2点\\\\\r\n            答えに2点, 計4点\r\n    \r\n\
+    \        \\item \r\n            答えに2点\r\n    \r\n        \\item\r\n          \
+    \  底面の三角形に下した垂線の足が重心（外心）に一致することを述べて3点\\\\\r\n            答えに3点, 計6点\r\n    \r\n\
+    \        \\item\r\n            答えに3点\r\n    \r\n        \\item\r\n           \
+    \ 内接球の半径を求めて3点\\\\\r\n            答えに2点, 計5点\r\n    \\end{enumerate}\r\n\r\n\\\
+    kouhyou\\\\\r\n    正四面体の各値は余裕があれば暗記してしまってもよい。\\\\\r\n    本問で導出方法まで抑えておこう。\\\\\r\
     \n\r\n\\newpage\r\n\\kaisetsu\r\n    \\begin{enumerate}[left = 0pt, label = (\\\
-    arabic*)]\r\n        \\item\r\n            三角形ABDは正三角形であるから$\\kaku{BAD} = 60^{\\\
-    circ}$であり, $\\kaku{BAD} + \\kaku{BCD} = 180^{\\circ}$\\\\\r\n            したがって四角形の対角の和が$180^{\\\
-    circ}$であるから題意は示された。（証明終）\r\n\r\n        \\item\r\n            (1)より, 四角形ABCDは円に内接しているから,\
-    \ 円周角の定理より\r\n                \\begin{equation*}\r\n                    \\angle\
-    \ \\rm ABD = \\angle ACD\r\n                \\end{equation*}\r\n            したがって,\
-    \ \\tsankaku{CED}は$\\kaku{ECD} = 60^{\\circ}, \\: \\rm CD = CE$より正三角形である。（証明終）\r\
-    \n\r\n        \\item\r\n            \\tsankaku{ABD}は正三角形であるから, \r\n          \
-    \      \\begin{equation*}\r\n                    \\rm BD = AD \\quad \\cdots \\\
-    ctext{1}\r\n                \\end{equation*}\r\n            弧CDに対する円周角の定理より\r\n\
-    \                \\begin{equation*}\r\n                    \\kaku{DBC} = \\kaku{DAE}\
-    \ \\quad \\cdots \\ctext{2}\r\n                \\end{equation*}\r\n          \
-    \  また, $\\kaku{EDB} = x^{\\circ}$とすると, \r\n                \\begin{align*}\r\n\
-    \                    \\kaku{BDC} &= \\kaku{EDC} - \\kaku{EDB} = 60^{\\circ} -\
-    \ x\\\\\r\n                    \\kaku{ADE} &= \\kaku{ADB} - \\kaku{EDB} = 60^{\\\
-    circ} - x\r\n                \\end{align*}\r\n            したがって, \r\n        \
-    \        \\begin{equation*}\r\n                    \\kaku{BDC} = \\kaku{ADE} \\\
-    quad \\cdots \\ctext{3}\r\n                \\end{equation*}\r\n\r\n          \
-    \  以上\\ctext{1}, \\ctext{2}, \\ctext{3}より, 一辺とその両端の角が等しいから$\\sankaku{BCD} \\equiv\
-    \ \\sankaku{AED}$である。 （証明終）\r\n\r\n        \\item\r\n            (2)より$\\rm CD\
-    \ = CE$\\\\\r\n            (3)より$\\rm BC = AE$\r\n\r\n            したがって, $\\rm\
-    \ BC + CD = AE + CE = AC$（証明終）\r\n\r\n        \\item\r\n            (4)の結果を用いて式変形する。\r\
-    \n                \\begin{align*}\r\n                    \\rm AC \\cdot BD &=\
-    \ \\rm (BC + CD) \\cdot BD \\quad \\because (4)\\\\\r\n                    &=\
-    \ \\rm BC \\cdot BD + CD \\cdot BD\\\\\r\n                    &= \\rm BC \\cdot\
-    \ DA + CD \\cdot AB \\quad \\because \\sankaku{ABD}は正三角形\\\\\r\n             \
-    \       &= \\rm AB \\cdot CD + BC \\cdot DA\r\n                \\end{align*}\r\
-    \n    \\end{enumerate}"
+    arabic*)]\r\n        \\item\r\n            平面ABCを切り取って考える。\r\n               \
+    \ \\begin{center}\r\n                    \\begin{tikzpicture}[scale=2]\r\n   \
+    \                     \\coordinate[label = below left:B](B) at (0,0);\r\n    \
+    \                    \\coordinate[label = below right:C](C) at (2,0);\r\n    \
+    \                    \\coordinate[label = above:A](A) at (1,1.732);\r\n      \
+    \                  \\coordinate[label = below:H](H) at (1,0);\r\n            \
+    \            \\draw(0.5, 0.05)--(0.5, -0.05);\r\n                        \\draw(1.5,\
+    \ 0.05)--(1.5, -0.05);\r\n                        \\draw[thick](A)--(B)--(C)--cycle\r\
+    \n                                    (A)--(H);\r\n                        \\\
+    draw[dashed] (A) to [out=200,in=90] (B);\r\n                        \\draw (0.2,1)\
+    \ node[fill=white] {$a$};\r\n                        \\draw[dashed] (B) to [out=320,in=220]\
+    \ (C);\r\n                        \\draw (1,-0.4) node[fill=white] {$a$};\r\n\
+    \                        \\draw [dashed] (A) to [out=350, in = 90] (C);\r\n  \
+    \                      \\draw (1.83, 1) node[fill=white] {$a$};\r\n          \
+    \          \\end{tikzpicture}\r\n                \\end{center}\r\n           \
+    \ Aから下した垂線の足をHとすると, \\tsankaku{ABC}は正方形より, $\\rm BH = \\bunsu{1}{2} \\cdot BC$したがって,\
+    \ 三角比を考えることにより\r\n                \\begin{align*}\r\n                    \\rm\
+    \ AH &= \\rm \\sqrt{3} \\cdot BH\\\\\r\n                    &= \\sqrt{3} \\cdot\
+    \ \\bunsu{a}{2}\\\\\r\n                    &= \\bunsu{\\sqrt{3}}{2}a\r\n     \
+    \           \\end{align*}\r\n                \r\n        \\item \r\n         \
+    \   (1)より\\tsankaku{ABC}の高さが求まっているから\r\n                \\begin{align*}\r\n  \
+    \                  S &= \\bunsu{1}{2} \\cdot a \\cdot \\bunsu{\\sqrt{3}}{2}a\\\
+    \\\r\n                    &= \\bunsu{\\sqrt{3}}{4}a^2\r\n                \\end{align*}\r\
+    \n    \r\n        \\item\r\n            Pから平面ABCに下した垂線の足をPとする。$\\text{OA} = a$より,\
+    \ $\\rm AP$の長さが分かれば三平方の定理から正四面体の高さを求めることができる。\r\n                \\begin{center}\r\
+    \n                    \\begin{tikzpicture}[scale=1.5]\r\n                    \
+    \    \\coordinate[label = above left:A](A) at (0,0.05);\r\n                  \
+    \      \\coordinate[label = below right:B](B) at (2.5,-0.75);\r\n            \
+    \            \\coordinate[label = above right:C](C) at (4,0);\r\n            \
+    \            \\coordinate[label = above:O](O) at (1.9,3.42);\r\n             \
+    \           \\coordinate[label = right:P](P) at (1.9, -0.2);\r\n             \
+    \           \\draw[blue] (A)--(P);\r\n                        \\draw[red] (O)--(P);\r\
+    \n                        \\draw[very thick] (A)--(B)--(C)--(O)--cycle;\r\n  \
+    \                      \\draw[dashed] (A)--(C);\r\n                        \\\
+    draw[very thick] (B)--(O);\r\n                    \\end{tikzpicture}\r\n     \
+    \           \\end{center}\r\n\\newpage\r\n            Pは\\tsankaku{ABC}の重心である（\\\
+    tsankaku{ABC}が正三角形）ため, $\\rm AP : PH = 2 : 1$となることを用いてAPを求める。\r\n            \
+    \    \\begin{center}\r\n                    \\begin{tikzpicture}[scale=3]\r\n\
+    \                        \\coordinate[label = below left:B](B) at (0,0);\r\n \
+    \                       \\coordinate[label = below right:C](C) at (2,0);\r\n \
+    \                       \\coordinate[label = above:A](A) at (1,1.732);\r\n   \
+    \                     \\coordinate[label = left:P](P) at (1,0.5774);\r\n     \
+    \                   \\coordinate[label = below:H](H) at (1,0);\r\n           \
+    \             \\draw[thick](A)--(B)--(C)--cycle\r\n                          \
+    \          (A)--(H);\r\n                        \\draw[dashed] (A) to [out=200,in=90]\
+    \ (B);\r\n                        \\draw (0.2,1) node[fill=white] {$a$};\r\n \
+    \                       \\draw[dashed] (B) to [out=320,in=220] (C);\r\n      \
+    \                  \\draw (1,-0.4) node[fill=white] {$a$};\r\n               \
+    \         \\draw [dashed] (A) to [out=350, in = 90] (C);\r\n                 \
+    \       \\draw (1.83, 1) node[fill=white] {$a$};\r\n                        \\\
+    draw[dashed] (A) to [out=290,in=70] (P);\r\n                        \\draw (1.13,1.1)\
+    \ node[fill=white] {\\textcircled{\\scriptsize 2}};\r\n                      \
+    \  \\draw[dashed] (P) to [out=310,in=50] (H);\r\n                        \\draw\
+    \ (1.13,0.2887) node[fill=white] {\\textcircled{\\scriptsize 1}};\r\n        \
+    \                \\fill (P) circle(0.8pt);\r\n                        \\draw(0.5,\
+    \ 0.05)--(0.5, -0.05);\r\n                        \\draw(1.5, 0.05)--(1.5, -0.05);\r\
+    \n                    \\end{tikzpicture}\r\n                \\end{center}\r\n\
+    \                \\begin{align*}\r\n                    \\rm AP &= \\bunsu{2}{3}\\\
+    rm AH\\\\\r\n                    &= \\bunsu{2}{3} \\cdot \\bunsu{\\sqrt{3}}{2}a\\\
+    \\\r\n                    &= \\bunsu{\\sqrt{3}}{3}a\r\n                \\end{align*}\r\
+    \n            したがって, \\tsankaku{APO}に対する三平方の定理から\r\n                \\begin{align*}\r\
+    \n                    \\rm AO^2 &= \\rm AP^2 + OP^2\\\\\r\n                  \
+    \  a^2 &= \\left(\\bunsu{\\sqrt{3}}{3}a\\right)^2 + \\rm OP^2\\\\\r\n        \
+    \            \\rm OP^2 &= a^2 - \\bunsu{3}{9}a^2\\\\\r\n                    \\\
+    rm OP^2 &= \\bunsu{2}{3}a^2\\\\\r\n                    \\therefore h &= \\bunsu{\\\
+    sqrt{6}}{3}a\r\n                \\end{align*}\r\n            【補足】\\\\\r\n    \
+    \        \\tsankaku{ABC}は正三角形なので, Pは外心でもある。正弦定理などから外接円の半径$R$を求めて, $\\rm AP = R$として議論しても良い。\r\
+    \n    \r\n        \\item\r\n            (2), (3)より求める体積$V$は\r\n              \
+    \  \\begin{align*}\r\n                    V &= \\bunsu{1}{3} \\cdot \\bunsu{\\\
+    sqrt{3}}{4}a^2 \\cdot \\bunsu{\\sqrt{6}}{3}a\\\\\r\n                    &= \\\
+    bunsu{\\sqrt{2}}{12}a^3\r\n                \\end{align*}\r\n\\newpage    \r\n\
+    \        \\item\r\n            正四面体の内接球の半径$r$は, 球の中心から各面への垂線の長さと等しい。\r\n     \
+    \           \\begin{center}\r\n                    \\begin{tikzpicture}\r\n  \
+    \                      \\coordinate[label = above left:A](A) at (0,0.05);\r\n\
+    \                        \\coordinate[label = below right:B](B) at (2.5,-0.75);\r\
+    \n                        \\coordinate[label = above right:C](C) at (4,0);\r\n\
+    \                        \\coordinate[label = above:O](O) at (1.9,3.42);\r\n \
+    \                       \\draw[very thick] (A)--(B)--(C)--(O)--cycle\r\n     \
+    \                                     (O)--(B);\r\n                        \\\
+    draw[dashed] (A)--(C);\r\n                        % Draw inscribed sphere\r\n\
+    \                        \\shade[ball color=blue!40, opacity=0.3] (2,0.9) circle[radius=1.1];\r\
+    \n                        \r\n                        % Draw center of sphere\r\
+    \n                        \\fill[red] (2,0.9) circle[radius=0.05];\r\n       \
+    \                 \\draw[blue](2, 0.9)--(2, -0.2);\r\n                       \
+    \ \\draw[->](-0.5, -0.7)node[left, blue]{$r$}--(1.8, 0.4);\r\n               \
+    \     \\end{tikzpicture}\r\n                \\end{center}\r\n            したがって,\
+    \ 各面に垂線を下ろすことにより, 正四面体は高さ$r$の三角錐4つに分割される。\\\\\r\n            よって, \r\n       \
+    \         \\begin{equation*}\r\n                    V = \\bunsu{1}{3} \\cdot S\
+    \ \\cdot r \\times 4\r\n                \\end{equation*}\r\n            であるから,\
+    \ 内接球の半径は\r\n                \\begin{align*}\r\n                    r &= \\bunsu{3V}{4S}\\\
+    \\\r\n                    &= \\bunsu{3 \\cdot \\bunsu{\\sqrt{2}}{12}a^3}{4 \\\
+    cdot \\bunsu{\\sqrt{3}}{4}a^2}\r\n                    = \\bunsu{\\sqrt{6}}{12}a\r\
+    \n                \\end{align*}\r\n            と求まる。したがって内接球の体積$W$は\r\n      \
+    \          \\begin{align*}\r\n                    W &= \\bunsu{4}{3} \\pi r^3\\\
+    \\\r\n                    &= \\bunsu{4}{3} \\pi \\cdot \\left(\\bunsu{\\sqrt{6}}{12}a\\\
+    right)^3\\\\\r\n                    &= \\bunsu{\\sqrt{6}}{216}\\pi a^3\r\n   \
+    \             \\end{align*}\r\n            【補足】\\\\\r\n            内接球の半径を求めるにあたり,\
+    \ 本問では正四面体であったため, すべての面の表面積が等しく上記の解答となった。\\\\\r\n            一般の四面体では各面の表面積が等しいとは限らないが,\
+    \ 同様に4つに分割して考えると, 正四面体全体の表面積を用いて内接球の半径を求めることができる。\\\\\r\n\r\n            四面体の各面の表面積をそれぞれ$S_1,\
+    \ \\: S_2, \\: S_3, \\: S_4$とする。このとき\r\n                \\begin{align*}\r\n  \
+    \                  V &= \\bunsu{1}{3} \\cdot r \\cdot S_1 + \\bunsu{1}{3} \\cdot\
+    \ r \\cdot S_2 + \\bunsu{1}{3} \\cdot r \\cdot S_3 + \\bunsu{1}{3} \\cdot r \\\
+    cdot S_4\\\\\r\n                    &= \\bunsu{1}{3}r(S_1 + S_2 + S_3 + S_4)\r\
+    \n                \\end{align*}\r\n            四面体の表面積を$S$とすれば, $S = S_1 + S_2\
+    \ + S_3 + S_4$であるから, \r\n                \\begin{equation*}\r\n              \
+    \      V = \\bunsu{1}{3}rS\r\n                \\end{equation*}\r\n    \\end{enumerate}"
