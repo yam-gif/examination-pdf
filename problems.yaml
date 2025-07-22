@@ -1087,3 +1087,45 @@
     cos^2{2x}\\:}\\cdot(2x)'\\\\\r\n                &=\\dfrac{2}{\\:\\cos^2{2x}}\r\
     \n            \\end{align*}\r\n         \\end{fleqn}\r\n        \\end{enumerate}\r\
     \n\\end{multicols}"
+- subject: 数学3
+  category: 微分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の問いに答えよ。（答えのみでよい）\r\n%接線の方程式をきちんと求められるかの確認\r\n\\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n    \\item\r\n       $ \\displaystyle \r\n       y=\\\
+    sin{x} $\r\n       の点$ \\displaystyle \r\n         \\left(\\frac{\\:\\pi\\:}{6},\\\
+    :\\frac{\\:1\\:}{2}\\right) $ における接線の方程式を求めよ。\r\n    \\item\r\n       $ \\displaystyle\
+    \ \r\n       y=x\\log x $\r\n       の点$ (e,\\:e) $ における接線の方程式を求めよ。\r\n    \\item\r\
+    \n        $ \\displaystyle \r\n       y=xe^x $\r\n       の点 $ (1,\\:e) $ における接線の方程式を求めよ。\r\
+    \n\\end{enumerate}"
+  answer: "\\section{}\r\n次の問いに答えよ。（答えのみでよい）\r\n%接線の方程式をきちんと求められるかの確認\r\n\\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n    \\item\r\n       $ \\displaystyle \r\n       y=\\\
+    sin{x} $\r\n       の点$ \\displaystyle \r\n         \\left(\\frac{\\:\\pi\\:}{6},\\\
+    :\\frac{\\:1\\:}{2}\\right) $ における接線の方程式を求めよ。\r\n    \\item\r\n       $ \\displaystyle\
+    \ \r\n       y=x\\log x $\r\n       の点$ (e,\\:e) $ における接線の方程式を求めよ。\r\n    \\item\r\
+    \n        $ \\displaystyle \r\n       y=xe^x $\r\n       の点 $ (1,\\:e) $ における接線の方程式を求めよ。\r\
+    \n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n     \
+    \   \\item\r\n            $y=\\dfrac{\\:\\sqrt{3}\\:}{2}x+\\dfrac{1}{\\:2\\:}-\\\
+    dfrac{\\:\\sqrt{3}\\pi\\:}{\\:12\\:}$\r\n        \\item\r\n            $y=2x-e$\r\
+    \n        \\item\r\n            $y=e(2x-1)$\r\n    \\end{enumerate}\r\n    \r\n\
+    \\haiten（20点）\\\\\r\n(1)6点 (2)7点 (3)7点\\\\\r\n\r\n\\kouhyou\\\\\r\n関数が変われど,\\\
+    :曲線の接線を求めるという一連の操作の流れは,\\:数学IIで三次関数の接線を求めた時の操作の流れと何も変わらない。積の微分法や商の微分法を使って導関数さえ求めることができれば今までと同じことをやれば良いだけなので,\\\
+    :きちんと接線を求める問題は解答できるようにしておきたい。\\\\\r\n\r\n\\kaisetsu\r\n\\begin{youten}\r\n {接線の方程式}{}\r\
+    \n    $y=f(x)上の点(\\:a,\\:f(a)\\:)$での接線は,\\\\\r\n    \\begin{equation*}\r\n   \
+    \ y-f(a)=f'(a)(x-a)\r\n    \\end{equation*}\r\n    で表される。\r\n\\end{youten}\r\n\
+    \\begin{youten*}[title={要点 2:\r\n    積の微分法（再喝）}]{}\r\n    \\begin{equation*}\r\
+    \n        \\{f(x)g(x)\\}'=f'(x)g(x)+f(x)g'(x)\r\n    \\end{equation*}\r\n\\end{youten*}\r\
+    \n    \\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n         \\item\r\n\
+    \         \\begin{equation*}\r\n            y'=\\cos{x}\r\n        \\end{equation*}\r\
+    \n        $\\cos{\\dfrac{\\:\\pi\\:}{6}}=\\dfrac{\\:\\sqrt{3}\\:}{2}$なので接線の方程式は,\r\
+    \n        \\begin{align*}\r\n            y-\\dfrac{1}{\\:2\\:}&=\\dfrac{\\:\\\
+    sqrt{3}\\:}{2}\\left(x-\\dfrac{\\:\\pi\\:}{6}\\right)\\\\\r\n            y&=\\\
+    dfrac{\\:\\sqrt{3}\\:}{2}x+\\dfrac{1}{\\:2\\:}-\\dfrac{\\:\\sqrt{3}\\pi\\:}{\\\
+    :12\\:}\r\n        \\end{align*}\r\n            \r\n         \\item\r\n      \
+    \   \\begin{align*}\r\n            y'&=x'(\\log{x})+x(\\log{x})'\\\\&=\\log{x}+1\r\
+    \n        \\end{align*}\r\n        $\\log{e}+1=2$なので接線の方程式は,\r\n        \\begin{align*}\r\
+    \n             y-e&=2(x-e)\\\\\r\n             y&=2x-e\r\n        \\end{align*}\r\
+    \n        \\item\r\n        \\begin{align*}\r\n            y'&=x'e^x+x(e^x)'\\\
+    \\&=e^x(x+1)\r\n        \\end{align*}\r\n        $e^1(1+1)=2e$なので接線の方程式は,\r\n\
+    \        \\begin{align*}\r\n            y-e&=2e(x-1)\\\\\r\n            y&=e(2x-1)\r\
+    \n        \\end{align*}\r\n\\end{enumerate}"
