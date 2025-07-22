@@ -1593,3 +1593,129 @@
     :5\\:}\\cos{5x}-(-\\cos {x})\\right)+C\\\\\r\n                &=-\\dfrac{1}{\\\
     :10\\:}\\cos{5x}+\\dfrac{1}{\\:2\\:}\\cos{x} + C\r\n            \\end{align*}\r\
     \n        \\end{fleqn}\r\n\\end{enumerate}"
+- subject: 数学3
+  category: 積分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の定積分を計算せよ。（記述）\r\n\\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\
+    \n\r\n    \\item\r\n       $ \\displaystyle \\int_0^1  \\frac{x+1}{\\: x^2+1 \\\
+    :} \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int_{\\frac{1}{\\:2\\:}}^1\
+    \ (1-x) \\sqrt{1-x^2} \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int_1^3\
+    \ (x+2) \\sqrt{x+1} \\ dx$\r\n    \\item\r\n       $ \\displaystyle \\int_0^{\\\
+    sqrt{3}} \\frac{dx}{\\:\\sqrt{4-x^2}\\:}$\r\n    \\item\r\n       $ \\displaystyle\\\
+    int_0^3  x^2e^x \\ dx$       \r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の定積分を計算せよ。（記述）\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n\r\n    \\item\r\n       $ \\displaystyle \\int_0^1  \\frac{x+1}{\\\
+    : x^2+1 \\:} \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int_{\\frac{1}{\\\
+    :2\\:}}^1 (1-x) \\sqrt{1-x^2} \\ dx$\r\n    \\item\r\n        $ \\displaystyle\
+    \ \\int_1^3 (x+2) \\sqrt{x+1} \\ dx$\r\n    \\item\r\n       $ \\displaystyle\
+    \ \\int_0^{\\sqrt{3}} \\frac{dx}{\\:\\sqrt{4-x^2}\\:}$\r\n    \\item\r\n     \
+    \  $ \\displaystyle\\int_0^3  x^2e^x \\ dx$       \r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\n        \\\
+    item\r\n            $\\dfrac{1}{\\:2\\:}\\log2+\\dfrac{\\:\\pi\\:}{4}$\r\n   \
+    \     \\item\r\n            $\\dfrac{\\:\\pi\\:}{6}-\\dfrac{\\:\\sqrt{3}\\:}{4}$\r\
+    \n        \\item\r\n            $\\dfrac{\\:272-44\\sqrt{2}\\:}{15}$\r\n     \
+    \   \\item\r\n            $\\dfrac{\\:\\pi\\:}{3}$\r\n        \\item\r\n     \
+    \       $5e^3-2$\r\n    \\end{enumerate} \r\n\\haiten（20点）\\\\\r\n(1)\\ctext{1}に2点,\\\
+    :答えに2点\\\\\r\n(2)\\ctext{2}に2点,\\:\\ctext{3}に1点,\\:答えに1点\\\\\r\n(3)~(4) 答えに各4点\\\
+    \\\r\n(5)\\ctext{4}に2点,\\:答えに2点\\\\\r\n\r\n\\kouhyou\\\\\r\n置換積分や部分積分を用いる積分について確認した。\\\
+    \\\r\n1問1問が色々な要素を問うており解きごたえがあるが,\\:いずれも参考書等に載っているような問題であるため,\\:きちんと解けるようにしておきたい。\\\
+    \\\r\nまた,\\:積分の置換方法や計算方法についてはさまざまなやり方が考えられるものであり,\\:解答は私ならどのように解くかという一例を示しただけである。必ずしもこの解法が全てであるわけではないことに十分注意を払うべきである。\\\
+    \\\r\nこの大問を初見で満点が取れたならば,\\:数学IIIの積分計算の基礎が定着しているといって良いだろう。\r\n\\newpage\r\n\\kaisetsu\r\
+    \n\\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\n    \\item \r\n        $x=\\\
+    tan{\\theta}$とおくと,\r\n        \\begin{align*}\r\n        dx&=(\\tan{\\theta})'d\\\
+    theta\\\\\r\n        &=\\dfrac{1}{\\:\\cos^2{\\theta}\\:}d\\theta\r\n        \\\
+    end{align*}\r\n        \\begin{center}\r\n            {\\large\\begin{tabular}{|c||ccc|}\r\
+    \n            \\hline\r\n            $x$ & $0$ & $\\cdots$ & $1$ \\\\\r\n    \
+    \        \\hline\r\n            $\\theta$ &$0$ & $\\cdots$ & $\\frac{\\:\\pi\\\
+    :}{4}$\\\\\r\n            \\hline\r\n            \\end{tabular}}\r\n        \\\
+    end{center}\r\n        よって,\r\n        \\begin{align*}\r\n            \\displaystyle\\\
+    int_0^1 \\frac{x+1}{\\: x^2+1 \\:} \\ dx&=\r\n            \\int_0^{\\frac{\\pi}{4}}\\\
+    frac{\\tan{\\theta+1}}{\\tan^2{\\theta}+1}\\cdot\\dfrac{1}{\\:\\cos^2{\\theta}}~d\\\
+    theta\\\\\r\n            &=\\int_0^{\\frac{\\pi}{4}}(\\tan{\\theta+1})\\cdot(\\\
+    cos^2{\\theta})\\cdot\\dfrac{1}{\\:\\cos^2{\\theta}}~d\\theta\\\\\r\n        \
+    \    &=\\int_0^{\\frac{\\pi}{4}}(\\tan{\\theta+1})~d\\theta\\\\\r\n          \
+    \  &=\\int_0^{\\frac{\\pi}{4}}\\tan{\\theta}~d\\theta+\\int_0^{\\frac{\\pi}{4}}1~d\\\
+    theta\\\\\r\n        \\end{align*}\r\n        ここで,\r\n        \\begin{align*}\r\
+    \n            \\displaystyle \\int_0^{\\frac{\\pi}{4}}\\tan{\\theta}~d\\theta&=\\\
+    displaystyle\\int_0^{\\frac{\\pi}{4}}\\dfrac{\\:\\sin{\\theta}\\:}{\\cos{\\theta}}\\\
+    \ d\\theta\\\\\r\n            &=\\displaystyle- \\int_0^{\\frac{\\pi}{4}} \\dfrac{\\\
+    :(\\cos{\\theta})'\\:}{\\cos{\\theta}}\\ d\\theta\\\\\r\n            &=-\\bigg[\\\
+    log\\mid\\cos{\\theta}\\mid\\bigg]_0^{\\frac{\\pi}{4}}\\\\\r\n            &=\\\
+    dfrac{1}{\\:2\\:}\\log2~~~\\cdots \\ctext{1}\r\n        \\end{align*}\r\n    \
+    \    \\begin{equation*}\r\n            \\int_0^{\\frac{\\pi}{4}}1~d\\theta=\\\
+    dfrac{\\:\\pi\\:}{4}\r\n        \\end{equation*}\r\n        であることから,\\:\r\n  \
+    \      \\begin{equation*}\r\n            \\displaystyle\\int_0^1 \\frac{x+1}{\\\
+    : x^2+1 \\:} \\ dx=\\dfrac{1}{\\:2\\:}\\log2+\\dfrac{\\:\\pi\\:}{4}\r\n      \
+    \  \\end{equation*}\r\n    \\newpage\r\n    \\item \r\n        \\begin{equation*}\r\
+    \n            \\displaystyle \\int_{\\frac{1}{\\:2\\:}}^1 (1-x) \\sqrt{1-x^2}\
+    \ \\ dx=\\int_{\\frac{1}{\\:2\\:}}^1\\sqrt{1-x^2}dx-\\int_{\\frac{1}{\\:2\\:}}^1x\\\
+    sqrt{1-x^2}~dx\\\\\r\n        \\end{equation*}\r\n        ここで,\r\n        \\begin{equation*}\r\
+    \n            \\int_{\\frac{1}{\\:2\\:}}^1\\sqrt{1-x^2}dx\r\n        \\end{equation*}\r\
+    \n        は下図の斜線部分の面積であるため,\\\\\r\n        \\begin{center}\r\n            \\begin{tikzpicture}[scale=4]\r\
+    \n           \\begin{scope} % 下記のパスの内側だけをクリップ \r\n           \\path[clip] plot[domain=0.5:1,\
+    \ variable=\\x, samples=120, smooth] ({\\x},{sqrt(1-\\x*\\x)}) -- (1,0) -- (0.5,0)\
+    \ -- cycle;\r\n            % クリップされた部分の中に等間隔の斜線を引く\r\n            \\foreach \\\
+    t in {0,...,40} {\r\n              % たとえばやや右上がりの線を引いてみる（間隔は 0.05 ずつ）\r\n     \
+    \         \\draw[thin]\r\n                ( -0.1 + 0.04*\\t,  0 )\r\n        \
+    \        --\r\n                (      0.05*\\t,  1.1 );\r\n            }\r\n \
+    \           \\end{scope}\r\n\r\n\r\n              % --- 座標軸 -------------------------------------------------\r\
+    \n              \\draw[->] (-0.05,0) -- (1.1,0) node[right] {$x$};\r\n       \
+    \       \\draw[->] (0,-0.05) -- (0,1.05) node[above] {$y$};\r\n            \r\n\
+    \              % --- 曲線 y = sqrt(1 - x^2)（上半円半径1） ------------------\r\n     \
+    \         \\draw[line width=1pt, domain=0:1, samples=2000, smooth]\r\n       \
+    \             plot ({\\x},{sqrt(1-\\x*\\x)});\r\n              % --- 補助線・ラベル ----------------------------------------\r\
+    \n              \\draw[dashed] (0.5,0) -- (0.5,{sqrt(3)/2});\r\n             \
+    \ \\draw[dashed] (0,0) -- (0.5,{sqrt(3)/2});\r\n              \\node[below] at\
+    \ (0.6,0) {C$\\left(\\frac{1}{\\:2\\:},0\\right)$};\r\n              \\node[below]\
+    \ at (-0.05,0) {O};\r\n              \\node[below] at (1.1,0) {A$(1,0)$};\r\n\
+    \              \\node[right] at (0.2,1.1) {$y=\\sqrt{1-x^{2}}$};\r\n         \
+    \     \\node[above,right] at (0.5,0.9) {B$\\left(\\frac{1}{\\:2\\:},\\frac{\\\
+    :\\sqrt{3}\\:}{2}\\right)$};\r\n            \\end{tikzpicture}\r\n        \\end{center}\r\
+    \n        \\begin{equation*}\r\n           \\overbrace{\\dfrac{1}{\\:2\\:}\\cdot1\\\
+    cdot1\\cdot\\dfrac{\\:\\pi\\:}{3}}^{\\text{扇形OABの面積}}-\\overbrace{\\dfrac{1}{\\\
+    :2\\:}\\cdot\\dfrac{1}{\\:2\\:}\\cdot\\dfrac{\\:\\sqrt{3}\\:}{2}}^{\\text{三角形OCBの面積}}=\\\
+    dfrac{\\:\\pi\\:}{6}-\\dfrac{\\:\\sqrt{3}\\:}{8}~~~\\cdots \\ctext{2}\r\n    \
+    \    \\end{equation*}\r\n        また,\r\n        \\begin{align*}\r\n        \\\
+    int_{\\frac{1}{\\:2\\:}}^1x\\sqrt{1-x^2}~dx&=\\bigg[-\\dfrac{1}{\\:3\\:}(1-x^2)^{\\\
+    tfrac{3}{2}}\\bigg]_{\\frac{1}{2}}^{1}\\\\\r\n        &=\\dfrac{\\:\\sqrt{3}\\\
+    :}{8}~~~\\cdots \\ctext{3}\r\n        \\end{align*}\r\n        以上より,\r\n     \
+    \   \\begin{align*}\r\n            \\int_{\\frac{1}{\\:2\\:}}^1\\sqrt{1-x^2}dx-\\\
+    int_{\\frac{1}{\\:2\\:}}^1x\\sqrt{1-x^2}~dx&=\\left(\\dfrac{\\:\\pi\\:}{6}-\\\
+    dfrac{\\:\\sqrt{3}\\:}{8}\\right)-\\dfrac{\\:\\sqrt{3}\\:}{8}\\\\\r\n        \
+    \    &=\\dfrac{\\:\\pi\\:}{6}-\\dfrac{\\:\\sqrt{3}\\:}{4}\r\n        \\end{align*}\r\
+    \n    \\newpage\r\n    \\item \r\n        $u=\\sqrt{x+1}$とおくと,\\\\\r\n       \
+    \ \\begin{align*}\r\n        \\sqrt{x+1}&=u\\\\\r\n        x+1&=u^2\\\\\r\n  \
+    \      dx&=2u~du\r\n        \\end{align*}\r\n        \\begin{center}\r\n     \
+    \       {\\large\\begin{tabular}{|c||ccc|}\r\n            \\hline\r\n        \
+    \    $x$ & $1$ & $\\cdots$ & $3$ \\\\\r\n            \\hline\r\n            $\\\
+    theta$ &$\\sqrt{2}$ & $\\cdots$ & $2$\\\\\r\n            \\hline\r\n         \
+    \   \\end{tabular}}\r\n        \\end{center}\r\n       これと,\\:$x=u^2-1$であることから,\
+    \ \r\n        \\begin{align*}\r\n            \\displaystyle \\int_1^3 (x+2) \\\
+    sqrt{x+1} \\ dx&=\\displaystyle \\int_{\\sqrt{2}}^{2} (u^2-1+2)\\cdot u\\cdot2u~du\\\
+    \\\r\n            &=\\displaystyle \\int_{\\sqrt{2}}^2 (u^2+1)\\cdot2u^2~du\\\\\
+    \r\n            &= \\int_{\\sqrt{2}}^2 (2u^4+2u^2)~du\\\\\r\n            &=\\\
+    bigg[\\dfrac{2}{\\:5\\:}u^5+\\dfrac{2}{\\:3\\:}u^3\\bigg]_{\\sqrt{2}}^2\\\\\r\n\
+    \            &=\\dfrac{\\:272-44\\sqrt{2}\\:}{15}\r\n        \\end{align*}\r\n\
+    \    \\item\r\n        $x=2\\sin{\\theta}$とおくと,\\:$dx=2\\cos{\\theta}~d\\theta$であり,\\\
+    \\\r\n        \\begin{center}\r\n            {\\large\\begin{tabular}{|c||ccc|}\r\
+    \n            \\hline\r\n            $x$ & $0$ & $\\cdots$ & $\\sqrt{3}$ \\\\\r\
+    \n            \\hline\r\n            $\\theta$ &$0$ & $\\cdots$ & $\\frac{\\pi}{3}$\\\
+    \\\r\n            \\hline\r\n            \\end{tabular}}\r\n        \\end{center}\r\
+    \n        であることから,\r\n        \\begin{align*}\r\n            \\displaystyle \\\
+    int_0^{\\sqrt{3}} \\frac{dx}{\\:\\sqrt{4-x^2}\\:}&=\\displaystyle \\int_0^{\\\
+    tfrac{\\pi}{3}} \\frac{2\\cos{\\theta}~d\\theta}{\\:\\sqrt{4-4\\sin^2{\\theta}}\\\
+    :}\\\\\r\n            &=\\displaystyle \\int_0^{\\tfrac{\\pi}{3}} \\frac{2\\cos{\\\
+    theta}~d\\theta}{\\:2\\sqrt{1-\\sin^2}{\\theta}\\:}\\\\\r\n            &=\\displaystyle\
+    \ \\int_0^{\\tfrac{\\pi}{3}} \\frac{\\cos{\\theta}}{\\:\\cos{\\theta}\\:}~d\\\
+    theta\\\\\r\n            &=\\displaystyle \\int_0^{\\tfrac{\\pi}{3}}1~d\\theta\\\
+    \\\r\n            &=\\dfrac{\\:\\pi\\:}{3}\r\n        \\end{align*}\r\n    \\\
+    item \r\n        \\begin{align*}\r\n            \\displaystyle\\int_0^3 x^2e^x~dx&=\\\
+    displaystyle\\int_0^3 x^2(e^x)'~dx\\\\\r\n            &=\\bigg[x^2e^x\\bigg]_0^3-\\\
+    displaystyle\\int_0^32x e^x~dx\\\\\r\n            &=9e^3-\\displaystyle2\\int_0^3x\
+    \ e^x~dx~~~\\cdots \\ctext{4}\\\\\r\n        \\end{align*}\r\n        ここで,\\:\r\
+    \n        \\begin{align*}\r\n            \\int_0^3x e^x~dx&=\\int_0^3x (e^x)'~dx\\\
+    \\\r\n            &=\\bigg[xe^x\\bigg]_0^3-\\displaystyle\\int_0^3 e^x~dx\\\\\r\
+    \n            &=3e^3-\\bigg[e^x\\bigg]_0^3\\\\\r\n            &=3e^3-e^3+1\\\\\
+    \r\n            &=2e^2+1\r\n        \\end{align*}\r\n        であるから\\ctext{4}より,\r\
+    \n        \\begin{align*}\r\n            &9e^3-2(2e^2+1)\\\\\r\n            &=9e^3-4e^3-2\\\
+    \\\r\n            &=5e^3-2\r\n        \\end{align*}\r\n\\end{enumerate}"
