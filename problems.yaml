@@ -1184,3 +1184,65 @@
     ,-\\tfrac{3\\sqrt3}{2})$};\r\n    \\node[below right] at (axis cs: 1.73205,  2.59808)\
     \ {\\scriptsize$(\\sqrt3,\\,\\tfrac{3\\sqrt3}{2})$};\r\n  \\end{axis}\r\n\\end{tikzpicture}\r\
     \n\\end{center}"
+- subject: 数学3
+  category: 微分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の問いに答えよ。（記述）\r\n%はさみうちの原理を用いる基本的な問題。（１）（２）できちんと微分法を用いて不等式評価ができるかを確認。\r\
+    \n\\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n    \\item\r\n       $\
+    \ \\displaystyle\r\n       x>0 のとき,\\: \r\n       x-\\frac{\\:x^2\\:}{2} < \\\
+    log(1+x)\r\n       $\r\n       を示せ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        x>0のとき,\\:\r\n       x-\\frac{\\:x^2\\:}{2}+\\frac{\\:x^3\\:}{3}\
+    \ > \\log (1+x)  \r\n       $\r\n        を示せ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        \\lim_{x\\to +0}\\: \\frac{\\:\\log(1+x)-x\\:}{x^2}\r\n        $\r\
+    \n        を求めよ。\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の問いに答えよ。（記述）\r\n%はさみうちの原理を用いる基本的な問題。（１）（２）できちんと微分法を用いて不等式評価ができるかを確認。\r\
+    \n\\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n    \\item\r\n       $\
+    \ \\displaystyle\r\n       x>0 のとき,\\: \r\n       x-\\frac{\\:x^2\\:}{2} < \\\
+    log(1+x)\r\n       $\r\n       を示せ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        x>0のとき,\\:\r\n       x-\\frac{\\:x^2\\:}{2}+\\frac{\\:x^3\\:}{3}\
+    \ > \\log (1+x)  \r\n       $\r\n        を示せ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        \\lim_{x\\to +0}\\: \\frac{\\:\\log(1+x)-x\\:}{x^2}\r\n        $\r\
+    \n        を求めよ。\r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n     \
+    \   \\item\r\n           解説参照\r\n        \\item\r\n            解説参照\r\n      \
+    \  \\item\r\n            $-\\dfrac{1}{\\:2\\:}$\r\n    \\end{enumerate}\r\n  \
+    \  \r\n\\haiten（20点）\\\\\r\n(1)\\ctext{1}の式に3点,\\:証明完了して2点\\\\\r\n(2)\\ctext{2}の式に3点,\\\
+    :証明完了して2点\\\\\r\n(3)\\ctext{3}の式に2点,\\:\\ctext{4}の式に4点,\\:答えに4点\\\\\r\n\r\n\\\
+    kouhyou\\\\\r\n誘導が親切についているため,\\:その誘導に乗っかって\\ctext{6}の形まで変形できたかがポイント。はさみうちの原理を使う極限の問題は難易度が高いが,\\\
+    :差がつく部分でもあるためきちんと解けるようにしておこう。\\\\\r\n\r\n\\kaisetsu\r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n         \\item\r\n            \\begin{youten}\r\n \
+    \            {不等式の証明}{}\r\n                $f(x)>g(x)の証明$\r\n\r\n            \
+    \    基本的には$h(x)=f(x)-g(x)$とおき,\\:$h(x)>0$を示していく。\r\n\r\n                示し方には微分して増減表を見る,\\\
+    :グラフの利用,\\:有名不等式へと持ち込むなど色々考えられるため,\\:その都度臨機応変に対応していく。\r\n            \\end{youten}\r\
+    \n            \\begin{align*}\r\n            f(x)&=\\log(1+x)-\\left(x-\\dfrac{\\\
+    :x^2\\:}{2}\\right)~~\\text{とおく。}\\\\\r\n            f'(x)&=\\dfrac{1}{\\:1+x\\\
+    :}-(1-x)\\\\          \r\n            &=\\dfrac{\\:1-(1-x)(1+x)\\:}{1+x}\\\\\r\
+    \n            &=\\dfrac{x^2}{\\:1+x\\:}>0~~(x>0)~~~\\cdots\\ctext{1}\r\n     \
+    \       \\end{align*}\r\n            \r\n            よって,\\:$f(x)$は$x>0$で単調増加をする。\r\
+    \n\r\n            これと$f(0)=0-(0-0)=0$より,\\:$x>0$において$f(x)>0$が成立。\r\n         \
+    \   \\begin{equation*}\r\n            \\therefore~x-\\dfrac{\\:x^2\\:}{2}<\\log(1+x)\r\
+    \n            \\end{equation*}\r\n         \\item\r\n         \\begin{align*}\r\
+    \n            g(x)&=x-\\dfrac{\\:x^2\\:}{2}+\\dfrac{\\:x^3\\:}{3}-\\log(1+x)~~\\\
+    text{とおく。}\\\\\r\n            g'(x)&=1-x-x^2-\\dfrac{1}{\\:1+x\\:}\\\\\r\n   \
+    \         &=\\dfrac{\\:(1-x+x^2)(1+x)-1\\:}{1+x}\\\\\r\n            &=\\dfrac{x^3}{\\\
+    :1+x\\:}>0\\quad (x>0)~~~\\cdots \\ctext{2}\r\n        \\end{align*}\r\n     \
+    \       よって,\\:$g(x)$は$x>0$で単調増加をする。\r\n\r\n            これと$g(0)=0$より,\\:$x>0$において$g(x)>0$が成立。\r\
+    \n\r\n            \\begin{equation*}\r\n            \\therefore \\quad x-\\dfrac{\\\
+    :x^2\\:}{2}+\\dfrac{\\:x^3\\:}{3} > \\log (1+x)\r\n            \\end{equation*}\r\
+    \n         \\item\r\n            \\begin{youten}\r\n            {はさみうちの原理}{}\r\
+    \n            $A(x)<B(x)<C(x)$かつ\\:\r\n            $\\displaystyle \\lim_{x\\\
+    to \\alpha}A(x)=\\lim_{x\\to \\alpha}C(x)=p$であるとき,\\:\r\n            \r\n    \
+    \        $\\displaystyle \\lim_{x\\to \\alpha}B(x)は収束しかつ$\r\n            $\\displaystyle\
+    \ \\lim_{x\\to \\alpha}B(x)=p$であることが言える。\r\n            \\end{youten}\r\n    \
+    \        (1),\\:(2)より,\\:$x>0$のとき,\r\n            \\begin{align*}\r\n        \
+    \    x-\\dfrac{\\:x^2\\:}{2}& < \\log(1+x)< x-\\dfrac{\\:x^2\\:}{2}+\\dfrac{\\\
+    :x^3\\:}{3}~~~\\cdots \\ctext{3}\\\\\r\n            \\iff-\\dfrac{\\:x^2\\:}{2}\
+    \ &< \\log(1+x)-x< -\\dfrac{\\:x^2\\:}{2}+\\dfrac{\\:x^3\\:}{3}\\\\\r\n      \
+    \      \\iff -\\dfrac{\\:1\\:}{2} &< \\dfrac{\\:\\log(1+x)-x\\:}{x^2}< -\\dfrac{\\\
+    :1\\:}{2}+\\dfrac{\\:x\\:}{3}~~~\\cdots \\ctext{4}\r\n            \\end{align*}\r\
+    \n            $\\displaystyle\\lim_{x\\to +0}\\: -\\dfrac{\\:1\\:}{2}=-\\dfrac{1}{\\\
+    :2\\:},\\:\\displaystyle\\lim_{x\\to +0}\\: -\\dfrac{\\:1\\:}{2}+\\dfrac{\\:x\\\
+    :}{3}=-\\dfrac{1}{\\:2\\:} $であることから,\\:はさみうちの原理より,\r\n            \\begin{equation*}\r\
+    \n            \\displaystyle \\lim_{x\\to +0}\\: \\frac{\\:\\log(1+x)-x\\:}{x^2}=-\\\
+    dfrac{1}{\\:2\\:}\r\n            \\end{equation*}\r\n            ~~が得られる。\r\n\\\
+    end{enumerate}"
