@@ -849,3 +849,48 @@
     \\\r\n            1つの並び方に対して, 裏返して一致するものが1つ存在するから重複度は2である。したがって求める場合の数は\r\n  \
     \              \\begin{equation*}\r\n                    \\bunsu{(5 - 1)!}{2}\
     \ = 12 \\: 通り\r\n                \\end{equation*}\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 場合の数
+  difficulty: 入門
+  body: "\\section{}\r\n以下の問いに答えよ。\r\n    \\begin{enumerate}[left=0pt, label = (\\\
+    arabic*)]\r\n        \\item\r\n            大小2個のサイコロを投げるとき, 目の和が5以下になる場合は何通りか。\r\
+    \n\r\n        \\item \r\n            大中小3個のサイコロを投げるとき, 目の積が偶数になる場合は何通りか。\r\n\r\
+    \n        \\item \r\n            大中小3個のサイコロを投げるとき, 目の積が4の倍数になる場合は何通りか。\r\n   \
+    \ \\end{enumerate}"
+  answer: "\\section{}\r\n以下の問いに答えよ。\r\n    \\begin{enumerate}[left=0pt, label = (\\\
+    arabic*)]\r\n        \\item\r\n            大小2個のサイコロを投げるとき, 目の和が5以下になる場合は何通りか。\r\
+    \n\r\n        \\item \r\n            大中小3個のサイコロを投げるとき, 目の積が偶数になる場合は何通りか。\r\n\r\
+    \n        \\item \r\n            大中小3個のサイコロを投げるとき, 目の積が4の倍数になる場合は何通りか。\r\n   \
+    \ \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            10通り\r\n\r\n        \\item\r\n            189通り\r\n\
+    \r\n        \\item\r\n            135通り \r\n    \\end{enumerate}\r\n\r\n\\haiten（10点）\\\
+    \\\r\n    (1)(2)各3点, (3)4点\\\\\r\n\r\n\\kouhyou\\\\\r\nサイコロ2個問題であれば表を書いて数えた方が早い。3個であってもたかだか216通りなので丁寧に場合分けして数える方針でも問題ないことは多い\\\
+    \\\r\n\r\n\\kaisetsu\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            6×6の表を書き, 5以下になる箇所に〇をつける。〇の数を数えて10通り。\r\n    \
+    \            \\begin{table}[htbp]\r\n                    \\centering\r\n     \
+    \                   \\begin{tabular}{|c|c|c|c|c|c|c|} \\hline\r\n            \
+    \                  & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline\r\n                  \
+    \          1 & 〇 & 〇 & 〇 & 〇 &  &  \\\\ \\hline\r\n                          \
+    \  2 & 〇 & 〇 & 〇 &  &  &  \\\\ \\hline\r\n                            3 & 〇 &\
+    \ 〇 &  &  &  &  \\\\ \\hline\r\n                            4 & 〇 &  &  &  & \
+    \ &  \\\\ \\hline\r\n                            5 &  &  &  &  &  &  \\\\ \\hline\r\
+    \n                            6 &  &  &  &  &  &  \\\\ \\hline\r\n           \
+    \             \\end{tabular}\r\n                \\end{table}\r\n             \
+    \   \r\n            \\item\r\n                目の積が奇数になる場合の数の余事象である。\\\\\r\n  \
+    \              1, 3, 5のいずれかしか出ない場合の数は\r\n                    \\begin{equation*}\r\
+    \n                        3^3 = 27 \\: 通り\r\n                    \\end{equation*}\r\
+    \n                だから求める場合の数は\r\n                    \\begin{equation*}\r\n  \
+    \                      216 - 27 = 189 \\: 通り\r\n                    \\end{equation*}\r\
+    \n    \r\n            \\item \r\n                積$abc$が4とならない場合の余事象であるから, \\\\\
+    \r\n                「\\ctext{1}すべての出目が奇数」, 「\\ctext{2}1つだけ2または6の目で残りは奇数」を考える。\r\
+    \n                    \\begin{enumerate}[left = 0pt, label = \\ctext{\\arabic*}]\r\
+    \n                        \\item\r\n                            すべての出目が奇数のとき\\\
+    \\\r\n                                1または3または5のみが出ればよいから$3^3$通り。\r\n    \r\n\
+    \                        \\item\r\n                            1つだけ2または6の目で残りは奇数のとき\\\
+    \\\r\n                            任意のサイコロで2または6が出る場合を考えると$2 \\times 3^2$通りであり,\
+    \ 3つのサイコロで同様の場合の数になるから, $2 \\times 3^2 \\times 3$通りである。\r\n                  \
+    \  \\end{enumerate}\r\n                以上, \\ctext{1}, \\ctext{2}より求める場合の数は\r\n\
+    \                    \\begin{equation*}\r\n                        216 - (3^3\
+    \ + 2 \\times 3^2 \\times 3) = 135 \\: 通り\r\n                    \\end{equation*}\r\
+    \n                ※4の倍数となる場合を考えても良いが場合分けがややこしいため, 余事象で考えている。 \r\n        \\end{enumerate}"
