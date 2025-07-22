@@ -2414,3 +2414,62 @@
     \ \\begin{equation*}\r\n                    \\bunsu{1}{36} \\times \\bunsu{7}{18}\
     \ + \\bunsu{7}{18} = \\bunsu{259}{648}\r\n                \\end{equation*}\r\n\
     \    \\end{enumerate}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\n原点を出発点とする数直線上の点Pは, 次の規則に従って動くものとする。\r\n    \\begin{itemize}\r\
+    \n        \\item \r\n            1枚の硬貨を投げて, 表が出た場合は点Pを正の向きに1だけ進める。\r\n\r\n   \
+    \     \\item \r\n            1枚の硬貨を投げて, 裏が出た場合はさらに1個のサイコロを1回投げ,\\\\\r\n      \
+    \      奇数の目が出た場合は点Pを正の向きに1だけ進める。\\\\\r\n            偶数の目が出た場合は点Pを負の向きに2だけ進める。\r\
+    \n    \\end{itemize}\r\n硬貨を投げたときの表裏が出る確率と, さいころを投げたときに出る目の確率は同様に確からしいとして, 以下の問いに答えよ。\r\
+    \n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item \r\
+    \n            1回の試行でPが正の向きに1だけ進む確率を求めよ。\r\n\r\n        \\item \r\n           \
+    \ 3回この試行を行ったとき, 点Pが原点にいる確率を求めよ。\r\n\r\n        \\item \r\n            6回この試行を行ったとき,\
+    \ 点Pが原点にいる確率を求めよ。\r\n\r\n        \\item\r\n            $n$を自然数とする。$n$回この試行を行ったとき,\
+    \ Pが原点にいるために$n$の満たすべき必要条件を求めよ。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n原点を出発点とする数直線上の点Pは, 次の規則に従って動くものとする。\r\n    \\begin{itemize}\r\
+    \n        \\item \r\n            1枚の硬貨を投げて, 表が出た場合は点Pを正の向きに1だけ進める。\r\n\r\n   \
+    \     \\item \r\n            1枚の硬貨を投げて, 裏が出た場合はさらに1個のサイコロを1回投げ,\\\\\r\n      \
+    \      奇数の目が出た場合は点Pを正の向きに1だけ進める。\\\\\r\n            偶数の目が出た場合は点Pを負の向きに2だけ進める。\r\
+    \n    \\end{itemize}\r\n硬貨を投げたときの表裏が出る確率と, さいころを投げたときに出る目の確率は同様に確からしいとして, 以下の問いに答えよ。\r\
+    \n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item \r\
+    \n            1回の試行でPが正の向きに1だけ進む確率を求めよ。\r\n\r\n        \\item \r\n           \
+    \ 3回この試行を行ったとき, 点Pが原点にいる確率を求めよ。\r\n\r\n        \\item \r\n            6回この試行を行ったとき,\
+    \ 点Pが原点にいる確率を求めよ。\r\n\r\n        \\item\r\n            $n$を自然数とする。$n$回この試行を行ったとき,\
+    \ Pが原点にいるために$n$の満たすべき必要条件を求めよ。\r\n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\bunsu{3}{4}$\r\n        \r\n        \\item\r\n\
+    \            $\\bunsu{27}{64}$\r\n\r\n        \\item\r\n            $\\bunsu{1215}{4096}$\r\
+    \n            \r\n        \\item\r\n            $n$が3の倍数であること。\r\n    \\end{enumerate}\r\
+    \n\r\n\\haiten（25点）\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            それぞれの場合分けで正しく確率を求めて各2点\\\\\r\n            答えに2点,\
+    \ 計6点\r\n\r\n        \\item\r\n            正の数に2回, 負の数に1回進むことを述べて3点\\\\\r\n  \
+    \          答えに3点, 計6点\r\n\r\n        \\item \r\n            正の数に4回, 負の数に2回進むことを述べて3点\\\
+    \\\r\n            答えに3点, 計6点\r\n\r\n        \\item \r\n            正しい論述に7点\r\n\
+    \    \\end{enumerate}\r\n    解答不備一カ所につき1点減点\\\\\r\n\r\n\\kouhyou\\\\\r\n    ランダムウォークの標準的な問題。(3)までは正答したい。\\\
+    \\\r\n    (4)のような一般の$n$に対して考察させる問題は入試まで含め超頻出。本問の場合, (2), (3)の結果で解の予想はある程度立つが,\
+    \ 正しい論述は初学のうちは難しい。\r\n\r\n\\newpage\r\n\\kaisetsu\r\n    \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n            正の方向に進む確率は硬貨の出る面により場合分け出来る。\r\
+    \n                \\begin{enumerate}[left = 0pt]\r\n                    \\item[(i)]\r\
+    \n                        表が出たとき\\\\\r\n                        題意より, このときの確率は$\\\
+    bunsu{1}{2}$\r\n\r\n                    \\item[(ii)]\r\n                     \
+    \   裏が出たとき\\\\\r\n                        さいころを投げて奇数の目が出ればよいから, 求める確率は\r\n   \
+    \                         \\begin{equation*}\r\n                             \
+    \   \\bunsu{1}{2} \\times \\bunsu{3}{6} = \\bunsu{1}{4}\r\n                  \
+    \          \\end{equation*}\r\n                \\end{enumerate}\r\n          \
+    \  (i), (ii)は互いに排反だから, 求める確率は\r\n                \\begin{equation*}\r\n      \
+    \              \\bunsu{1}{2} + \\bunsu{1}{4} = \\bunsu{3}{4}\r\n             \
+    \   \\end{equation*}\r\n        \r\n        \\item\r\n            3回の試行でPが原点にいるのは,\
+    \ Pが正の向きに2回, 負の向きに1回進んだ時であるから\r\n                \\begin{equation*}\r\n      \
+    \              \\combination{3}{2}\\left(\\bunsu{3}{4}\\right)^2\\left(\\bunsu{1}{4}\\\
+    right) = \\bunsu{27}{64}\r\n                \\end{equation*}\r\n\r\n        \\\
+    item\r\n            (2)と同様に考え, 6回の試行でPが原点にいるのは, Pが正の向きに4回, 負の向きに2回進んだ時であるから\r\n\
+    \                \\begin{equation*}\r\n                    \\combination{6}{4}\\\
+    left(\\bunsu{3}{4}\\right)^4\\left(\\bunsu{1}{4}\\right)^2 = \\bunsu{1215}{4096}\r\
+    \n                \\end{equation*}\r\n            \r\n        \\item\r\n     \
+    \       Pが負の向きに動く回数を$k$回$(1 \\leqq k \\leqq n)$とする。このとき, Pが正の向きに動く回数は$n - k$回であるから,\
+    \ $n$回試行を行ったときにPがいる座標は\r\n                \\begin{equation*}\r\n             \
+    \       -2 \\times k + (n - k) = n - 3k\r\n                \\end{equation*}\r\n\
+    \            と表せられる。これが原点にいるためには\r\n                \\begin{equation*}\r\n   \
+    \                 n - 3k = 0 \\iff n = 3k\r\n                \\end{equation*}\r\
+    \n            であるから, $n$が3の倍数であることが必要。\r\n    \\end{enumerate}"
