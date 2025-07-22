@@ -725,3 +725,127 @@
     \ 求める場合の数は\r\n                \\begin{equation*}\r\n                    \\textcolor{red}{1}\
     \ + \\textcolor{blue}{1} + \\bunsu{6}{3!} = 3 \\: 通り\r\n                \\end{equation*}\r\
     \n            ※これも数え上げて求めても良い。\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 場合の数
+  difficulty: 入門
+  body: "\\section{}\r\n以下の問いに答えよ。\r\n    \\begin{enumerate}[left = 0pt, label = (\\\
+    arabic*)]\r\n        \\item\r\n            10個の弁当と3つの飲み物がある。弁当と飲み物を1つずつ選ぶとき, その選び方は何通りか。\r\
+    \n            \r\n        \\item\r\n            108の正の約数の総和を求めよ。\r\n         \
+    \   \r\n        \\item\r\n            1以上200以下の整数について, \r\n                \\\
+    begin{enumerate}[left = 0pt, label = \\ctext{\\arabic*}]\r\n                 \
+    \   \\item \r\n                        3または5で割り切れるものはいくつあるか。\r\n    \r\n     \
+    \               \\item \r\n                        3または5または8で割り切れるものはいくつあるか。\r\
+    \n                \\end{enumerate}\r\n            \r\n        \\item \r\n    \
+    \        10円玉5枚, 100円玉3枚, 500円玉1枚の一部, または全部を用いると何種類の金額ができるか。\r\n            \r\
+    \n        \\item \r\n            スタート地点から東に3区画, 北に2区画で整備された位置にゴールがある。スタート地点からゴールまでの最短経路は何通りか。\r\
+    \n            \r\n        \\item \r\n            scienceの7個の文字を横一列に並べるとき, その並べ方は何通りか。\r\
+    \n\r\n        \\item \r\n            scienceの7個の文字を横一列に並べるとき, iとnが隣り合う並べ方は何通りか。\r\
+    \n                \r\n        \\item \r\n            9人を4人, 3人, 2人の3つのグループに分ける方法は何通りか。\r\
+    \n\r\n        \\item \r\n            5種類の色の玉を使って数珠を作るとき, 作り方は何通りか。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n以下の問いに答えよ。\r\n    \\begin{enumerate}[left = 0pt, label =\
+    \ (\\arabic*)]\r\n        \\item\r\n            10個の弁当と3つの飲み物がある。弁当と飲み物を1つずつ選ぶとき,\
+    \ その選び方は何通りか。\r\n            \r\n        \\item\r\n            108の正の約数の総和を求めよ。\r\
+    \n            \r\n        \\item\r\n            1以上200以下の整数について, \r\n        \
+    \        \\begin{enumerate}[left = 0pt, label = \\ctext{\\arabic*}]\r\n      \
+    \              \\item \r\n                        3または5で割り切れるものはいくつあるか。\r\n  \
+    \  \r\n                    \\item \r\n                        3または5または8で割り切れるものはいくつあるか。\r\
+    \n                \\end{enumerate}\r\n            \r\n        \\item \r\n    \
+    \        10円玉5枚, 100円玉3枚, 500円玉1枚の一部, または全部を用いると何種類の金額ができるか。\r\n            \r\
+    \n        \\item \r\n            スタート地点から東に3区画, 北に2区画で整備された位置にゴールがある。スタート地点からゴールまでの最短経路は何通りか。\r\
+    \n            \r\n        \\item \r\n            scienceの7個の文字を横一列に並べるとき, その並べ方は何通りか。\r\
+    \n\r\n        \\item \r\n            scienceの7個の文字を横一列に並べるとき, iとnが隣り合う並べ方は何通りか。\r\
+    \n                \r\n        \\item \r\n            9人を4人, 3人, 2人の3つのグループに分ける方法は何通りか。\r\
+    \n\r\n        \\item \r\n            5種類の色の玉を使って数珠を作るとき, 作り方は何通りか。\r\n    \\end{enumerate}\r\
+    \n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n\\begin{multicols}{3}\r\n    \\begin{enumerate}[left = 0pt, label\
+    \ = (\\arabic*)]\r\n        \\item\r\n            30通り\r\n\r\n        \\item\r\
+    \n            280\r\n\r\n        \\item\r\n            \\begin{enumerate}[left\
+    \ = 0pt, label = \\ctext{\\arabic*}]\r\n                \\item \r\n          \
+    \          93個\r\n                    \r\n                \\item \r\n        \
+    \            106個\r\n            \\end{enumerate}\r\n\\columnbreak\r\n       \
+    \ \\item\r\n            47種類\r\n\r\n        \\item\r\n            10通り\r\n   \
+    \         \r\n        \\item\r\n            1260通り\r\n\\columnbreak\r\n      \
+    \  \\item\r\n            360通り\r\n            \r\n        \\item\r\n         \
+    \   1260通り\r\n            \r\n        \\item\r\n            12通り\r\n    \\end{enumerate}\r\
+    \n\\end{multicols}\r\n\r\n\\haiten（20点）\\\\\r\n各2点\\\\\r\n\r\n\\kouhyou\\\\\r\n\
+    2問以上間違えるようであれば教科書の例題レベルの問題から再確認しよう。\\\\\r\n\r\n\\kaisetsu\r\n    \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n            1つの弁当を選んだとき, 飲み物の選択肢は3つある。弁当は10個であるから選び方の総数は\r\
+    \n                \\begin{equation*}\r\n                    10 \\times 3 = 30\
+    \ \\: 通り\r\n                \\end{equation*}\r\n\r\n        \\item \r\n      \
+    \      $108 = 2^2 \\cdot 3^3$であるから, 約数の総和は\r\n                \\begin{equation*}\r\
+    \n                    (2^0 + 2^1 + 2^2)(3^0 + 3^1 + 3^2 + 3^3) = 7 \\times 40\
+    \ = 280\r\n                \\end{equation*}\r\n\r\n        \\item \r\n       \
+    \     \\begin{enumerate}[left = 0pt, label = \\ctext{\\arabic*}]\r\n         \
+    \       \\item\r\n                    3で割り切れる整数の総数は, \r\n                    \
+    \    \\begin{equation*}\r\n                            200 \\div 3 = 66 \\cdots\
+    \ 2\r\n                        \\end{equation*}\r\n                    より66個。\\\
+    \\\r\n                    5で割り切れる整数の総数は, \r\n                        \\begin{equation*}\r\
+    \n                            200 \\div 5 = 40\\text{個}\r\n                  \
+    \      \\end{equation*}\r\n                    これら総数106個は, 15で割り切れるものを重複して数えているため,\
+    \ その個数を引く必要がある。\\\\\r\n                    15で割り切れる整数の総数は, \r\n              \
+    \          \\begin{equation*}\r\n                            200 \\div 15 = 13\
+    \ \\cdots 5\r\n                        \\end{equation*}\r\n                  \
+    \  より13個。\\\\\r\n                    したがって3または5で割り切れるものの個数は\r\n              \
+    \          \\begin{equation*}\r\n                            66 + 40 - 13 = 93\\\
+    text{個}\r\n                        \\end{equation*}\r\n            \r\n      \
+    \          \\item\r\n                    同様に考える。\\\\\r\n                    8で割り切れる整数の総数は,\
+    \ $200 \\div 8 = 25$個\\\\\r\n                    24で割り切れる整数の総数は, $200 \\div 24\
+    \ = 8 \\cdots 8$より8個\\\\\r\n                    40で割り切れる整数の総数は, $200 \\div 40\
+    \ = 5$個\\\\\r\n                    120で割り切れる整数の総数は, $200 \\div 120 = 1 \\cdots\
+    \ 80$より1個\\\\\r\n                    したがって3または5で割り切れるものの個数は\r\n              \
+    \          \\begin{equation*}\r\n                            66 + 40 + 25 - 13\
+    \ - 8 - 5 + 1 = 106 \\: 個\r\n                        \\end{equation*}\r\n    \
+    \                【図説】\\\\\r\n                    3で割り切れる整数の集合をA, 5で割り切れる整数の集合をB,\
+    \ 8で割り切れる整数の集合をCとする。\\\\\r\n                    求めたい集合は下図の色が塗られている部分であり, 同じ箇所のカウント数は1回にしなければならない（重複してはいけない）。\\\
+    \\\r\n                    \r\n                    まず$n(\\text{A}), \\: n(\\text{B}),\
+    \ \\: n(\\text{C})$の総和を取ると, $n(\\rm A \\cap B \\cap \\overline{C})$と$n(\\rm A\
+    \ \\cap \\overline{B} \\cap C)$と$n(\\rm \\overline{A} \\cap B \\cap C)$を2回, $n(\\\
+    rm A \\cap B \\cap C)$を3回数え上げている。\\\\\r\n                    $n(\\rm A \\cap B)$,\
+    \ $n(\\rm A \\cap C)$, $n(\\rm B \\cap C)$を引くことで, 任意の2つの集合の共通部分の数え上げ回数を1回にすることが出来るものの,\
+    \ $n(\\rm A \\cap B \\cap C)$の数え上げ回数が0回となってしまうため, 最後に$n(\\rm A \\cap B \\cap C)$を足すことで$n(\\\
+    rm A \\cup B \\cup C)$を重複なく数え上げることが出来る。\r\n                        \\begin{center}\r\
+    \n                            \\begin{tikzpicture}\r\n                       \
+    \         \\fill[red!10!] (0.75,1.2) circle [radius=1];\r\n                  \
+    \              \\fill[green!10!] (0,0) circle [radius=1];\r\n                \
+    \                \\fill[blue!10!] (1.5,0) circle [radius=1];\r\n             \
+    \                   \\begin{scope} \r\n                                    \\\
+    clip (1.5,0) circle [radius=1];\r\n                                    \\fill[green!40!blue!20!]\
+    \ (0,0) circle [radius=1];\r\n                                \\end{scope}\r\n\
+    \                                \\begin{scope} \r\n                         \
+    \           \\clip (1.5,0) circle [radius=1];\r\n                            \
+    \        \\fill[red!40!blue!20!] (0.75,1.2) circle [radius=1];\r\n           \
+    \                     \\end{scope}\r\n                                \\begin{scope}\
+    \ \r\n                                    \\clip (0.75,1.2) circle [radius=1];\r\
+    \n                                    \\fill[green!40!red!20!] (0,0) circle [radius=1];\r\
+    \n                                \\end{scope}\r\n                           \
+    \     \\begin{scope} \r\n                                    \\clip (1.5,0) circle\
+    \ [radius=1];\r\n                                    \\clip (0.75, 1.2) circle\
+    \ [radius=1];\r\n                                    \\fill[green!40!blue!40!red!40!]\
+    \ (0,0) circle [radius=1];\r\n                                \\end{scope}\r\n\
+    \                                \\draw (0.75, 1.2) circle[radius=1];\r\n    \
+    \                            \\draw (0,0) circle [radius=1];\r\n             \
+    \                   \\draw (1.5,0) circle [radius=1];\r\n                    \
+    \            \\draw (0.75,2.2) node[fill=white]{A};\r\n                      \
+    \          \\draw ({cos(pi*5/4 r)},{sin(pi*5/4 r)}) node[fill=white]{B};\r\n \
+    \                               \\draw ({1.5+cos(pi/4 r)},{sin(pi*7/4 r)}) node[fill=white]{C};\r\
+    \n                            \\end{tikzpicture}\r\n                        \\\
+    end{center}\r\n        \\end{enumerate}\r\n            \r\n        \\item\r\n\
+    \            硬貨を1枚も使わないときも併せて考えると, 10円玉は0～5枚の6通り, 100円玉は0～3枚の4通り, 500円玉は0～1枚の2通りの場合が存在する。\\\
+    \\\r\n            これらから1枚も使わない1通りを引けば良いから\r\n                \\begin{equation*}\r\
+    \n                    6 \\times 4 \\times 2 - 1 = 48 - 1 = 47 \\: 種類\r\n     \
+    \           \\end{equation*}\r\n                    \r\n        \\item\r\n   \
+    \         東方向に3区画, 北方向に2区画進む経路が最短となり, これは「→→→↑↑」の5コマンドの並び替え（同じものを含む順列）と1対1対応するので\r\
+    \n                \\begin{equation*}\r\n                    \\bunsu{5!}{3! \\\
+    cdot 2!} = 10 \\: 通り\r\n                \\end{equation*}\r\n\r\n        \\item\
+    \ \r\n            7文字のうち, cとeが2つずつあるから\r\n                \\begin{equation*}\r\
+    \n                    \\bunsu{7!}{2! \\cdot 2!} = 1260 \\: 通り\r\n            \
+    \    \\end{equation*}\r\n\r\n        \\item \r\n            iとnをまとめて1文字と考え, iとnの入れ替えを考えれば良い。\r\
+    \n                \\begin{equation*}\r\n                    \\bunsu{6!}{2! \\\
+    cdot 2!} \\times 2 ! = 360 \\: 通り\r\n                \\end{equation*}\r\n\r\n\
+    \        \\item \r\n            9人から4人選び, 残りの5人から3人（もしくは2人）選べば良い。また, 人数が異なるからグループ分けに伴う重複度は発生しない。\r\
+    \n                \\begin{equation*}\r\n                    \\combination{9}{4}\
+    \ \\times \\combination{5}{3} \\times \\combination{2}{2} = 1260 \\: 通り\r\n  \
+    \              \\end{equation*}\r\n\r\n        \\item \r\n            回転または裏返しによって一致するものは同じとみなすことに注意する。\\\
+    \\\r\n            1つの並び方に対して, 裏返して一致するものが1つ存在するから重複度は2である。したがって求める場合の数は\r\n  \
+    \              \\begin{equation*}\r\n                    \\bunsu{(5 - 1)!}{2}\
+    \ = 12 \\: 通り\r\n                \\end{equation*}\r\n    \\end{enumerate}"
