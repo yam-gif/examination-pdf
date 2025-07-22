@@ -1767,3 +1767,44 @@
     \n        I &= \\dfrac{e^x}{2}(\\sin{x} - \\cos{x}) + C \\\\\r\n        J &= \\\
     dfrac{e^x}{2}(\\sin{x} + \\cos{x}) + C\r\n        \\end{aligned}\r\n        \\\
     right.\r\n        \\]\r\n\r\n\\end{enumerate}"
+- subject: 数学3
+  category: 積分3
+  difficulty: 入門
+  body: "\\section{}\r\n$ \\displaystyle I_n =\\displaystyle\\int_1^e(\\log{x})^n~dx\
+    \ $ とする。このとき,次の問いに答えよ。（記述）\r\n%積分漸化式の典型的な基本問題。\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n    \\item\r\n       $\\displaystyle I_1$を求めよ。\r\n    \\item\r\n\
+    \        $\\displaystyle I_{n+1}$を$\\displaystyle I_{n}$ を用いて表せ。\r\n    \\item\r\
+    \n        $\\displaystyle I_5$を求めよ。\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n$ \\displaystyle I_n =\\displaystyle\\int_1^e(\\log{x})^n~dx\
+    \ $ とする。このとき,次の問いに答えよ。（記述）\r\n%積分漸化式の典型的な基本問題。\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n    \\item\r\n       $\\displaystyle I_1$を求めよ。\r\n    \\item\r\n\
+    \        $\\displaystyle I_{n+1}$を$\\displaystyle I_{n}$ を用いて表せ。\r\n    \\item\r\
+    \n        $\\displaystyle I_5$を求めよ。\r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\n        \\\
+    item\r\n            $1$\r\n        \\item\r\n            $I_{n+1}=e-(n+1)I_{n}$\r\
+    \n        \\item \r\n            $120-44e$\r\n    \\end{enumerate}\r\n    \r\n\
+    \\haiten（20点）\\\\\r\n(1)4点\\\\\r\n(2)10点\\\\\r\n(3)6点\\\\\r\n\r\n\\kouhyou\\\\\
+    \r\n積分漸化式の典型問題を出題した。\r\n$\\displaystyle\\int_1^e(\\log{x})^n~dx$だけでなく,\\:$\\displaystyle\\\
+    int_1^{\\tfrac{\\pi}{4}}(\\tan{x})^n~dx$や$\\displaystyle\\int_1^{\\tfrac{\\pi}{2}}(\\\
+    sin{x})^n~dx$など様々な形で出題されるため,\\:解けなかった人は参考書を用いて色々な積分漸化式に触れることで感覚を掴む訓練をしてみると良い。\r\
+    \n\\\\\r\n\r\n\\kaisetsu\r\n\\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\n\
+    \    \\item \r\n        \\begin{align*}\r\n            I_1&=\\displaystyle\\int_1^e\\\
+    log{x}~dx\\\\\r\n            &=\\displaystyle\\int_1^e(x)'\\log{x}~dx\\\\\r\n\
+    \            &=\\bigg[x\\log{x}\\bigg]_1^e-\\displaystyle\\int_1^ex(\\log{x})'~dx\\\
+    \\\r\n            &=e\\cdot1-\\displaystyle\\int_1^e1~dx\\\\\r\n            &=e-(e-1)\\\
+    \\\r\n            &=1\r\n        \\end{align*}\r\n    \\item \r\n        \\begin{align*}\r\
+    \n            I_{n+1}&=\\displaystyle\\int_1^e\\left(\\log{x}\\right)^{n+1}~dx\\\
+    \\\r\n            &=\\int_1^e(x)'\\left(\\log{x}\\right)^{n+1}~dx\\\\\r\n    \
+    \        &=\\bigg[x\\left(\\log{x}\\right)^{n+1}\\bigg]_1^e-\\int_1^ex\\left\\\
+    {(\\log{x}\\right)^{n+1}\\}'~dx\\\\\r\n            &=e-\\int_1^ex\\cdot(n+1)\\\
+    left(\\log{x}\\right)^{n}\\cdot\\dfrac{1}{\\:x\\:}~dx\\\\\r\n            &=e-(n+1)\\\
+    int_1^e\\left(\\log{x}\\right)^{n}~dx\\\\\r\n            &=e-(n+1)I_n\r\n    \
+    \    \\end{align*}\r\n    \\item\r\n        ~\\\\\r\n        (1),\\:(2)より,\\\\\
+    \r\n        \\begin{align*}\r\n            I_2&=e-(1+1)I_1\\\\\r\n           \
+    \ &=e-2\\cdot1\\\\\r\n            &=e-2\r\n        \\end{align*}\r\n        同様にして,\\\
+    :\r\n        \\begin{align*}\r\n            I_3&=e-3I_2\\\\\r\n            &=e-3(e-2)\\\
+    \\\r\n            &=6-2e\r\n        \\end{align*}\r\n        \\begin{align*}\r\
+    \n            I_4&=e-4I_3\\\\\r\n            &=e-4(6-2e)\\\\\r\n            &=9e-24\r\
+    \n        \\end{align*}\r\n        \\begin{align*}\r\n            I_5&=e-5I_4\\\
+    \\\r\n            &=e-5(9e-24)\\\\\r\n            &=120-44e\r\n        \\end{align*}\r\
+    \n\\end{enumerate}"
