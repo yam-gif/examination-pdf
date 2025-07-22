@@ -1012,3 +1012,78 @@
     \                            f(p^a q^b r^c) = p^{a - 1}q^{b - 1}r^{c - 1}(p -\
     \ 1)(q - 1)(r - 1)\r\n                        \\end{equation*}\r\n           \
     \ \\end{enumerate}\r\n    \\end{enumerate}"
+- subject: 数学3
+  category: 微分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の関数を微分せよ。（答えのみでよい）\r\n%基礎的な関数の微分がちゃんと行えるかの確認（言い換えればこれができないとお話にならない）\r\
+    \n\\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n    \
+    \   $ \\displaystyle \r\n       \\sin{2x}\r\n       $\r\n    \\item\r\n      \
+    \  $ \\displaystyle\r\n        \\sin{x^2}\r\n        $\r\n    \\item\r\n     \
+    \   $ \\displaystyle \r\n        \\cos{2x}\r\n        $\r\n    \\item\r\n    \
+    \   $ \\displaystyle \r\n       \\cos{x^2}\r\n       $\r\n\r\n    \\item\r\n \
+    \      $ \\displaystyle\r\n       \\log 2x\r\n       $ \r\n\r\n    \\item \r\n\
+    \       $ \\displaystyle \r\n       \\log x^2\r\n       $\r\n       \r\n    \\\
+    item\r\n        $ \\displaystyle \r\n       e^{2x}\r\n        $\r\n    \\item\r\
+    \n        $ \\displaystyle\r\n        e^{x^2}\r\n        $\r\n    \\item\r\n \
+    \      $ \\displaystyle \r\n       2^x\r\n       $\r\n\r\n    \\item\r\n     \
+    \  $ \\displaystyle \r\n       \\tan 2x\r\n       $ \r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の関数を微分せよ。（答えのみでよい）\r\n%基礎的な関数の微分がちゃんと行えるかの確認（言い換えればこれができないとお話にならない）\r\
+    \n\\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n    \
+    \   $ \\displaystyle \r\n       \\sin{2x}\r\n       $\r\n    \\item\r\n      \
+    \  $ \\displaystyle\r\n        \\sin{x^2}\r\n        $\r\n    \\item\r\n     \
+    \   $ \\displaystyle \r\n        \\cos{2x}\r\n        $\r\n    \\item\r\n    \
+    \   $ \\displaystyle \r\n       \\cos{x^2}\r\n       $\r\n\r\n    \\item\r\n \
+    \      $ \\displaystyle\r\n       \\log 2x\r\n       $ \r\n\r\n    \\item \r\n\
+    \       $ \\displaystyle \r\n       \\log x^2\r\n       $\r\n       \r\n    \\\
+    item\r\n        $ \\displaystyle \r\n       e^{2x}\r\n        $\r\n    \\item\r\
+    \n        $ \\displaystyle\r\n        e^{x^2}\r\n        $\r\n    \\item\r\n \
+    \      $ \\displaystyle \r\n       2^x\r\n       $\r\n\r\n    \\item\r\n     \
+    \  $ \\displaystyle \r\n       \\tan 2x\r\n       $ \r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n\\begin{multicols}{2}\r\n    \\begin{enumerate}[left=0pt, label\
+    \ = (\\arabic*)]\r\n        \\item\r\n           $2\\cos2x$\r\n        \\item\r\
+    \n            $2x\\cos x^2$\r\n        \\item\r\n            $-2\\sin2x$\r\n \
+    \       \\item\r\n            $-2x\\sin x^2$\r\n        \\item\r\n           \
+    \ $\\dfrac{1}{\\:x\\:}$\r\n        \\item\r\n            $\\dfrac{2}{\\:x\\:}$\r\
+    \n        \\item\r\n            $2e^{2x}$\r\n        \\item\r\n            $2xe^{x^2}$\r\
+    \n        \\item\r\n            $2^x\\log2 $\r\n        \\item\r\n           \
+    \ $\\dfrac{2}{\\:\\cos^2{2x}}$  \r\n    \\end{enumerate}\r\n\\end{multicols}\r\
+    \n\\haiten（20点）\\\\\r\n各2点×10\\\\\r\n\r\n\\kouhyou\\\\\r\n数学IIIの基本的な関数の微分が頭に入っているかを確認した。この問題は完答以外あり得ないため,\\\
+    :間違えた問題がある人は再度復習し,\\:必ずできるようにしてほしい。\\\\\r\n\\newpage\r\n\\kaisetsu\r\n\\begin{youten}\r\
+    \n        {基本的な関数の微分}{}\r\n            \\begin{enumerate}\r\n                \\\
+    item[1.]$(\\sin{x})'=\\cos{x}$\r\n                \\item[2.]$(\\cos{x})'=-\\sin{x}$\r\
+    \n                \\item[3.]$(\\tan{x})'=\\dfrac{1}{\\cos^2{x}}$\r\n         \
+    \       \\item[4.]$(a^{x})'=a^{x}\\log{a}$\r\n                \\item[5.]$(\\log{x})'=\\\
+    dfrac{1}{\\:x\\:}$\r\n            \\end{enumerate} \r\n    \\end{youten}\r\n\\\
+    begin{youten}\r\n    {合成関数の微分}{}\r\n    \\begin{equation*}\r\n        \\dfrac{d}{\\\
+    :dx\\:}f(g(x))=f'(g(x))\\cdot g'(x)\r\n    \\end{equation*}\r\n\\end{youten}\r\
+    \n    \\vskip\\baselineskip\r\n\\begin{multicols}{2}\r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n         \\item\r\n          \\begin{fleqn}[5pt]\r\n\
+    \            \\begin{align*}\r\n                (\\sin{2x})'&=\\cos{2x}\\cdot(2x)'\\\
+    \\\r\n                 &=2\\cos2x\r\n            \\end{align*}\r\n         \\\
+    end{fleqn}\r\n         \\item\r\n         \\begin{fleqn}[5pt]\r\n            \\\
+    begin{align*}\r\n                (\\sin{x^2})'&=\\cos{x^2}\\cdot(x^2)'\\\\\r\n\
+    \                &=2x\\cos{x^2}\r\n            \\end{align*}\r\n         \\end{fleqn}\r\
+    \n         \\item\r\n         \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\
+    \n                 (\\cos{2x})'&=-\\sin{2x}\\cdot(2x)'\\\\\r\n               &=-2\\\
+    sin2x\r\n            \\end{align*}\r\n         \\end{fleqn}\r\n         \\item\r\
+    \n         \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n            \
+    \    (\\cos{x^2})'&=-\\sin{x^2}\\cdot(x^2)'\\\\\r\n                &=-2x\\sin{x^2}\r\
+    \n            \\end{align*}\r\n         \\end{fleqn}\r\n        \\item\r\n   \
+    \     \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n                (\\\
+    log{2x})'&=\\dfrac{1}{\\:2x\\:}\\cdot(2x)'\\\\\r\n                &=\\dfrac{1}{\\\
+    :x\\:}\r\n            \\end{align*}\r\n         \\end{fleqn}\r\n        \\item\r\
+    \n        \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n            (\\\
+    log{x^2})'&=\\dfrac{1}{\\:x^2\\:}\\cdot(x^2)'\\\\\r\n            &=\\dfrac{2}{\\\
+    :x\\:}\r\n            \\end{align*}\r\n         \\end{fleqn}\r\n        \\item\r\
+    \n        \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n             \
+    \   (e^{2x})'&=e^{2x}\\cdot(2x)'\\\\\r\n                &=2e^{2x}\r\n        \
+    \    \\end{align*}\r\n         \\end{fleqn}\r\n        \\item\r\n        \\begin{fleqn}[5pt]\r\
+    \n            \\begin{align*}\r\n                 (e^{x^2})'&=e^{x^2}\\cdot(x^2)'\\\
+    \\\r\n                &=2xe^{x^2}\r\n            \\end{align*}\r\n         \\\
+    end{fleqn}\r\n        \\item\r\n        \\begin{fleqn}[5pt]\r\n            \\\
+    begin{align*}\r\n                (2^{x})'=2^{x}\\log2\r\n            \\end{align*}\r\
+    \n         \\end{fleqn}\r\n        \\item\r\n        \\begin{fleqn}[5pt]\r\n \
+    \           \\begin{align*}\r\n                 (\\tan{2x})'&=\\dfrac{1}{\\:\\\
+    cos^2{2x}\\:}\\cdot(2x)'\\\\\r\n                &=\\dfrac{2}{\\:\\cos^2{2x}}\r\
+    \n            \\end{align*}\r\n         \\end{fleqn}\r\n        \\end{enumerate}\r\
+    \n\\end{multicols}"
