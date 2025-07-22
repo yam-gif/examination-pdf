@@ -1367,3 +1367,67 @@
     \   \\end{align*}\r\n        $また,\\:f'(0)=e^0=1であることから,$\r\n        \\begin{equation*}\r\
     \n        \\displaystyle\\lim_{h\\to 0}\\: \\frac{\\:e^h-1\\:}{h}=1\r\n      \
     \  \\end{equation*}\r\n\\end{shosetsu}"
+- subject: 数学3
+  category: 極限
+  difficulty: 入門
+  body: "\\section{}\r\n次の極限を求めよ。(記述）\r\n%数列の和の極限。和の公式をきちんと使えるか&部分分数分解の基本的な問題をきちんと答えられるかの確認。\r\
+    \n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n    \\item\r\n      \
+    \ $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n \\left(\\\
+    frac{k}{\\:n^2\\:} + \\frac{k^2}{\\:n^3\\:}\\right)\r\n       $\r\n    \\item\r\
+    \n       $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n\
+    \ \\frac{1}{\\:k(k+1)\\:} \r\n       $\r\n    \\item\r\n      $ \\displaystyle\
+    \ \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n \\frac{1}{\\:k(k+2)\\\
+    :} \r\n      $\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の極限を求めよ。(記述）\r\n%数列の和の極限。和の公式をきちんと使えるか&部分分数分解の基本的な問題をきちんと答えられるかの確認。\r\
+    \n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n    \\item\r\n      \
+    \ $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n \\left(\\\
+    frac{k}{\\:n^2\\:} + \\frac{k^2}{\\:n^3\\:}\\right)\r\n       $\r\n    \\item\r\
+    \n       $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n\
+    \ \\frac{1}{\\:k(k+1)\\:} \r\n       $\r\n    \\item\r\n      $ \\displaystyle\
+    \ \r\n         \\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n \\frac{1}{\\:k(k+2)\\\
+    :} \r\n      $\r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\dfrac{5}{\\:6\\:}$\r\n        \\item\r\n      \
+    \      $1$\r\n        \\item\r\n            $\\dfrac{3}{\\:4\\:}$\r\n    \\end{enumerate}\r\
+    \n    \r\n\\haiten（20点）\\\\\r\n(1)〜(2) 答えに各6点\\\\\r\n(3) \\ctext{1}の式に3点,\\:\\\
+    ctext{2}の式に3点,\\:答えに2点\\\\\r\n\r\n\\kouhyou\\\\\r\nこの大問では,\\:数列の和の極限について確認した。極限といえど,\\\
+    :$\\displaystyle\\sum$の使い方がきちんと数Bでおさえられていれば,\\:戸惑うことがないはずである。この大問で解けない問題があった場合恐らくそれは数列の単元の理解不足であると思われるため,\\\
+    :数列の和や部分分数分解の解法について再度復習してみると良い。\\\\\r\n\r\n\\kaisetsu\\\\\r\n    \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n     \\begin{youten}\r\n  \
+    \      {数列の和の基本公式}{}\r\n            $\\displaystyle \\sum_{k\\:=\\:1}^n k=\\frac{1}{\\\
+    :2\\:}n(n+1)$\r\n\r\n             $\\displaystyle \\sum_{k\\:=\\:1}^n k^2=\\frac{1}{\\\
+    :6\\:}n(n+1)(2n+1)$\r\n    \\end{youten}\r\n            $\\displaystyle\\lim_{n\\\
+    to \\infty} \\sum_{k\\:=\\:1}^n \\left(\\frac{\\:k\\:}{n^2}+\\frac{\\:k^2\\:}{n^3}\\\
+    right)$\r\n\r\n            $=\\displaystyle\\lim_{n\\to \\infty} \\sum_{k\\:=\\\
+    :1}^n \\left(\\frac{\\:1\\:}{n^2}\\cdot \\frac{1}{\\:2\\:}n\\left(n+1\\right)+\\\
+    frac{\\:1\\:}{n^3}\\cdot\\cfrac{1}{\\:6\\:}n\\left(n+1\\right)\\left(2n+1\\right)\\\
+    right)$\r\n\r\n            $=\\displaystyle\\lim_{n\\to \\infty}\\left(\\frac{\\\
+    :n(n+1)\\:}{\\:2n^2\\:}+\\frac{\\:n(n+1)(2n+1)\\:}{6n^3}\\right)$\r\n\r\n    \
+    \        $=\\displaystyle\\lim_{n\\to \\infty}\\left(\\frac{\\:(n+1)\\:}{\\:2n\\\
+    :}+\\frac{\\:(n+1)(2n+1)\\:}{6n^2}\\right)$\r\n\r\n            $=\\displaystyle\\\
+    lim_{n\\to \\infty}\\left(\\frac{\\:1\\:}{\\:2\\:}\\left(1+\\frac{1}{\\:n\\:}\\\
+    right)+\\frac{\\:1\\:}{6}\\left(1+\\frac{1}{\\:n\\:}\\right)\\left(\\:2+\\frac{1}{\\\
+    :n\\:}\\right)\\right)$\r\n\r\n            $=\\dfrac{1}{\\:2\\:}+\\dfrac{1}{\\\
+    :3\\:}=\\dfrac{5}{\\:6\\:}$\r\n        \\item\r\n        \r\n            $\\displaystyle\\\
+    lim_{n\\to \\infty}\\sum_{k\\:=\\:1}^n \\frac{1}{\\:k(k+1)\\:}$\r\n          \
+    \  $=\\displaystyle\\lim_{n\\to \\infty}\\sum_{k\\:=\\:1}^n \\left(\\frac{1}{\\\
+    :k\\:}-\\frac{1}{\\:k+1\\:}\\right)$\r\n\r\n            $=\\displaystyle\\lim_{n\\\
+    to \\infty}\\left(1-\\frac{1}{\\:2\\:}+\\frac{\\:1\\:}{2}-\\frac{1}{\\:3\\:}+\\\
+    frac{1}{\\:3\\:}-\\cdots+\\frac{1}{\\:n-1\\:}-\\frac{1}{\\:n\\:}\\right)$\r\n\r\
+    \n            $=\\displaystyle\\lim_{n\\to \\infty}\\left(1-\\frac{1}{\\:n\\:}\\\
+    right)=1$\r\n        \\item\r\n            \\begin{fleqn}[5pt]\r\n           \
+    \     \\begin{align*}\r\n                    \\displaystyle&\\lim_{n\\to \\infty}\
+    \ \\sum_{k\\:=\\:1}^n \\frac{1}{\\:k(k+2)\\:}\\\\\r\n                    &=\\\
+    displaystyle\\lim_{n\\to \\infty} \\sum_{k\\:=\\:1}^n\\frac{1}{\\:2\\:}\\left(\\\
+    frac{1}{\\:k\\:}-\\frac{1}{\\:k+2\\:}\\right)~~~\\cdots \\ctext{1}\\\\\r\n   \
+    \                 &=\\displaystyle\\lim_{n\\to \\infty}\\frac{1}{\\:2\\:}\\Bigg(\\\
+    left(1-\\frac{1}{\\:3\\:}\\right)+\\left(\\frac{1}{\\:2\\:}-\\frac{1}{\\:4\\:}\\\
+    right)+\\left(\\frac{1}{\\:3\\:}-\\frac{1}{\\:5\\:}\\right)+\\bigg(\\frac{1}{\\\
+    :4\\:}-\\cdots\\\\\r\n                    \\displaystyle&\\cdots+\\left(\\frac{1}{\\\
+    :n-2\\:}-\\frac{1}{\\:n\\:}\\right)+\\left(\\frac{1}{\\:n-1\\:}-\\frac{1}{\\:n+1\\\
+    :}\\right)+\\left(\\frac{1}{\\:n\\:}-\\frac{1}{\\:n+2\\:}\\right)\\Bigg)\\\\\r\
+    \n                    &=\\displaystyle\\lim_{n\\to \\infty} \\frac{1}{\\:2\\:}\\\
+    left(1+\\frac{1}{\\:2\\:}-\\frac{1}{\\:n+1\\:}-\\frac{1}{\\:n+2\\:}\\right)~~~\\\
+    cdots \\ctext{2}\\\\\r\n                    &=\\dfrac{1}{\\:2\\:}\\left(1+\\dfrac{1}{\\\
+    :2\\:}-0-0\\right)=\\dfrac{3}{\\:4\\:}\r\n                \\end{align*}\r\n  \
+    \          \\end{fleqn}\r\n    \\end{enumerate}"
