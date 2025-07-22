@@ -897,67 +897,118 @@
 - subject: 数学A
   category: 場合の数
   difficulty: 入門
-  body: "\\section{}\r\n同じ大きさの5枚の正方形の板を一列に並べて下図のような掲示板を作り, 壁に固定する。赤色, 緑色, 青色のペンキを用いて,\
-    \ 隣り合う正方形どうしが異なる色となるように塗り分ける。ただし, 塗り分ける際には, 2色のペンキで塗り分けることがあっても良いものとする。\\\\\r\n\
-    \    \\begin{center}\r\n        \\begin{tikzpicture}{scale = 1.0}\r\n        \
-    \    \\draw[thick] (0, 0)--(0, 1)--(5, 1)--(5, 0)--cycle;\r\n            \\draw[thick]\
-    \ (1, 0)--(1, 1);\r\n            \\draw[thick] (2, 0)--(2, 1);\r\n           \
-    \ \\draw[thick] (3, 0)--(3, 1);\r\n            \\draw[thick] (4, 0)--(4, 1);\r\
-    \n        \\end{tikzpicture}\r\n    \\end{center}\r\n    \r\n    \\begin{enumerate}[left=0pt,\
-    \ label = (\\arabic*)]\r\n        \\item\r\n            塗り分け方は全部で何通りか。\r\n   \
-    \     \r\n        \\item\r\n            赤色で塗られる正方形が3枚であるのは何通りか。\r\n\r\n      \
-    \  \\item \r\n            赤色で塗られる正方形が1枚であるのは何通りか。\r\n\r\n        \\item\r\n  \
-    \          赤色で塗られる正方形が2枚であるのは何通りか。\r\n    \\end{enumerate}"
-  answer: "\\section{}\r\n同じ大きさの5枚の正方形の板を一列に並べて下図のような掲示板を作り, 壁に固定する。赤色, 緑色, 青色のペンキを用いて,\
-    \ 隣り合う正方形どうしが異なる色となるように塗り分ける。ただし, 塗り分ける際には, 2色のペンキで塗り分けることがあっても良いものとする。\\\\\r\n\
-    \    \\begin{center}\r\n        \\begin{tikzpicture}{scale = 1.0}\r\n        \
-    \    \\draw[thick] (0, 0)--(0, 1)--(5, 1)--(5, 0)--cycle;\r\n            \\draw[thick]\
-    \ (1, 0)--(1, 1);\r\n            \\draw[thick] (2, 0)--(2, 1);\r\n           \
-    \ \\draw[thick] (3, 0)--(3, 1);\r\n            \\draw[thick] (4, 0)--(4, 1);\r\
-    \n        \\end{tikzpicture}\r\n    \\end{center}\r\n    \r\n    \\begin{enumerate}[left=0pt,\
-    \ label = (\\arabic*)]\r\n        \\item\r\n            塗り分け方は全部で何通りか。\r\n   \
-    \     \r\n        \\item\r\n            赤色で塗られる正方形が3枚であるのは何通りか。\r\n\r\n      \
-    \  \\item \r\n            赤色で塗られる正方形が1枚であるのは何通りか。\r\n\r\n        \\item\r\n  \
-    \          赤色で塗られる正方形が2枚であるのは何通りか。\r\n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
-    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\n     \
-    \   \\item\r\n            48通り\r\n    \r\n        \\item\r\n            4通り\r\n\
-    \r\n        \\item\r\n            16通り\r\n\r\n        \\item\r\n            26通り\r\
-    \n    \\end{enumerate}\r\n    \r\n\\haiten（20点）\\\\\r\n各5点, 解答不備一つにつき1点減点\\\\\r\
-    \n\r\n\\kouhyou\\\\\r\n    2015年センター試験本試の問題。高々48通りしかないので, 数え上げるのも有力な手法。\\\\\r\n\
-    \    『場合の数』は「漏れなく・ダブりなく」数えられれば方法はなんでも良い。\\\\\r\n\r\n\\newpage\r\n\\kaisetsu\\\\\
-    \r\n    掲示板の左から順にA, B, C, D, Eと名前を付ける。\r\n        \\begin{center}\r\n        \
-    \    \\begin{tikzpicture}{scale = 1.0}\r\n                \\draw[thick] (0, 0)--(0,\
-    \ 1)--(5, 1)--(5, 0)--cycle;\r\n                \\draw[thick] (1, 0)--(1, 1);\r\
-    \n                \\draw[thick] (2, 0)--(2, 1);\r\n                \\draw[thick]\
-    \ (3, 0)--(3, 1);\r\n                \\draw[thick] (4, 0)--(4, 1);\r\n       \
-    \         \\node at(0.5, 0.5){A};\r\n                \\node at(1.5, 0.5){B};\r\
-    \n                \\node at(2.5, 0.5){C};\r\n                \\node at(3.5, 0.5){D};\r\
-    \n                \\node at(4.5, 0.5){E};\r\n            \\end{tikzpicture}\r\n\
-    \        \\end{center}\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\
-    \n        \\item\r\n            Aに塗る色は3通りあり, B～Eはそれぞれ左隣に塗られる色以外の2通りの色の塗り方がある。\r\
-    \n                \\begin{equation*}\r\n                    3 \\times 2^4 = 48\
-    \ \\: 通り\r\n                \\end{equation*}\r\n    \r\n        \\item\r\n   \
-    \         赤色で3枚塗られるとき, 塗られる板はA, C, Eに決まる。B, Dには緑色, 青色のどちらを塗っても良いから\r\n       \
-    \         \\begin{equation*}\r\n                    2^2 = 4 \\: 通り\r\n       \
-    \         \\end{equation*}\r\n\r\n        \\item\r\n            掲示板の対称性から, Aに塗られるときの場合の数とEに塗られるときの場合の数,\
-    \ Bに塗られるときの場合の数とDに塗られるときの場合の数はそれぞれ等しい。赤色で塗られる位置によって場合分けをする。\r\n              \
-    \  \\begin{enumerate}[left = 0pt]\r\n                    \\item[(i)]\r\n     \
-    \                   AまたはEに塗られるとき\\\\\r\n                        残り4枚に緑色と青色を交互に塗る方法が2通りある。したがって,\
-    \ このときの場合の数は\r\n                            \\begin{equation*}\r\n           \
-    \                     2 \\times 2 = 4 \\: 通り\r\n                            \\\
-    end{equation*}\r\n\r\n                    \\item[(ii)]\r\n                   \
-    \     BまたはDに塗られるとき\\\\\r\n                        Bに赤色で塗ったとき, Aには緑色または青色を塗る2通りの方法があり,\
-    \ C～Eには緑色と青色を交互に塗る2通りの方法がある。これはDに赤色で塗ったときも同様。したがって, このときの場合の数は\r\n           \
-    \                 \\begin{equation*}\r\n                                \\underbrace{2}_{\\\
-    text{端の色}} \\times \\underbrace{2}_{\\text{残りの3か所}} \\times \\underbrace{2}_{\\\
-    text{B or D}} = 8 \\: 通り\r\n                            \\end{equation*}\r\n\r\
-    \n                    \\item[(iii)]\r\n                        Cに塗られるとき\\\\\r\n\
-    \                        AとB, DとEのそれぞれに緑色と青色を交互に塗るから\r\n                     \
-    \       \\begin{equation*}\r\n                                2 \\times 2 = 4\
-    \ \\: 通り\r\n                            \\end{equation*}\r\n                \\\
-    end{enumerate}\r\n            以上より, 1枚の正方形に赤色が塗られる場合の数は\r\n                \\\
-    begin{equation*}\r\n                    4 + 8 + 4 = 16 \\: 通り\r\n            \
-    \    \\end{equation*}\r\n\r\n        \\item\r\n            赤色で塗られる正方形の枚数は0～3枚のいずれかである。\\\
-    \\\r\n            0枚のとき, 緑色, 青色を交互に塗る方法だから2通りである。したがって余事象を考えることで\r\n         \
-    \       \\begin{equation*}\r\n                    48 - (2 + 16 + 4) = 26 \\: 通り\r\
-    \n                \\end{equation*}\r\n            と求まる。\r\n    \\end{enumerate}"
+  body: "\\section{}\r\n    自然数1, 2, 3, $\\cdots , \\: n$のうち, $n$と互いに素であるものの個数を$f(n)$とする。\r\
+    \n        \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n            \\\
+    item\r\n                $f(10), \\: f(20)$を求めよ。\r\n    \r\n            \\item\r\
+    \n                自然数$a, \\: b, \\: c$および相異なる素数$p, \\: q, \\: r$に対して, 等式\r\n \
+    \                   \\begin{equation*}\r\n                        f(p^a q^b r^c)\
+    \ = p^{a - 1}q^{b - 1}r^{c - 1}(p - 1)(q - 1)(r - 1)\r\n                    \\\
+    end{equation*}\r\n                が成り立つことを, 以下の手順により示せ。\r\n                  \
+    \  \\begin{enumerate}[left = 0pt]\r\n                        \\item[(i)]\r\n \
+    \                           1から$p^a q^b r^c$までの数のうち, 全体集合を$U$, $p^a q^b r^c$と互いに素な自然数の集合を$X$,\
+    \ $p, \\: q, \\: r$の倍数の集合をそれぞれ$P, \\: Q, \\: R$とする。ある集合$A$の要素の個数を$n(A)$と表すとして,\
+    \ $n(X)$を$P, \\: Q, \\: R, \\: U$を用いて表す。\r\n            \r\n                 \
+    \       \\item[(ii)]\r\n                            (i)の各要素の個数を計算し, $n(X)$を計算する。\r\
+    \n                    \\end{enumerate}\r\n        \\end{enumerate}"
+  answer: "\\section{}\r\n    自然数1, 2, 3, $\\cdots , \\: n$のうち, $n$と互いに素であるものの個数を$f(n)$とする。\r\
+    \n        \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n            \\\
+    item\r\n                $f(10), \\: f(20)$を求めよ。\r\n    \r\n            \\item\r\
+    \n                自然数$a, \\: b, \\: c$および相異なる素数$p, \\: q, \\: r$に対して, 等式\r\n \
+    \                   \\begin{equation*}\r\n                        f(p^a q^b r^c)\
+    \ = p^{a - 1}q^{b - 1}r^{c - 1}(p - 1)(q - 1)(r - 1)\r\n                    \\\
+    end{equation*}\r\n                が成り立つことを, 以下の手順により示せ。\r\n                  \
+    \  \\begin{enumerate}[left = 0pt]\r\n                        \\item[(i)]\r\n \
+    \                           1から$p^a q^b r^c$までの数のうち, 全体集合を$U$, $p^a q^b r^c$と互いに素な自然数の集合を$X$,\
+    \ $p, \\: q, \\: r$の倍数の集合をそれぞれ$P, \\: Q, \\: R$とする。ある集合$A$の要素の個数を$n(A)$と表すとして,\
+    \ $n(X)$を$P, \\: Q, \\: R, \\: U$を用いて表す。\r\n            \r\n                 \
+    \       \\item[(ii)]\r\n                            (i)の各要素の個数を計算し, $n(X)$を計算する。\r\
+    \n                    \\end{enumerate}\r\n        \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $f(10) = 4, \\: f(20) = 8$\r\n    \r\n        \\item\r\
+    \n            \\begin{enumerate}[left = 0pt]\r\n                \\item[(i)]\r\n\
+    \                    $n(X) = n(U) - n(P \\cup Q \\cup R)$ または\\\\\r\n        \
+    \            $n(X) = n(U) - n(P) - n(Q) - n(R) + n(P \\cap Q) + n(Q \\cap R) +\
+    \ n(R \\cap P) - n(P \\cap Q \\cap R)$\r\n                \r\n               \
+    \ \\item[(ii)]\r\n                    解説参照\r\n            \\end{enumerate}\r\n\
+    \    \\end{enumerate}\r\n\r\n\\haiten（20点）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            答えにそれぞれ3点, 計6点\r\n   \
+    \     \r\n        \\item\r\n           \\begin{enumerate}[left = 0pt]\r\n    \
+    \            \\item[(i)]\r\n                    $n(X)$の集合の包含関係を述べて5点\\\\\r\n \
+    \                   適当な形で集合関係を導いて3点, 計8点\r\n                    \r\n         \
+    \       \\item[(ii)]\r\n                    (i)の結果を計算して6点（因数分解前後でそれぞれ3点を与える）\r\
+    \n            \\end{enumerate}\r\n    \\end{enumerate}\r\n解答不備一つにつき1点減点\\\\\r\n\
+    \r\n\\kouhyou\\\\\r\n    集合の要素の個数の関する問題。一般化されていて分かりにくいかもしれないが, 計算自体は何も変わらない。\r\
+    \n\r\n\\kaisetsu\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n\
+    \        \\item\r\n            10と互いに素な10までの数は1, 3, 7, 9の4個。\\\\\r\n         \
+    \   20と互いに素な20までの数は1, 3, 7, 9, 11, 13, 17, 19の8個。\r\n                \\begin{equation*}\r\
+    \n                    \\therefore f(10) = 4, \\: f(20) = 8\r\n               \
+    \ \\end{equation*}\r\n\r\n\\newpage\r\n        \\item\r\n            \\begin{enumerate}[left\
+    \ = 0pt]\r\n                \\item[(i)]\r\n                    $f(p^a q^b r^c)$は1から$p^a\
+    \ q^b r^c$のうちで, $p$の倍数でも, $q$の倍数でも, $r$の倍数でもない数の総数であるから\r\n                  \
+    \      \\begin{equation*}\r\n                            n(X) = n(U) - n(P \\\
+    cup Q \\cup R)\r\n                        \\end{equation*}\r\n               \
+    \         \\begin{center}\r\n                            \\begin{tikzpicture}\r\
+    \n                                \\draw[fill = yellow!90!white!10!] (-1.5, -1.5)--(-1.5,\
+    \ 3)--(3, 3)--(3, -1.5)--cycle;\r\n                                \\fill[red!10!]\
+    \ (0.75,1.2) circle [radius=1];\r\n                                \\fill[green!10!]\
+    \ (0,0) circle [radius=1];\r\n                                \\fill[blue!10!]\
+    \ (1.5,0) circle [radius=1];\r\n                                    \\begin{scope}\
+    \ \r\n                                        \\clip (1.5,0) circle [radius=1];\r\
+    \n                                        \\fill[green!40!blue!20!] (0,0) circle\
+    \ [radius=1];\r\n                                    \\end{scope}\r\n        \
+    \                            \\begin{scope} \r\n                             \
+    \           \\clip (1.5,0) circle [radius=1];\r\n                            \
+    \            \\fill[red!40!blue!20!] (0.75,1.2) circle [radius=1];\r\n       \
+    \                             \\end{scope}\r\n                               \
+    \     \\begin{scope} \r\n                                        \\clip (0.75,1.2)\
+    \ circle [radius=1];\r\n                                        \\fill[green!40!red!20!]\
+    \ (0,0) circle [radius=1];\r\n                                    \\end{scope}\r\
+    \n                                    \\begin{scope} \r\n                    \
+    \                    \\clip (1.5,0) circle [radius=1];\r\n                   \
+    \                     \\clip (0.75, 1.2) circle [radius=1];\r\n              \
+    \                          \\fill[green!40!blue!40!red!40!] (0,0) circle [radius=1];\r\
+    \n                                    \\end{scope}\r\n                       \
+    \         \\draw (0.75, 1.2) circle[radius=1];\r\n                           \
+    \     \\draw (0,0) circle [radius=1];\r\n                                \\draw\
+    \ (1.5,0) circle [radius=1];\r\n                                \\draw (0.75,2.2)\
+    \ node[fill=white]{$P$};\r\n                                \\draw ({cos(pi*5/4\
+    \ r)},{sin(pi*5/4 r)}) node[fill=white]{$Q$};\r\n                            \
+    \    \\draw ({1.5+cos(pi/4 r)},{sin(pi*7/4 r)}) node[fill=white]{$R$};\r\n   \
+    \                             \\node[fill = white] at({cos(pi*5/4 r)}, 3){$U$};\r\
+    \n                                \\draw[->](3.5, 2.5)node[yellow!10!black!90!,\
+    \ right]{$n(X)(= f(p^a q^b r^c))$}--(2.5, 2.5);\r\n                          \
+    \  \\end{tikzpicture}\r\n                        \\end{center}\r\n           \
+    \     \r\n                \\item[(ii)]\r\n                    (i)の結果を用いて各要素を計算する。\r\
+    \n                        \\begin{align*}\r\n                            n(P)\
+    \ = \\bunsu{p^a q^b r^c}{p} = p^{a - 1} q^b r^c, \\quad \r\n                 \
+    \           n(Q) &= \\bunsu{p^a q^b r^c}{q} = p^a q^{b - 1} r^c, \\quad\r\n  \
+    \                          n(R) = \\bunsu{p^a q^b r^c}{r} = p^a q^b r^{c - 1}\\\
+    \\\r\n                            n(P \\cap Q) &= \\bunsu{p^a q^b r^c}{pq} = p^{a\
+    \ - 1} q^{b - 1} r^c\\\\\r\n                            n(Q \\cap R) &= \\bunsu{p^a\
+    \ q^b r^c}{qr} = p^a q^{b - 1} r^{c - 1}\\\\\r\n                            n(R\
+    \ \\cap P) &= \\bunsu{p^a q^b r^c}{rp} = p^{a - 1} q^b r^{c - 1}\\\\\r\n     \
+    \                       n(P \\cap Q \\cap R) &= \\bunsu{p^a q^b r^c}{pqr} = p^{a\
+    \ - 1} q^{b - 1} r^{c - 1}\r\n                        \\end{align*}\r\n      \
+    \              であることと\r\n                        \\begin{equation*}\r\n      \
+    \                      n(P \\cup Q \\cup R) = n(P) + n(Q) + n(R) - n(P \\cap Q)\
+    \ - n(Q \\cap R) - n(R \\cap P) + n(P \\cap Q \\cap R)\r\n                   \
+    \     \\end{equation*}\r\n                    を用いれば\r\n                      \
+    \  \\begin{align*}\r\n                            n(X) &= n(U) - n(P \\cup Q \\\
+    cup R)\\\\\r\n                            &= n(U) - \\{n(P) + n(Q) + n(R) - n(P\
+    \ \\cap Q) - n(Q \\cap R) - n(R \\cap P) + n(P \\cap Q \\cap R)\\}\\\\\r\n   \
+    \                         &= p^a q^b r^c - \\\\\r\n                          \
+    \  & \\hspace{0.5cm} \\{p^{a - 1} q^b r^c + p^a q^{b - 1} r^c + p^a q^b r^{c -\
+    \ 1} - p^{a - 1} q^{b - 1} r^c - p^a q^{b - 1} r^{c - 1} - p^{a - 1} q^b r^{c\
+    \ - 1} + p^{a - 1} q^{b - 1} r^{c - 1}\\}\\\\\r\n                            &=\
+    \ p^{a - 1} q^{b - 1} r^{c - 1}(pqr - qr - pr - pq + r + p + q - 1)\\\\\r\n  \
+    \                      \\end{align*}\r\n                    となる。ここで, \r\n    \
+    \                    \\begin{align*}\r\n                            pqr - qr -\
+    \ pr - pq + r + p + q - 1 &= p(qr - q - r + 1) - qr + q + r - 1\\\\\r\n      \
+    \                      &= p(qr - q - r + 1) - (qr - q - r + 1)\\\\\r\n       \
+    \                     &= (p - 1)(qr - q - r + 1)\\\\\r\n                     \
+    \       &= (p - 1)\\{q(r - 1) - (r - 1)\\}\\\\\r\n                           \
+    \ &= (p - 1)(q - 1)(r - 1)\r\n                        \\end{align*}\r\n      \
+    \              と因数分解できるから, \r\n                        \\begin{equation*}\r\n\
+    \                            f(p^a q^b r^c) = p^{a - 1}q^{b - 1}r^{c - 1}(p -\
+    \ 1)(q - 1)(r - 1)\r\n                        \\end{equation*}\r\n           \
+    \ \\end{enumerate}\r\n    \\end{enumerate}"
