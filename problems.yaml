@@ -1808,3 +1808,64 @@
     \n        \\end{align*}\r\n        \\begin{align*}\r\n            I_5&=e-5I_4\\\
     \\\r\n            &=e-5(9e-24)\\\\\r\n            &=120-44e\r\n        \\end{align*}\r\
     \n\\end{enumerate}"
+- subject: 数学3
+  category: 積分3
+  difficulty: 入門
+  body: "\\section{}\r\n$\\displaystyle \\int_0^2 \\frac{\\:2x+1\\:}{ \\:\\sqrt{x^2+4}\\\
+    :} \\ dx $  を計算せよ。（記述）\r\n~\\\\"
+  answer: "\\section{}\r\n$\\displaystyle \\int_0^2 \\frac{\\:2x+1\\:}{ \\:\\sqrt{x^2+4}\\\
+    :} \\ dx $  を計算せよ。（記述）\r\n~\\\\\r\n\\\\\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\\\\\r\n$4(\\sqrt2-1)+\\log(1+\\sqrt{2})$\\\\\r\n~\\\\\r\n\\haiten（20点）\\\
+    \\\r\n$\\tan\\theta$で置換する発想に2点\\\\\r\n$\\ctext{1}$の結果に6点\\\\\r\n$\\displaystyle\\\
+    int_0^{\\tfrac{\\pi}{4}}\\dfrac{1}{\\:\\cos{\\theta}\\:}~d\\theta$について適切な計算方針が立てられて4点\\\
+    \\\r\n$\\ctext{2}$の結果に6点\\\\\r\n答えに2点\\\\\r\n\r\n\\kouhyou\\\\\r\n数学IIIの積分計算の力試しのような問題。\\\
+    \\$\\tan{\\theta}$置換や$\\dfrac{1}{\\:\\cos{\\theta}\\:}$の積分など,\\:差がつくポイントが所々に散りばめられている。\\\
+    \\\r\n正しく置換積分を実行して答えを合わせられた人はお見事。積分計算については自信を持って構わない。\\\\\r\n\r\n\\kaisetsu\\\\\
+    \r\n$x=2\\tan{\\theta}$とおくと,\\:\r\n\\begin{equation*}\r\n    dx=\\dfrac{2}{\\\
+    :\\cos^2{\\theta}\\:}d\\theta\r\n\\end{equation*}\r\nかつ\r\n\\begin{center}\r\n\
+    \    {\\large\\begin{tabular}{|c||ccc|}\r\n    \\hline\r\n    $x$ & $0$ & $\\\
+    cdots$ & $2$ \\\\\r\n    \\hline\r\n    $\\theta$ &$0$ & $\\cdots$ & $\\frac{\\\
+    :\\pi\\:}{4}$\\\\\r\n    \\hline\r\n    \\end{tabular}}\r\n\\end{center}\r\nであることから,\r\
+    \n\\begin{align*}\r\n    \\int_0^2 \\frac{\\:2x+1\\:}{\\:\\sqrt{x^2+4}\\:}~dx&=\
+    \ \\int_0^{\\tfrac{\\pi}{4}}\\dfrac{\\:4\\tan{\\theta}+1\\:}{ \\:\\sqrt{4\\tan^2{\\\
+    theta}+4}\\:}\\cdot\\dfrac{2}{\\:\\cos^2{\\theta}}~d\\theta\\\\\r\n    &=\\int_0^{\\\
+    tfrac{\\pi}{4}}\\dfrac{\\:4\\tan{\\theta}+1\\:}{ \\:2\\:}\\cdot\\cos{\\theta}\\\
+    cdot\\dfrac{2}{\\:\\cos^2{\\theta}}~d\\theta\\\\\r\n    &=\\int_0^{\\tfrac{\\\
+    pi}{4}}\\left(\\dfrac{\\:4\\sin{\\theta}\\:}{\\:\\cos^2{\\theta}\\:}+\\dfrac{1}{\\\
+    :\\cos{\\theta}\\:}\\right)~d\\theta\\\\\r\n    &=\\int_0^{\\tfrac{\\pi}{4}}\\\
+    dfrac{\\:4\\sin{\\theta}\\:}{\\:\\cos^2{\\theta}\\:}~d\\theta+\\int_0^{\\tfrac{\\\
+    pi}{4}}\\dfrac{1}{\\:\\cos{\\theta}\\:}~d\\theta\\\\\r\n\\end{align*}\r\n$\\displaystyle\\\
+    int_0^{\\tfrac{\\pi}{4}}\\dfrac{\\:4\\sin{\\theta}\\:}{\\:\\cos^2{\\theta}\\:}~d\\\
+    theta$について,\\:$\\cos{\\theta}=t$とおくと,\r\n\\begin{equation*}\r\n    -\\sin{\\theta}~d\\\
+    theta=dt\r\n\\end{equation*}\r\nかつ,\r\n\\begin{center}\r\n    {\\large\\begin{tabular}{|c||ccc|}\r\
+    \n    \\hline\r\n    $\\theta$ & $0$ & $\\cdots$ & $\\frac{\\:\\pi\\:}{4}$ \\\\\
+    \r\n    \\hline\r\n    $t$ &$1$ & $\\cdots$ & $\\frac{\\sqrt{2}}{2}$\\\\\r\n \
+    \   \\hline\r\n    \\end{tabular}}\r\n\\end{center}\r\nであることから,\\:\r\n\\begin{align*}\r\
+    \n    \\int_0^{\\tfrac{\\pi}{4}}\\dfrac{\\:4\\sin{\\theta}\\:}{\\:\\cos^2{\\theta}\\\
+    :}~d\\theta&=\\int_1^{\\tfrac{\\sqrt{2}}{2}}-\\dfrac{\\:4\\:}{\\:t^2\\:}~dt\\\\\
+    \r\n    &=\\bigg[4\\cdot\\dfrac{1}{t}\\bigg]_1^{\\tfrac{\\sqrt{2}}{2}}\\\\\r\n\
+    \    &=4\\sqrt{2}-4~~~\\cdots \\ctext{1}\r\n\\end{align*}\r\n$\\displaystyle\\\
+    int_0^{\\tfrac{\\pi}{4}}\\dfrac{1}{\\:\\cos{\\theta}\\:}~d\\theta$について,\r\n\\\
+    begin{align*}\r\n    \\int_0^{\\tfrac{\\pi}{4}}\\dfrac{1}{\\:\\cos{\\theta}\\\
+    :}~d\\theta&=\\int_0^{\\tfrac{\\pi}{4}}\\dfrac{1}{\\:\\cos{\\theta}\\:}\\cdot\\\
+    dfrac{\\:\\cos{\\theta}\\:}{\\cos{\\theta}}~d\\theta\\\\\r\n    &=\\int_0^{\\\
+    tfrac{\\pi}{4}}\\dfrac{\\cos{\\theta}}{\\:\\cos^2{\\theta}\\:}~d\\theta\\\\\r\n\
+    \    &=\\int_0^{\\tfrac{\\pi}{4}}\\dfrac{\\cos{\\theta}}{\\:1-\\sin^2{\\theta}\\\
+    :}~d\\theta\\\\\r\n\\end{align*}\r\n$\\sin\\theta=u$とおくと,\\:\r\n\\begin{equation*}\r\
+    \n    \\cos{\\theta}~d\\theta=du\r\n\\end{equation*}\r\nかつ,\r\n\\begin{center}\r\
+    \n    {\\large\\begin{tabular}{|c||ccc|}\r\n    \\hline\r\n    $\\theta$ & $0$\
+    \ & $\\cdots$ & $\\frac{\\:\\pi\\:}{4}$ \\\\\r\n    \\hline\r\n    $u$ &$0$ &\
+    \ $\\cdots$ & $\\frac{\\sqrt{2}}{2}$\\\\\r\n    \\hline\r\n    \\end{tabular}}\r\
+    \n\\end{center}\r\nであることから,\\:\r\n\\begin{align*}\r\n    \\int_0^{\\tfrac{\\pi}{4}}\\\
+    dfrac{\\cos{\\theta}}{\\:1-\\sin^2{\\theta}\\:}~d\\theta&=\\int_0^{\\tfrac{\\\
+    sqrt{2}}{2}}\\dfrac{du}{\\:1-u^2\\:}\\\\\r\n    &=\\int_0^{\\tfrac{\\sqrt{2}}{2}}\\\
+    dfrac{1}{\\:2\\:}\\cdot\\left(\\dfrac{1}{\\:1-u\\:}+\\dfrac{1}{\\:1+u\\:}\\right)~du\\\
+    \\\r\n    &=\\dfrac{1}{\\:2\\:}\\bigg[\\log{\\mid1+u\\mid}-\\log{\\mid1-u\\mid}\\\
+    bigg]_0^{\\tfrac{\\sqrt{2}}{2}}\\\\\r\n    &=\\dfrac{1}{\\:2\\:}\\bigg[\\log\\\
+    mid\\dfrac{1+u}{1-u}\\mid\\bigg]_0^{\\tfrac{\\:\\sqrt{2}\\:}{2}}\\\\\r\n    &=\\\
+    dfrac{1}{\\:2\\:}\\cdot\\log\\dfrac{\\:1+\\frac{\\sqrt{2}}{2}\\:}{\\:1-\\frac{\\\
+    sqrt{2}}{2}\\:}\\\\\r\n    &=\\dfrac{1}{\\:2\\:}\\cdot\\log(3+2\\sqrt{2})\\\\\r\
+    \n    &=\\dfrac{1}{\\:2\\:}\\cdot\\log(1+\\sqrt{2})^2\\\\\r\n    &=\\log(1+\\\
+    sqrt{2})~~~\\cdots \\ctext{2}\r\n\\end{align*}\r\n$\\ctext{1},\\ctext{2}$より,\r\
+    \n\\begin{equation*}\r\n    \\displaystyle \\int_0^2 \\frac{\\:2x+1\\:}{ \\:\\\
+    sqrt{x^2+4}\\:} \\ dx= 4(\\sqrt2-1)+\\log(1+\\sqrt{2})\r\n\\end{equation*}"
