@@ -1480,3 +1480,116 @@
     dfrac{2}{\\:3\\:}+\\dfrac{\\:n-1\\:}{\\:n\\:} \\cdot \\log\\: \\left(\\dfrac{1}{\\\
     :4\\:}\\right)$\r\n\r\n            $=0+1\\cdot\\log\\dfrac{1}{\\:4\\:}=-2\\log2$\r\
     \n    \\end{enumerate}"
+- subject: 数学3
+  category: 積分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の不定積分を計算せよ。（答えのみでよい）\r\n\\begin{enumerate}[left = 0pt, label\
+    \ = (\\arabic*)]\r\n    \\item\r\n       $ \\displaystyle\\int \\sin{x} \\ dx$\r\
+    \n    \\item\r\n        $ \\displaystyle \\int \\cos{x} \\ dx$\r\n    \\item\r\
+    \n        $ \\displaystyle \\int \\tan{x} \\ dx$\r\n    \\item\r\n       $ \\\
+    displaystyle \\int \\log{x} \\ dx$\r\n    \\item\r\n       $ \\displaystyle \\\
+    int e^x \\ dx$\r\n    \\item\r\n       $ \\displaystyle\\int \\frac{1}{\\:x\\\
+    :} \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int \\frac{1}{\\cos^2{x}}\
+    \ \\ dx $\r\n    \\item\r\n        $ \\displaystyle \\int \\sin^2{x} \\ dx$\r\n\
+    \    \\item\r\n       $ \\displaystyle\\int \\sin^3{x} \\ dx$\r\n    \\item\r\n\
+    \       $ \\displaystyle  \\int \\sin{2x}\\cos{3x} \\ dx$\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の不定積分を計算せよ。（答えのみでよい）\r\n\\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n    \\item\r\n       $ \\displaystyle\\int \\sin{x}\
+    \ \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int \\cos{x} \\ dx$\r\n \
+    \   \\item\r\n        $ \\displaystyle \\int \\tan{x} \\ dx$\r\n    \\item\r\n\
+    \       $ \\displaystyle \\int \\log{x} \\ dx$\r\n    \\item\r\n       $ \\displaystyle\
+    \ \\int e^x \\ dx$\r\n    \\item\r\n       $ \\displaystyle\\int \\frac{1}{\\\
+    :x\\:} \\ dx$\r\n    \\item\r\n        $ \\displaystyle \\int \\frac{1}{\\cos^2{x}}\
+    \ \\ dx $\r\n    \\item\r\n        $ \\displaystyle \\int \\sin^2{x} \\ dx$\r\n\
+    \    \\item\r\n       $ \\displaystyle\\int \\sin^3{x} \\ dx$\r\n    \\item\r\n\
+    \       $ \\displaystyle  \\int \\sin{2x}\\cos{3x} \\ dx$\r\n\\end{enumerate}\r\
+    \n\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    （$C$は積分定数とする）\r\n    \\begin{multicols}{2}\r\n        \\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n            \\item\r\n                $-\\cos{x}+C$\r\n         \
+    \   \\item\r\n                $\\sin{x}+C$\r\n            \\item\r\n         \
+    \       $-\\log{\\mid \\cos{x}\\mid}+C$\r\n            \\item\r\n            \
+    \    $x\\log{x}-x+C$\r\n            \\item\r\n                $e^x+C$\r\n    \
+    \        \\item\r\n                $\\log{\\mid x\\mid}+C$\r\n            \\item\r\
+    \n                $\\tan{x}+C$\r\n            \\item\r\n                $\\dfrac{\\\
+    :x\\:}{2}-\\dfrac{\\:\\sin{2x}\\:}{4}+C$\r\n            \\item\r\n           \
+    \     $-\\cos{x}+\\dfrac{\\:\\cos^3{x}\\:}{3}+C$\\\\\r\n                $\\left(-\\\
+    dfrac{3}{\\:4\\:}\\cos{x}+\\dfrac{1}{\\:12\\:}\\cos{3x}+C\\right)$\r\n       \
+    \     \\item\r\n                $-\\dfrac{\\:\\cos{5x}\\:}{10}+\\dfrac{\\:\\cos{x}\\\
+    :}{2}+C$\r\n        \\end{enumerate}\r\n    \\end{multicols}\r\n\\haiten（20点）\\\
+    \\\r\n各2点×10\\\\\r\n\\newpage\r\n\\kouhyou\\\\\r\n数学IIIで出題される基本的な積分について確認した。\\\
+    \\\r\n必要である解法と結果は暗記し,\\:素早く処理をできるようにしていきたい。\\\\\r\n~\\\\\r\n\\kaisetsu\r\n\\begin{youten}\r\
+    \n    {重要な関数の積分}{}\r\n    (Cは積分定数)\r\n    \\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n        \\item\r\n            $\\displaystyle\\int\\sin{x}\\ dx=-\\\
+    cos{x}+C$\r\n        \\item \r\n            $\\displaystyle\\int\\cos{x}\\ dx=\\\
+    sin{x}+C$\r\n        \\item \r\n            $\\displaystyle\\int\\dfrac{1}{\\\
+    :\\cos^2{x}\\:}\\ dx=\\tan{x}+C$\r\n        \\item \r\n            $\\displaystyle\\\
+    int e^{x}\\ dx=e^{x}+C$\r\n        \\item \r\n            $\\displaystyle\\int\\\
+    dfrac{1}{\\:x\\:}\\ dx=\\log{\\mid x\\mid}+C$\r\n    \\end{enumerate}\r\n    ~\\\
+    \\\r\n    いずれも,\\:結果を微分すると被積分関数に一致することから,\\:逆算して求めることができる。\r\n\\end{youten}\r\n\
+    \\begin{youten}\r\n    {部分積分}{}\r\n        \\begin{equation*}\r\n            \\\
+    displaystyle \\int f'(x)g(x)\\ dx=f(x)g(x)-\\int f(x)g'(x)\\ dx\r\n        \\\
+    end{equation*}\r\n\\end{youten}\r\n\\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\
+    \n    \\item \r\n        $\\displaystyle\\int\\sin{x}\\ dx=-\\cos{x}+C$\r\n  \
+    \  \\item \r\n        $\\displaystyle\\int\\cos{x}\\ dx=\\sin{x}+C$\r\n    \\\
+    item \r\n        \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n      \
+    \          \\displaystyle \\int \\tan{x}~dx&=\\displaystyle\\int\\dfrac{\\:\\\
+    sin{x}\\:}{\\cos{x}}\\ dx\\\\\r\n                &=\\displaystyle \\int \\dfrac{\\\
+    :-(\\cos{x})'\\:}{\\cos{x}}\\ dx~~~\\cdots\\ctext{1}\r\n            \\end{align*}\r\
+    \n         \\end{fleqn}\r\n        $\\cos{x}=t$~\\text{とおくと,\\:}\r\n        $(\\\
+    cos{x})'dx= -\\sin{x}~dx=dt$~\\text{であるため,\\:}\r\n        \\begin{fleqn}[5pt]\r\
+    \n            \\begin{equation*}\r\n                \\ctext{1}\\iff\\int -\\dfrac{1}{\\\
+    :t\\:}dt=-\\log{\\mid t \\mid}+C\r\n            \\end{equation*}\r\n       \\\
+    end{fleqn}\r\n        $\\therefore \\displaystyle \\int\\tan{x}\\ dx=-\\log{\\\
+    mid \\cos{x}\\mid}+C$\r\n        \\newpage\r\n    \\item\r\n        \\begin{youten}\r\
+    \n            {$\\int\\log{x}~dx$の積分}{}\r\n            $(x)'=1,\\:(\\log{x})'=\\\
+    dfrac{1}{\\:x\\:}$であることを利用して,\\:部分積分により求めることができる。\\\\\r\n            そうすることで,\\\
+    :被積分関数から$\\log{x}$がなくなり積分を実行できる。\\\\\r\n            (具体的な方法は下を参照)\r\n        \\\
+    end{youten}\r\n        \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\n\
+    \                \\displaystyle\\int\\log{x}\\ dx&=\\int(x)'\\log{x}~dx\\\\\r\n\
+    \                &=\\displaystyle x\\log{x}-\\int x(\\log{x})'dx\\\\\r\n     \
+    \           &=\\displaystyle x\\log{x}-\\int x\\cdot\\dfrac{1}{\\:x\\:}~dx\\\\\
+    \r\n                &=\\displaystyle x\\log{x}-\\int1~dx\\\\\r\n             \
+    \   &=x\\log{x}-x+C\r\n            \\end{align*}\r\n        \\end{fleqn}\r\n \
+    \   \\item \r\n        $\\displaystyle \\int e^x\\ dx=e^x+C$\r\n    \\item \r\n\
+    \         $\\displaystyle\\int \\frac{1}{\\:x\\:} \\ dx=\\log{\\mid x \\mid}+C$\r\
+    \n    \\item \r\n         $ \\displaystyle \\int \\frac{1}{\\cos^2{x}} \\ dx =\\\
+    tan{x}+C$\r\n    \\item\r\n        \\begin{youten}\r\n            {半角の公式}{}\r\n\
+    \            \\begin{align*}\r\n                \\sin^2{x}&=\\dfrac{\\:1-\\cos{2x}\\\
+    :}{2}\\\\\r\n                \\cos^2{x}&=\\dfrac{\\:1+\\cos{2x}\\:}{2}\r\n   \
+    \         \\end{align*}\r\n        \\end{youten}\r\n        \\begin{youten}\r\n\
+    \            {$\\int\\sin^2{x}~dx$型の積分}{}\r\n            $\\displaystyle \\int\
+    \ \\sin^2{x} \\ dx,\\:\\displaystyle \\int \\cos^2{x} \\ dx$はそのまま積分することができないため,\\\
+    :\\\\半角の公式(要点4)を用いて積分可能な形に変形をする。\\\\\r\n            (具体的な方法は下を参照) \r\n       \
+    \ \\end{youten}\r\n        \\begin{fleqn}[5pt]\r\n            \\begin{align*}\r\
+    \n                \\displaystyle \\int \\sin^2{x} \\ dx&=\\int\\dfrac{\\:1-\\\
+    cos2x\\:}{2}~dx\\\\\r\n                &=\\int\\dfrac{1}{\\:2\\:}~dx-\\dfrac{1}{\\\
+    :2\\:}\\int\\cos{2x}~dx\\\\\r\n                &=\\dfrac{x}{\\:2\\:}-\\dfrac{\\\
+    :1\\:}{2}\\cdot\\dfrac{\\:\\sin{2x}}{2}+C\\\\\r\n                &=\\dfrac{\\\
+    :x\\:}{2}-\\dfrac{\\:\\sin{2x}\\:}{4}+C\r\n            \\end{align*}\r\n     \
+    \   \\end{fleqn}\r\n    \\item \r\n        \\begin{fleqn}[5pt]\r\n           \
+    \ \\begin{align*}\r\n                \\displaystyle\\int \\sin^3{x} \\ dx\r\n\
+    \                &=\\int(1-\\cos^2x)\\sin{x}~dx~~~\\cdots\\ctext{1}\r\n      \
+    \  \\end{align*}\r\n            \\end{fleqn}\r\n        $\\cos{x}=t$~\\text{とおくと,\\\
+    :}$(\\cos{x})'dx=-\\sin{x}~dx=dt$~\\text{であるため,\\:}\r\n        \\begin{fleqn}[5pt]\r\
+    \n            \\begin{equation*}\r\n                \\ctext{1}\\iff\\int(t^2-1)~dt=-t+\\\
+    dfrac{1}{\\:3\\:}t^3\r\n            \\end{equation*}\r\n        \\end{fleqn}\r\
+    \n        $\\therefore \\displaystyle\\int \\sin^3{x} \\ dx=-\\cos{x}+\\dfrac{\\\
+    :\\cos^3{x}\\:}{3}+C$\r\n    \\item \r\n        \\begin{youten}\r\n          \
+    \   {積和の公式}{}\r\n                \\[\r\n                \\begin{aligned}\r\n \
+    \               \\cos{A} \\cos{B} &= \\frac{1}{\\:2\\:} \\left( \\cos(A - B) +\
+    \ \\cos(A + B) \\right) \\\\\r\n                \\sin{A} \\sin{B} &= \\frac{1}{\\\
+    :2\\:} \\left( \\cos(A - B) - \\cos(A + B) \\right) \\\\\r\n                \\\
+    sin{A} \\cos{B} &= \\frac{1}{\\:2\\:} \\left( \\sin(A + B) + \\sin(A - B) \\right)\r\
+    \n                \\end{aligned}\r\n                \\]\r\n\r\n        \\end{youten}\r\
+    \n        \\begin{youten}\r\n            {$\\int\\sin{ax}\\cos{bx}~dx$型の積分}{}\r\
+    \n            そのまま積分することができないため,\\:積和の公式(要点6)を用いて積分可能な形に変形する。\\\\\r\n        \
+    \    （具体的な方法は下を参照）\r\n        \\end{youten}\r\n        \\begin{fleqn}[5pt]\r\n\
+    \            \\begin{align*}\r\n                \\int \\sin{2x}\\cos{3x}\\ dx&=\\\
+    int \\dfrac{1}{\\:2\\:}\\big(\\sin{(2x+3x)}+\\sin{(2x-3x)}\\big)~dx\r\n      \
+    \          \\\\\r\n                &=\\dfrac{1}{\\:2\\:}\\int(\\sin{5x}+\\sin{(-x)})~dx\\\
+    \\\r\n                &=\\dfrac{1}{\\:2\\:}\\int\\left(\\sin5x-\\sin x\\right)~dx\\\
+    \\\r\n                &=\\dfrac{1}{\\:2\\:}\\left(\\int\\sin{5x}\\,dx-\\int\\\
+    sin{x}~dx\\right)\\\\\r\n                &=\\dfrac{1}{\\:2\\:}\\left(-\\dfrac{1}{\\\
+    :5\\:}\\cos{5x}-(-\\cos {x})\\right)+C\\\\\r\n                &=-\\dfrac{1}{\\\
+    :10\\:}\\cos{5x}+\\dfrac{1}{\\:2\\:}\\cos{x} + C\r\n            \\end{align*}\r\
+    \n        \\end{fleqn}\r\n\\end{enumerate}"
