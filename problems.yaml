@@ -2211,3 +2211,103 @@
     \ 1}\\\\\r\n                    &= \\bunsu{9801}{9801 + 199}\\\\\r\n         \
     \           &= \\bunsu{9801}{10000}\r\n                \\end{align*}\r\n    \\\
     end{enumerate}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\n以下の問いに答えよ。（答えのみで良い）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            8本中3本が当たりのくじ引きがある。1人1本ずつ順に引いていくとき,\
+    \ 3人目が当たりを引く確率を求めよ。\r\n\r\n        \\item\r\n            3人が2回じゃんけんをするとき, 2回続けて“あいこ”となる確率を求めよ。\r\
+    \n            \r\n        \\item\r\n            $n$を自然数とする。1個のサイコロを$n$回投げ, 出た目を順に$X_1,\
+    \ \\: X_2, \\cdots, \\: X_n$とし, その積を$Y$とするとき, $Y$が5で割り切れる確率を求めよ。\r\n         \
+    \               \r\n        \\item\r\n            2個のサイコロを同時に投げるとき, 2つのさいころの目の数が共に4以下である事象をA,\
+    \ 2つのサイコロの目の和が6である事象をBとする。Aが起きたときにBが起きる確率を求めよ。\r\n\r\n        \\item\r\n     \
+    \       A, Bの2チームが, 先に3勝した方が優勝するプレーオフを行う。1試合でAが勝つ確率は$\\bunsu{3}{5}$であるとする。Bが優勝する確率を求めよ。ただし引き分けは発生しないものとする。\r\
+    \n    \\end{enumerate}"
+  answer: "\\section{}\r\n以下の問いに答えよ。（答えのみで良い）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            8本中3本が当たりのくじ引きがある。1人1本ずつ順に引いていくとき,\
+    \ 3人目が当たりを引く確率を求めよ。\r\n\r\n        \\item\r\n            3人が2回じゃんけんをするとき, 2回続けて“あいこ”となる確率を求めよ。\r\
+    \n            \r\n        \\item\r\n            $n$を自然数とする。1個のサイコロを$n$回投げ, 出た目を順に$X_1,\
+    \ \\: X_2, \\cdots, \\: X_n$とし, その積を$Y$とするとき, $Y$が5で割り切れる確率を求めよ。\r\n         \
+    \               \r\n        \\item\r\n            2個のサイコロを同時に投げるとき, 2つのさいころの目の数が共に4以下である事象をA,\
+    \ 2つのサイコロの目の和が6である事象をBとする。Aが起きたときにBが起きる確率を求めよ。\r\n\r\n        \\item\r\n     \
+    \       A, Bの2チームが, 先に3勝した方が優勝するプレーオフを行う。1試合でAが勝つ確率は$\\bunsu{3}{5}$であるとする。Bが優勝する確率を求めよ。ただし引き分けは発生しないものとする。\r\
+    \n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n    \\item\r\
+    \n        $\\bunsu{3}{8}$\r\n        \r\n    \\item\r\n        $\\bunsu{1}{9}$\r\
+    \n\r\n    \\item\r\n        $1 - \\left(\\bunsu{5}{6}\\right)^n$\r\n        \r\
+    \n    \\item \r\n        $\\bunsu{3}{16}$\r\n\r\n\r\n    \\item \r\n        $31\
+    \ \\cdot \\left(\\bunsu{2}{5}\\right)^5 \\: \\left(= \\bunsu{992}{3125}\\right)$\r\
+    \n\\end{enumerate}\r\n\r\n\\haiten（20点）\\\\\r\n各4点\\\\\r\n\r\n\\kouhyou\\\\\r\n\
+    \    よくある確率の問題。特に難しいところはない。\\\\\r\n\r\n\\newpage\r\n\\kaisetsu\r\n    \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n            当たりのくじを〇, はずれのくじを×として,\
+    \ くじを引く順にこれらを並び替えると考える。\r\n            \r\n                \\centerline{\r\n \
+    \                   ○○○×××××, ○○×○××××, ‥\\\\\r\n                }\r\n       \
+    \     \r\n            これらの並び方は$\\bunsu{8!}{5!3!}$通りであり, このうち3人目が当たりとなるのは, 残り7回のうちで2回当たりが出る並び方であるから\r\
+    \n                \\begin{equation*}\r\n                    \\bunsu{\\combination{7}{2}}{\\\
+    bunsu{8!}{5!3!}} = \\bunsu{3}{8}\r\n                \\end{equation*}\r\n     \
+    \       【別解】\\\\\r\n            くじを全て区別する。すなわち, \r\n\r\n                \\centerline{\r\
+    \n                    当たり\\ctext{1}, ‥, 当たり\\ctext{3}, はずれ\\ctext{1}, ‥ , はずれ\\\
+    ctext{5}\r\n                }\r\n\r\n            とすると, これらの並び替えは$8!$通り。このうち3人目が当たりとなるのは,\
+    \ 当たりくじのどれかを引く3通りに対して残り7か所の並び替えがあるから$3 \\times 7!$通り。したがって求める確率は\r\n         \
+    \       \\begin{equation*}\r\n                    \\bunsu{3 \\times 7!}{8!} =\
+    \ \\bunsu{3}{8}\r\n                \\end{equation*}\r\n                \\begin{enumerate}[left\
+    \ = 0pt]\r\n                    \\item[※]\r\n                        上記の結果で, くじはどの順番で引こうが当たりを引く確率は変わらないことが分かる。あくまで条件付き確率が変わるだけ。\r\
+    \n                        \r\n                    \\item[※] \r\n             \
+    \           区別の仕方（素事象の取り方）で計算が変わるが, 同様に確からしい分け方で考えれば結論は変わらない。\r\n            \
+    \    \\end{enumerate}\r\n\r\n        \\item \r\n            3人じゃんけんにおいて, 1回のじゃんけんで“あいこ”になる確率は,\
+    \ 「1人が勝つ」または「2人が勝つ」確率の余事象であるから, \r\n                \\begin{equation*}\r\n   \
+    \                 1 - \\underbrace{\\left(\\bunsu{\\combination{3}{1} \\times\
+    \ 3}{3^3} + \\bunsu{\\combination{3}{2} \\times 3}{3^3} \\right)}_{※} = \\bunsu{1}{3}\r\
+    \n                \\end{equation*}\r\n            したがって2回続けてあいこになる確率は \r\n   \
+    \             \\begin{equation*}\r\n                    \\bunsu{1}{3} \\times\
+    \ \\bunsu{1}{3} = \\bunsu{1}{9}\r\n                \\end{equation*}\r\n      \
+    \          \\begin{enumerate}[left = 0pt]\r\n                    \\item[※]\r\n\
+    \                        3人じゃんけんの手の出し方は$3^3$通り。\\\\\r\n                      \
+    \  じゃんけんで1人が勝つ確率は, 勝つ人1人を選ぶ方法が$\\combination{3}{1}$通りで勝つ手は3通り。\r\n           \
+    \             2人が勝つときも同様に考える。\r\n                \\end{enumerate}\r\n\r\n    \
+    \    \\item\r\n            求める確率は, $n$回の操作の中で5が一度も出ない事象の余事象であるから\r\n         \
+    \       \\begin{equation*}\r\n                    1 - \\left(\\bunsu{5}{6}\\right)^n\r\
+    \n                \\end{equation*}\r\n\\newpage\r\n        \\item\r\n        \
+    \    2次元の表で考える。サイコロの目が共に4以下の箇所を〇, サイコロの目の和が6の箇所を◎として表に書き込むと以下のようになる。\r\n     \
+    \       \\begin{table}[htbp]\r\n                \\centering\r\n              \
+    \      \\begin{tabular}{|c|c|c|c|c|c|c|} \\hline\r\n                         \
+    \ & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline\r\n                        1 & 〇 & 〇 &\
+    \ 〇 & 〇 &  &  \\\\ \\hline\r\n                        2 & 〇 & 〇 & 〇 & ◎ &  & \
+    \ \\\\ \\hline\r\n                        3 & 〇 & 〇 & ◎ & 〇 &  &  \\\\ \\hline\r\
+    \n                        4 & 〇 & ◎ & 〇 & 〇 &  &  \\\\ \\hline\r\n           \
+    \             5 &  &  &  &  &  &  \\\\ \\hline\r\n                        6 &\
+    \  &  &  &  &  &  \\\\ \\hline\r\n                    \\end{tabular}\r\n     \
+    \       \\end{table}\r\n            \r\n            この表から条件付き確率を求めると$\\bunsu{3}{16}$となる。\r\
+    \n                    \r\n        \\item \r\n            求める確率は,\r\n         \
+    \       \\begin{enumerate}[left = 10pt]\r\n                    \\item[(i)]\r\n\
+    \                        Bの3連勝\r\n    \r\n                    \\item[(ii)]\r\n\
+    \                        3試合目まででBの2勝1負で, 4試合目にBが勝つ\r\n    \r\n               \
+    \     \\item[(iii)]\r\n                        4試合目まで2勝2負で, 5試合目にBが勝つ\r\n    \
+    \            \\end{enumerate}\r\n            上記(i)～(iii)の和事象である。\r\n         \
+    \       \\begin{enumerate}[left = 0pt]\r\n                    \\item[(i)]\r\n\
+    \                        Bが3連勝する確率\\\\\r\n                        Bが勝つ確率は$\\bunsu{2}{5}$であるから,\
+    \ このときの確率は\r\n                            \\begin{equation*}\r\n             \
+    \                   \\left(\\bunsu{2}{5}\\right)^3\r\n                       \
+    \     \\end{equation*}\r\n                            \r\n                   \
+    \ \\item[(ii)]\r\n                        3試合目まででBの2勝1負で, 4試合目にBが勝つ確率\r\n    \
+    \                        \\begin{equation*}\r\n                              \
+    \  \\combination{3}{1} \\cdot \\left(\\bunsu{2}{5}\\right)^2 \\cdot \\left(\\\
+    bunsu{3}{5}\\right) \\times \\bunsu{2}{5}\r\n                                =\\\
+    bunsu{3^2 \\cdot 2^3}{5^4}\r\n                            \\end{equation*}\r\n\
+    \    \r\n                    \\item[(iii)] \r\n                        4試合目まで2勝2負で,\
+    \ 5試合目にBが勝つ\r\n                            \\begin{equation*}\r\n            \
+    \                    \\combination{4}{2} \\cdot \\left(\\bunsu{2}{5}\\right)^2\
+    \ \\cdot \\left(\\bunsu{3}{5}\\right)^2 \\times \\bunsu{2}{5}\r\n            \
+    \                    =\\bunsu{3^3 \\cdot 2^4}{5^5}\r\n                       \
+    \     \\end{equation*}\r\n                \\end{enumerate}\r\n            以上より,\
+    \ 求める確率は\r\n                \\begin{align*}\r\n                    \\left(\\bunsu{2}{5}\\\
+    right)^3 + \\bunsu{3^2 \\cdot 2^3}{5^4} + \\bunsu{3^3 \\cdot 2^4}{5^5} &= \\left(\\\
+    bunsu{2}{5}\\right)^3 \\cdot \\left(1 + \\bunsu{9}{5} + \\bunsu{3^3 \\cdot 2}{25}\\\
+    right)\\\\\r\n                    &= \\left(\\bunsu{2}{5}\\right)^3 \\cdot \\\
+    left(\\bunsu{25 + 45 + 54}{25}\\right)\\\\\r\n                    &= 31 \\cdot\
+    \ \\left(\\bunsu{2}{5}\\right)^5 \\left(=\\bunsu{992}{3125}\\right)\r\n      \
+    \          \\end{align*}\r\n                \\begin{enumerate}\r\n           \
+    \         \\item[※]\r\n                        $\\left(\\bunsu{2}{5}\\right)^3$で括ることが出来るのは明らかなので、個々の確率は展開しないで指数のまま残しておくと計算が楽になる。\r\
+    \n                        \r\n                    \\item[※] \r\n             \
+    \           最後の計算自体に意味はないので, 指数のまま残しておいても良い。\r\n                \\end{enumerate}\r\
+    \n    \\end{enumerate}"
