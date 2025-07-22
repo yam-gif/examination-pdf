@@ -1719,3 +1719,51 @@
     \r\n            &=2e^2+1\r\n        \\end{align*}\r\n        であるから\\ctext{4}より,\r\
     \n        \\begin{align*}\r\n            &9e^3-2(2e^2+1)\\\\\r\n            &=9e^3-4e^3-2\\\
     \\\r\n            &=5e^3-2\r\n        \\end{align*}\r\n\\end{enumerate}"
+- subject: 数学3
+  category: 積分3
+  difficulty: 入門
+  body: "\\section{}\r\n次の問いに答えよ。（記述）\r\n%同型出現型不定積分\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n    \\item\r\n       $ \\displaystyle \r\n       e^x\\cos{x} \\ ,e^x\\\
+    sin{x}\r\n       $\r\n       を微分せよ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        \\int e^x\\sin{x} \\ dx \\ , \\  \\int e^x\\cos{x} \\ dx \\ \r\n\
+    \        $\r\n        を求めよ。\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の問いに答えよ。（記述）\r\n%同型出現型不定積分\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n    \\item\r\n       $ \\displaystyle \r\n       e^x\\cos{x} \\ ,e^x\\\
+    sin{x}\r\n       $\r\n       を微分せよ。\r\n    \\item\r\n        $ \\displaystyle\
+    \ \r\n        \\int e^x\\sin{x} \\ dx \\ , \\  \\int e^x\\cos{x} \\ dx \\ \r\n\
+    \        $\r\n        を求めよ。\r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left=0pt,label=(\\arabic*)]\r\n        \\\
+    item\r\n            \\begin{fleqn}[5pt]\r\n                \\begin{align*}\r\n\
+    \                    (e^x\\cos{x})'&=e^x(\\cos{x}-\\sin{x})\\\\\r\n          \
+    \          (e^x\\sin{x})'&=e^x(\\cos{x}+\\sin{x})\r\n                \\end{align*}\r\
+    \n            \\end{fleqn}\r\n        \\item\r\n            \\begin{fleqn}[5pt]\r\
+    \n                \\begin{align*}\r\n                    \\displaystyle\\int e^x\\\
+    sin{x}\\ dx&=\\dfrac{\\:e^x\\:}{2}(\\sin{x}-\\cos{x})+C\\\\\r\n              \
+    \      \\displaystyle\\int e^x\\cos{x}\\ dx&=\\dfrac{\\:e^x\\:}{2}(\\sin{x}+\\\
+    cos{x})+C\r\n                \\end{align*}\r\n            \\end{fleqn}\r\n   \
+    \ \\end{enumerate}\r\n\r\n\\haiten（20点）\\\\\r\n(1)答えに5点×2\\\\\r\n(2)答えに5点×2\\\\\
+    \r\n\r\n\\kouhyou\\\\\r\n微分から逆算していくといった,\\:ちょっと変わった計算方法を採る積分。\\\\\r\n積分の計算方法は多種多様であるが,\\\
+    :このようなパターンにも慣れておこう。\\\\\r\n\r\n\\kaisetsu\r\n\\begin{enumerate}[left=0pt,label=(\\\
+    arabic*)]\r\n    \\item \r\n        \\begin{youten}\r\n            {積の微分法}{}\r\
+    \n            \\begin{equation*}\r\n                \\{f(x)g(x)\\}'=f'(x)g(x)+f(x)g'(x)\r\
+    \n            \\end{equation*}\r\n        \\end{youten}\r\n        \\begin{align*}\r\
+    \n            (e^x\\cos{x})'&=(e^x)'\\cos{x}+e^x(\\cos{x})'\\\\\r\n          \
+    \  &=e^x\\cos{x}-e^x\\sin{x}\\\\\r\n            &=e^x(\\cos{x}-\\sin{x})\r\n \
+    \       \\end{align*}\r\n        \\begin{align*}\r\n            (e^x\\sin{x})'&=(e^x)'\\\
+    sin{x}+e^x(\\sin{x})'\\\\\r\n            &=e^x\\sin{x}+e^x\\cos{x}\\\\\r\n   \
+    \         &=e^x(\\cos{x}+\\sin{x})\r\n        \\end{align*}\r\n    \\item \r\n\
+    \        $I=\\displaystyle\\int e^x\\cos{x}\\ dx$,\\:$J=\\displaystyle\\int e^x\\\
+    sin{x}\\ dx$とおく。\\\\\r\n        (1)より,\\:\r\n        \\[\r\n        \\left\\{\r\
+    \n        \\begin{aligned}\r\n        (e^x\\cos{x})' &= e^x(\\cos{x} - \\sin{x})\
+    \ \\\\\r\n        (e^x\\sin{x})' &= e^x(\\cos{x} + \\sin{x})\r\n        \\end{aligned}\r\
+    \n        \\right.\r\n        \\]\r\n\r\n        両辺積分をすると,\\\\\r\n        \\[\r\
+    \n        \\left\\{\r\n        \\begin{aligned}\r\n        \\int(e^x\\cos{x})'~dx\
+    \ &= \\int e^x(\\cos{x} - \\sin{x})~dx \\\\\r\n        \\int(e^x\\sin{x})'~dx\
+    \ &= \\int e^x(\\cos{x} + \\sin{x})~dx\r\n        \\end{aligned}\r\n        \\\
+    right.\r\n        \\]\r\n\r\n        であることから,\r\n        \\[\r\n        \\left\\\
+    {\r\n        \\begin{aligned}\r\n        e^x\\cos{x} &= I - J \\\\\r\n       \
+    \ e^x\\sin{x} &= I + J\r\n        \\end{aligned}\r\n        \\right.\r\n     \
+    \   \\]\r\n\r\n        故に,\r\n        \\[\r\n        \\left\\{\r\n        \\begin{aligned}\r\
+    \n        I &= \\dfrac{e^x}{2}(\\sin{x} - \\cos{x}) + C \\\\\r\n        J &= \\\
+    dfrac{e^x}{2}(\\sin{x} + \\cos{x}) + C\r\n        \\end{aligned}\r\n        \\\
+    right.\r\n        \\]\r\n\r\n\\end{enumerate}"
