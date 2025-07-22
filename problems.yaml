@@ -2537,3 +2537,22 @@
     \       E(3X + 2Y + Z) &= 3E(X) + 2E(Y) + E(Z)\\\\\r\n                    &= 3\
     \ \\cdot \\bunsu{7}{2} + 2 \\cdot \\bunsu{7}{2} + \\bunsu{7}{2}\\\\\r\n      \
     \              &= 21\r\n                \\end{align*}\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 図形の性質
+  difficulty: 入門
+  body: "\\section{}\r\n三角形における以下の点の定義を述べよ。\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            内心\r\n\r\n        \\item\r\
+    \n            外心\r\n            \r\n        \\item\r\n            重心\r\n     \
+    \                   \r\n        \\item\r\n            垂心\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n三角形における以下の点の定義を述べよ。\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            内心\r\n\r\n        \\item\r\
+    \n            外心\r\n            \r\n        \\item\r\n            重心\r\n     \
+    \                   \r\n        \\item\r\n            垂心\r\n    \\end{enumerate}\r\
+    \n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            三角形の各頂点の角の二等分線の交点\r\n            \r\n        \\item\r\
+    \n            三角形の各辺の垂直二等分線の交点\r\n    \r\n        \\item\r\n            三角形の各頂点から対辺の中点に引いた直線の交点\r\
+    \n            \r\n        \\item \r\n            三角形の各頂点から対辺に下ろした垂線の交点\r\n   \
+    \ \\end{enumerate}\r\n\r\n\\haiten（20点）\\\\\r\n各5点\\\\\r\n\r\n\\kouhyou\\\\\r\n\
+    \    各点がどのような点なのかを知らなければ, 問題が解けるわけないし, 気付けるわけがない。\\\\\r\n    “解き方”を覚えるというような学習では,\
+    \ 多くの大学受験生が目指すような大学の入試問題は解けないということを強く認識すること。"
