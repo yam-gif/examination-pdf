@@ -2010,3 +2010,82 @@
     \ 求める確率は\r\n                    \\begin{equation*}\r\n                       \
     \ \\bunsu{720}{13 \\cdot 7\\cdot 5 \\cdot 3} = \\bunsu{48}{91}\r\n           \
     \         \\end{equation*}\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\nコインを8回投げるゲームを行う。最初の持ち点を4点とし, コインを1回投げるごとに表が\\\\\r\n出れば1点を加え,\
+    \ 裏が出れば1点を引く。このとき, 以下の問いに答えよ。\r\n    \\begin{enumerate}[left = 0pt, label = (\\\
+    arabic*)]\r\n        \\item\r\n            ゲーム終了時に持ち点が0になる確率を求めよ。\r\n\r\n    \
+    \    \\item\r\n            ゲーム終了時に初めて持ち点が0になる確率を求めよ。\r\n\r\n        \\item\r\n\
+    \            ゲーム終了時に初めて持ち点が0になるとき, 5回目に持ち点が1点となっている条件付き確率を求めよ。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\nコインを8回投げるゲームを行う。最初の持ち点を4点とし, コインを1回投げるごとに表が\\\\\r\n出れば1点を加え,\
+    \ 裏が出れば1点を引く。このとき, 以下の問いに答えよ。\r\n    \\begin{enumerate}[left = 0pt, label = (\\\
+    arabic*)]\r\n        \\item\r\n            ゲーム終了時に持ち点が0になる確率を求めよ。\r\n\r\n    \
+    \    \\item\r\n            ゲーム終了時に初めて持ち点が0になる確率を求めよ。\r\n\r\n        \\item\r\n\
+    \            ゲーム終了時に初めて持ち点が0になるとき, 5回目に持ち点が1点となっている条件付き確率を求めよ。\r\n    \\end{enumerate}\r\
+    \n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\bunsu{7}{64}$\r\n        \r\n        \\item\r\n\
+    \            $\\bunsu{7}{128}$\r\n\r\n        \\item\r\n            $\\bunsu{2}{7}$\r\
+    \n    \\end{enumerate}\r\n\r\n\\haiten（20点）\r\n    \\begin{enumerate}[left = 0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            反復試行の考えを示して2点\\\\\r\n\
+    \            答えに3点 計5点\r\n\r\n        \\item\r\n            正しい論述・解答に9点\\\\\r\n\
+    \            解説のような回答の場合, 得点推移グラフを書いて3点\\\\\r\n            道順の数え上げに3点\\\\\r\n\
+    \            答えに3点 \r\n\r\n        \\item \r\n            正しい論述・解答に6点\r\n    \\\
+    end{enumerate}\r\n    解答不備一カ所につき1点減点\\\\\r\n\r\n\\kouhyou\\\\\r\nルールが定められている反復試行の典型的な問題。ランダムウォークとして広く知られている。\\\
+    \\\r\n定期テストや模試, 共通テストで頻出。(2)は得点推移のグラフを書いて道順の問題に帰着させることが最も有力な手法である。\\\\\r\n\r\n\
+    \\newpage\r\n\\kaisetsu\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            表が2回, 裏が6回出ればよいから\r\n                \\begin{equation*}\r\
+    \n                    \\combination{8}{2} \\cdot \\left(\\bunsu{1}{2}\\right)^2\\\
+    left(\\bunsu{1}{2}\\right)^6 = \\bunsu{7}{64}\r\n                \\end{equation*}\r\
+    \n        \r\n        \\item\r\n            横軸を試行回数$n$, 縦軸を得点$p$とした得点推移のグラフを考える。\\\
+    \\\r\n            今ゲーム終了時に初めて持ち点が0になるようにグラフを描くと以下のようになる。\r\n\r\n            \\\
+    begin{center}\r\n                \\begin{tikzpicture}[scale=0.7]\r\n         \
+    \           \\draw[->,>=stealth,semithick] (-1,0)--(9,0) node[right]{$n$}; %x軸\r\
+    \n                    \\draw[->,>=stealth,semithick] (0,-1)--(0,7) node[left]{$p$};\
+    \ %y軸\r\n                    \\draw (0,0) node[below left]{O}; %原点\r\n       \
+    \             \\draw[dashed] (0, 4) node[left]{4} --(4,4);\r\n               \
+    \     \\draw (8, 0) node[below]{8};\r\n                    \\draw[dashed](0, 6)node[left]{6}--(2,\
+    \ 6);\r\n                    \\draw[dashed](0, 5)node[left]{5}--(3, 5);\r\n  \
+    \                  \\draw[dashed](0, 3)node[left]{3}--(5, 3);\r\n            \
+    \        \\draw[dashed](0, 2)node[left]{2}--(6, 2);\r\n                    \\\
+    draw[dashed](0, 1)node[left]{1}--(7, 1);\r\n                    \\draw[domain=0:2,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x + 4});\r\n                    \\draw[domain=1:3,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x + 2});\r\n                    \\draw[domain=2:4,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x});\r\n                    \\draw[domain=3:5,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x - 2});\r\n                    \\draw[domain=5:6,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x - 4});\r\n                    \\draw[domain=2:8,smooth,variable=\\\
+    x,black] plot ({\\x},{8 - \\x});\r\n                    \\draw[domain=1:5,smooth,variable=\\\
+    x,black] plot ({\\x},{6 - \\x});\r\n                    \\draw[domain=0:3,smooth,variable=\\\
+    x,black] plot ({\\x},{4 - \\x});\r\n                \\end{tikzpicture}\r\n   \
+    \         \\end{center}\r\n\r\n            上のグラフより, ゲーム終了時に初めて持ち点が0になる場合の数は, 得点推移のグラフの最短経路に等しい。\r\
+    \n            この道順は14通りであるから, 求める確率は\r\n                \\begin{equation*}\r\n\
+    \                    \\bunsu{14}{216} = \\bunsu{7}{128}\r\n                \\\
+    end{equation*}\r\n\r\n        \\item\r\n            (2)のグラフにおいて, $(n , \\: p)\
+    \ = (5, 1)$を通るような道順を考える。\r\n            \r\n            \\begin{center}\r\n  \
+    \              \\begin{tikzpicture}[scale=0.7]\r\n                    \\draw[->,>=stealth,semithick]\
+    \ (-1,0)--(9,0) node[right]{$n$}; %x軸\r\n                    \\draw[->,>=stealth,semithick]\
+    \ (0,-1)--(0,7) node[left]{$p$}; %y軸\r\n                    \\draw (0,0) node[below\
+    \ left]{O}; %原点\r\n                    \\draw(0, 4) node[left]{4};\r\n       \
+    \             \\draw (8, 0) node[below]{8};\r\n                    \\draw[domain=0:2,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x + 4});\r\n                    \\draw[domain=1:3,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x + 2});\r\n                    \\draw[domain=2:4,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x});\r\n                    \\draw[domain=3:5,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x - 2});\r\n                    \\draw[domain=5:6,smooth,variable=\\\
+    x,black] plot ({\\x},{\\x - 4});\r\n                    \\draw[domain=2:8,smooth,variable=\\\
+    x,black] plot ({\\x},{8 - \\x});\r\n                    \\draw[domain=1:5,smooth,variable=\\\
+    x,black] plot ({\\x},{6 - \\x});\r\n                    \\draw[domain=0:3,smooth,variable=\\\
+    x,black] plot ({\\x},{4 - \\x});\r\n                    \\draw[red, ultra thick](0,\
+    \ 4)--(1,5)--(5,1)--(6,2)--(8,0);\r\n                    \\draw[red, ultra thick](0,\
+    \ 4)--(3,1)--(4,2);\r\n                    \\draw[red, ultra thick](1, 3)--(2,4);\r\
+    \n                    \\draw[red, ultra thick](2, 2)--(3,3);\r\n             \
+    \       \\node[red, above]at(1, 5){1};\r\n                    \\node[red, below]at(1,\
+    \ 3){1};\r\n                    \\node[red, below]at(2, 2){1};\r\n           \
+    \         \\node[red, below]at(3, 1){1};\r\n                    \\node[red, above]at(2,\
+    \ 4){2};\r\n                    \\node[red, above]at(3, 3){3};\r\n           \
+    \         \\node[red, above]at(4, 2){4};\r\n                    \\node[red, below]at(5,\
+    \ 1){4};\r\n                    \\node[red, above]at(6, 2){4};\r\n           \
+    \     \\end{tikzpicture}\r\n            \\end{center}\r\n\r\n            グラフより,\
+    \ 条件を満たすような道順は4通りである。\\\\\r\n            したがって求める確率は\r\n                \\begin{equation*}\r\
+    \n                    \\bunsu{\\bunsu{4}{216}}{\\bunsu{14}{216}} = \\bunsu{2}{7}\r\
+    \n                \\end{equation*}\r\n    \\end{enumerate}"
