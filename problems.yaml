@@ -2089,3 +2089,64 @@
     \ 条件を満たすような道順は4通りである。\\\\\r\n            したがって求める確率は\r\n                \\begin{equation*}\r\
     \n                    \\bunsu{\\bunsu{4}{216}}{\\bunsu{14}{216}} = \\bunsu{2}{7}\r\
     \n                \\end{equation*}\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\n$n$を4以上の自然数とする。1から$n$までの数字が書かれた$n$枚のカードがある。カードを元に戻さずに続けて2枚引くとき,\
+    \ 1枚目のカードの数字が4以上, 2枚目のカードの数字が3以下である確率を$p_n$とする。このとき, 以下の問いに答えよ。\r\n\\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n    \\item\r\n        $p_n$の値を$n$を用いて表せ。\r\n\r\
+    \n    \\item\r\n        $\\bunsu{p_{n + 1}}{p_n}$の値を$n$を用いて表せ。\r\n\r\n    \\item\r\
+    \n        $p_n$を最大にする$n$の値とそのときの最大値を求めよ。\r\n\\end{enumerate}"
+  answer: "\\section{}\r\n$n$を4以上の自然数とする。1から$n$までの数字が書かれた$n$枚のカードがある。カードを元に戻さずに続けて2枚引くとき,\
+    \ 1枚目のカードの数字が4以上, 2枚目のカードの数字が3以下である確率を$p_n$とする。このとき, 以下の問いに答えよ。\r\n\\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n    \\item\r\n        $p_n$の値を$n$を用いて表せ。\r\n\r\
+    \n    \\item\r\n        $\\bunsu{p_{n + 1}}{p_n}$の値を$n$を用いて表せ。\r\n\r\n    \\item\r\
+    \n        $p_n$を最大にする$n$の値とそのときの最大値を求めよ。\r\n\\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\bunsu{3(n - 3)}{n(n - 1)}$\r\n        \r\n    \
+    \    \\item\r\n            $\\bunsu{(n - 1)(n - 2)}{(n + 1)(n - 3)}$\r\n\r\n \
+    \       \\item\r\n            $n = 5 \\lor 6$で最大値$\\bunsu{3}{10}$\r\n    \\end{enumerate}\r\
+    \n\r\n\\haiten（20点）\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            1枚目のカードが4以上である確率, 2枚目のカードに書かれた数字が3以下である確率を求めてそれぞれ2点\\\
+    \\\r\n            答えに1点, 計5点\r\n        \r\n        \\item\r\n            答えに3点\r\
+    \n\r\n        \\item\r\n            (2)の解と1との大小を比較し, それぞれ2点\\\\\r\n          \
+    \  最大値を取る$n$の値を求めて3点\\\\\r\n            最大値に3点, 計12点\r\n    \\end{enumerate}\r\
+    \n    解答不備一つにつき1点減点\\\\\r\n\r\n\\kouhyou\\\\\r\n試行回数や標本数が文字で与えられているときに, 条件を満たす確率の最大値を求める問題。これも頻出問題である。与えられている文字で一般的化した後に,\
+    \ 本問のように比を取るか, 1個ずれの差分を取って議論を進める。\r\n    \\begin{shosetsu}{確率の最大値}{}\r\n     \
+    \   ある確率$p_n$の最大値を考えるときは\r\n            \\begin{center}\r\n                $\\\
+    bunsu{p_{n + 1}}{p_n}$ \\quad または \\quad $p_{n + 1} - p_n$\r\n            \\end{center}\r\
+    \n        を考える。\\\\\r\n        これらの値は$n$で与えられるため, $\\bunsu{p_{n + 1}}{p_n} \\\
+    gtreqqless 1$や$p_{n + 1} - p_n \\gtreqqless 0$を考えることにより最大値を与える$n$の値を絞ることが出来る。\r\
+    \n    \\end{shosetsu}\r\n\r\n\\newpage\r\n\\kaisetsu\r\n    \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n        \\item\r\n            4以上のカードは$n - 3$枚あるから,\
+    \ 1枚目に引いたカードが4以上の数字である確率は\r\n                $\\bunsu{n - 3}{n}$\r\n         \
+    \   であり, 2枚目のカードに書かれた数字が3以下である確率は\r\n                $\\bunsu{3}{n - 1}$\r\n \
+    \           であるから\\\\求める確率は\r\n                \\begin{equation*}\r\n        \
+    \            p_n = \\bunsu{n - 3}{n} \\times \\bunsu{3}{n - 1} = \\bunsu{3(n -\
+    \ 3)}{n(n - 1)}\r\n                \\end{equation*}\r\n        \r\n        \\\
+    item\r\n            (1)で求めた解から$\\bunsu{p_{n + 1}}{p_n}$を計算する。\r\n            \
+    \    \\begin{align*}\r\n                    \\bunsu{p_{n + 1}}{p_n} &= \\bunsu{\\\
+    bunsu{3(n - 2)}{(n + 1)n}}{\\bunsu{3(n - 3)}{n(n - 1)}}\\\\\r\n              \
+    \      &= \\bunsu{(n - 1)(n - 2)}{(n + 1)(n - 3)} \\quad \\cdots \\ctext{1}\r\n\
+    \                \\end{align*}\r\n\r\n        \\item\r\n            $\\bunsu{p_{n\
+    \ + 1}}{p_n} > 1$\r\n            となる$n$の範囲を考える。(2)より\r\n                \\begin{align*}\r\
+    \n                    \\bunsu{(n - 1)(n - 2)}{(n + 1)(n - 3)} > 1 &\\iff (n -\
+    \ 1)(n - 2) > (n + 1)(n - 3) \\: (\\because n \\geqq 4)\\\\\r\n              \
+    \      &\\iff n < 5\r\n                \\end{align*}\r\n            したがって, $n\
+    \ < 5 \\iff n = 4$ \\: までは\r\n                \\begin{equation*}\r\n         \
+    \           \\bunsu{p_{n + 1}}{p_n} > 1 \\iff p_1 < \\cdots < p_4 < p_5\r\n  \
+    \              \\end{equation*}\r\n            同様にして\\\\\r\n            $\\ctext{1}\
+    \ = 1$を考えると$n = 5$であるから, $p_5 = p_6$\\\\\r\n            $\\ctext{1} < 1$を考えると$n\
+    \ > 5$であるから, $p_6 > p_7 > p_8 >\\cdots$\\\\\r\n            以上より, \r\n        \
+    \        \\begin{equation*}\r\n                    p_4 < p_5 = p_6  > p_7 > p_8\
+    \ >\\cdots\r\n                \\end{equation*}\r\n            がわかり, $p_n$は$n =\
+    \ 5 \\text{または} 6$で最大値\r\n                \\begin{equation*}\r\n             \
+    \       p_5 = \\bunsu{5 \\cdot 2}{5 \\cdot 4} = \\bunsu{3}{10}\r\n           \
+    \     \\end{equation*}\r\n            を取ることが分かる。\r\n\r\n            【別解】\\\\\r\
+    \n            本問では(2)で$\\bunsu{p_{n + 1}}{p_n}$を考えているが, 差分$p_{n + 1} - p_n$で考えることもできる。\r\
+    \n                \\begin{align*}\r\n                    p_{n + 1} - p_n &= \\\
+    bunsu{3(n - 2)}{(n + 1)n} - \\bunsu{3(n - 3)}{n(n - 1)}\\\\\r\n              \
+    \      &= \\bunsu{3}{n} \\left(\\bunsu{n - 2}{n + 1} - \\bunsu{n - 3}{n-1}\\right)\\\
+    \\\r\n                    &= \\bunsu{3}{n} \\cdot \\bunsu{5 - n}{(n + 1)(n - 1)}\r\
+    \n                \\end{align*}\r\n            いま$n \\geqq 4$であるから, $5 - n$の値が差分$p_{n\
+    \ + 1} - p_n$の正負を決める。以下, 上記と同様の議論を進めることで確率の最大値を求めることが出来る。\r\n    \\end{enumerate}"
