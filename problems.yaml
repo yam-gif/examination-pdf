@@ -336,3 +336,45 @@
     \n                \\begin{equation*}\r\n                    \\combination{4}{3}\
     \ = 4 \\: 通り\r\n                \\end{equation*}\r\n            であるから, $84 - 4\
     \ = 80$通り\r\n    \\end{enumerate}"
+- subject: 数学A
+  category: 場合の数
+  difficulty: 入門
+  body: "\\section{}\r\n50人のクラスであるゲームを2回行ったところ, 1回目で勝った生徒は31人, 2回目のゲームで勝った生徒は27人,\
+    \ 2回とも勝った生徒は14人であった。\r\n     \\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            少なくとも1回勝った生徒は何人か。\r\n\r\n        \\item\r\n  \
+    \          2回とも負けた生徒は何人か。\r\n\r\n        \\item\r\n            2回目のみ勝った生徒は何人か。\r\
+    \n    \\end{enumerate}"
+  answer: "\\section{}\r\n50人のクラスであるゲームを2回行ったところ, 1回目で勝った生徒は31人, 2回目のゲームで勝った生徒は27人,\
+    \ 2回とも勝った生徒は14人であった。\r\n     \\begin{enumerate}[left=0pt, label = (\\arabic*)]\r\
+    \n        \\item\r\n            少なくとも1回勝った生徒は何人か。\r\n\r\n        \\item\r\n  \
+    \          2回とも負けた生徒は何人か。\r\n\r\n        \\item\r\n            2回目のみ勝った生徒は何人か。\r\
+    \n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            44人\r\n\r\n        \\item\r\n            6人\r\n\r\n\
+    \        \\item\r\n            13人        \r\n    \\end{enumerate}\r\n\r\n\\haiten（10点）\\\
+    \\\r\n    (1)(2)各3点, (3)4点\\\\\r\n\r\n\\kouhyou\\\\\r\n要素の個数を考える問題。ベン図で考えれば容易。\\\
+    \\\r\n\r\n\\kaisetsu\\\\\r\n    1回目に勝った生徒の集合を$A$, 2回目に勝った生徒の集合を$B$, 全体集合を$U$とする。\\\
+    \\\r\n        \\begin{center}\r\n            \\begin{tikzpicture}\r\n        \
+    \        \\fill[red!10!] (0,0) circle [radius=1];\r\n                \\fill[blue!10!]\
+    \ (1.5,0) circle [radius=1];\r\n                \\begin{scope} \r\n          \
+    \          \\clip (1.5,0) circle [radius=1];\r\n                    \\fill[red!40!blue!20!]\
+    \ (0,0) circle [radius=1];\r\n                \\end{scope}\r\n               \
+    \ \\draw (0,0) circle [radius=1];\r\n                \\draw (1.5,0) circle [radius=1];\r\
+    \n                \\draw ({cos(pi*5/4 r)},{sin(pi*5/4 r)}) node[fill=white]{$A$};\r\
+    \n                \\draw ({1.5+cos(pi/4 r)},{sin(pi*7/4 r)}) node[fill=white]{$B$};\r\
+    \n                \\draw (-1.5, -1.5)--(-1.5, 1.5)--(3, 1.5)--(3, -1.5)--cycle;\r\
+    \n                \\node [fill=white] at({cos(pi*5/4 r)}, 1.5){$U$};\r\n     \
+    \       \\end{tikzpicture}\r\n        \\end{center}\r\n    以下では, 集合$X$の要素を$n(X)$と表すこととする。いま,\
+    \ 問題文から以下のことが分かる。\r\n        \\begin{equation*}\r\n            n(A) = 31, \\:\
+    \ n(B) = 27, \\: n(A \\cap B) = 14\r\n        \\end{equation*}\r\n        \\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n            \\item\r\n                $n(A \\\
+    cup B)$を求めればよいから\r\n                    \\begin{align*}\r\n                  \
+    \      n(A \\cup B) &= n(A) + n(B) - n(A \\cap B)\\\\\r\n                    \
+    \    &= 31 + 27 - 14 = 44 \\: 人\r\n                    \\end{align*}\r\n     \
+    \       \\item\r\n                $A$にも$B$にも属さない人数であるから, (1)の余事象を考えれば良い。\r\n \
+    \                   \\begin{equation*}\r\n                        50 - 44 = 6\
+    \ \\: 人\r\n                    \\end{equation*}\r\n    \r\n            \\item\
+    \ \r\n                $n(B) - n(A \\cap B)$を求めれば良い。\r\n                    \\\
+    begin{align*}\r\n                        n(B) - n(A \\cap B) &= 27 - 14\\\\\r\n\
+    \                        &= 13 \\: 人\r\n                    \\end{align*}\r\n\
+    \        \\end{enumerate}"
