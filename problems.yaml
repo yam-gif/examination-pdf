@@ -1323,3 +1323,47 @@
     \        $=\\displaystyle\\lim_{n\\to \\infty}\\:\\cfrac{1}{\\:\\sqrt{1+\\cfrac{1}{\\\
     :n^2\\:}}+1\\:}$\r\n\r\n        $=\\dfrac{1}{\\:\\sqrt{1+0}+1\\:}$\r\n\r\n   \
     \     $=\\dfrac{1}{\\:2\\:}$\r\n\\end{enumerate}"
+- subject: 数学3
+  category: 極限
+  difficulty: 入門
+  body: "\\section{}\r\n次の極限を求めよ。（答えのみでよい）\r\n%極限の基本公式が頭に入っているかの確認\r\n\\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n        $ \\displaystyle \r\
+    \n         \\lim_{x\\to 0}\\: \\frac{\\:\\sin{x}\\:}{x}\r\n        $\r\n    \\\
+    item\r\n        $ \\displaystyle \r\n         \\lim_{x\\to 0} \\: \\frac{\\:\\\
+    tan x \\:}{x}\r\n        $\r\n    \\item\r\n       $ \\displaystyle \r\n     \
+    \    \\lim_{x\\to 0}\\: \\frac{\\:1-\\cos{x}\\:}{x^2} \r\n       $\r\n\r\n   \
+    \ \\item\r\n       $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\:\\left(1+\\\
+    frac{1}{\\:n\\:}\\right)^n \\\\\r\n       $\r\n    \\item\r\n       $ \\displaystyle\
+    \ \r\n         \\lim_{h\\to 0}\\: \\frac{\\:e^h-1\\:}{h}\r\n       $ \r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の極限を求めよ。（答えのみでよい）\r\n%極限の基本公式が頭に入っているかの確認\r\n\\begin{enumerate}[left\
+    \ = 0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n        $ \\displaystyle \r\
+    \n         \\lim_{x\\to 0}\\: \\frac{\\:\\sin{x}\\:}{x}\r\n        $\r\n    \\\
+    item\r\n        $ \\displaystyle \r\n         \\lim_{x\\to 0} \\: \\frac{\\:\\\
+    tan x \\:}{x}\r\n        $\r\n    \\item\r\n       $ \\displaystyle \r\n     \
+    \    \\lim_{x\\to 0}\\: \\frac{\\:1-\\cos{x}\\:}{x^2} \r\n       $\r\n\r\n   \
+    \ \\item\r\n       $ \\displaystyle \r\n         \\lim_{n\\to \\infty} \\:\\left(1+\\\
+    frac{1}{\\:n\\:}\\right)^n \\\\\r\n       $\r\n    \\item\r\n       $ \\displaystyle\
+    \ \r\n         \\lim_{h\\to 0}\\: \\frac{\\:e^h-1\\:}{h}\r\n       $ \r\n\\end{enumerate}\r\
+    \n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $1$\r\n        \\item\r\n            $1$\r\n     \
+    \   \\item\r\n            $\\dfrac{1}{\\:2\\:}$\r\n        \\item\r\n        \
+    \    $e$\r\n        \\item\r\n            $1$\r\n    \\end{enumerate}\r\n    \r\
+    \n\\haiten（20点）\\\\\r\n各4点\\\\\r\n\r\n\\kouhyou\\\\\r\nこれらは全て極限を求めるときに使う重要な公式なので,\\\
+    :きちんと暗記しておくこと。\\\\\r\n\\newpage\r\n\\kaisetsu\\\\\r\n\\begin{youten}\r\n     \
+    \   {極限の基本(重要)公式}{}\r\n            \\begin{enumerate}[left = 0pt, label = (\\\
+    arabic*)]\r\n             \\item\r\n                $\\displaystyle\\lim_{x\\\
+    to 0}\\: \\frac{\\:\\sin{x}\\:}{x}=1$\r\n            \\item\r\n              \
+    \  $\\displaystyle\\lim_{x\\to 0} \\: \\frac{\\:\\tan x \\:}{x}=1$\r\n       \
+    \     \\item\r\n               $\\displaystyle\\lim_{x\\to 0}\\: \\frac{\\:1-\\\
+    cos{x}\\:}{x^2}=\\frac{1}{\\:2\\:}$\r\n            \\item\r\n               $\\\
+    displaystyle\\lim_{n\\to \\infty} \\:\\left(1+\\frac{1}{\\:n\\:}\\right)^n=e\\\
+    \\$\r\n            \\item\r\n               $\\displaystyle\\lim_{h\\to 0}\\:\
+    \ \\frac{\\:e^h-1\\:}{h}=1$ \r\n        \\end{enumerate}\r\n    \\end{youten}\r\
+    \n\\vskip\\baselineskip\r\n\\begin{shosetsu}\r\n        {要点4(5)の思い出し方}{}\r\n \
+    \       $f(x)=e^x$とおく。\\\\\r\n        微分係数の定義より,\\:\r\n        \\begin{align*}\r\
+    \n        \\displaystyle f'(0)&=\\lim_{h\\to0}\\frac{\\:e^{0+h}-e^0\\:}{(0+h)-0}\\\
+    \\\r\n        \\displaystyle &=\\lim_{h\\to0}\\dfrac{\\:e^h-1\\:}{h}\r\n     \
+    \   \\end{align*}\r\n        $また,\\:f'(0)=e^0=1であることから,$\r\n        \\begin{equation*}\r\
+    \n        \\displaystyle\\lim_{h\\to 0}\\: \\frac{\\:e^h-1\\:}{h}=1\r\n      \
+    \  \\end{equation*}\r\n\\end{shosetsu}"
