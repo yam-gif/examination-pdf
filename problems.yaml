@@ -1921,3 +1921,92 @@
     \                \\begin{equation*}\r\n                    \\bunsu{1}{6} \\cdot\
     \ (1 + 2 + 3 + 4 + 5 + 6) = \\bunsu{7}{2}\r\n                \\end{equation*}\r\
     \n    \\end{enumerate}"
+- subject: 数学A
+  category: 確率
+  difficulty: 入門
+  body: "\\section{}\r\n赤玉4個, 白玉5個, 青玉6個が入った袋がある。この袋から玉を4個取り出すとき, 次の確率を求めよ。\r\n  \
+    \  \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n \
+    \           赤玉が3個以上含まれる。\r\n\r\n        \\item\r\n            取り出した玉の色が全て同じ。\r\
+    \n\r\n        \\item \r\n            同じ色の玉を2個ずつ2色含む。\r\n        \r\n        \\\
+    item\r\n            3色の玉を取り出す。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n赤玉4個, 白玉5個, 青玉6個が入った袋がある。この袋から玉を4個取り出すとき, 次の確率を求めよ。\r\n\
+    \    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n        \\item\r\n\
+    \            赤玉が3個以上含まれる。\r\n\r\n        \\item\r\n            取り出した玉の色が全て同じ。\r\
+    \n\r\n        \\item \r\n            同じ色の玉を2個ずつ2色含む。\r\n        \r\n        \\\
+    item\r\n            3色の玉を取り出す。\r\n    \\end{enumerate}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n   \
+    \     \\item\r\n            $\\bunsu{3}{91}$\r\n\r\n        \\item\r\n       \
+    \     $\\bunsu{1}{65}$\r\n\r\n        \\item \r\n            $\\bunsu{20}{91}$\r\
+    \n        \r\n        \\item\r\n            $\\bunsu{48}{91}$\r\n    \\end{enumerate}\r\
+    \n\r\n\\haiten（20点）\\\\\r\n    1問につき正しい場合分けができて3点\\\\\r\n    答えに2点\\\\\r\n   \
+    \ 解答不備一つにつき1点減点\\\\\r\n\r\n\\kouhyou\\\\\r\n    互いに排反である確率の問題。解説で示すが, 互いに排反である（同時に起きない）ときはそれぞれ場合分けして考える。そもそも,\
+    \ 初めからそのように場合分けしていれば, 考慮漏れも防ぐことができる。\\\\\r\n\r\n\\kaisetsu\\\\\r\n    玉の取り出し方は\r\
+    \n        \\begin{equation*}\r\n            \\combination{15}{4} = \\bunsu{15\
+    \ \\cdot 14 \\cdot 13 \\cdot 12}{4 \\cdot 3 \\cdot 2 \\cdot 1} = 13 \\cdot 7\\\
+    cdot 5 \\cdot 3 \\: 通り\r\n        \\end{equation*}\r\n    である。（後の約分を考えて素因数分解しておく）\r\
+    \n\\newpage\r\n        \\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n\
+    \            \\item\r\n                赤玉を3個と他の色11個のうち1個を取り出す場合と, 赤玉を4個取り出す場合に分けて考える。\r\
+    \n                    \\begin{enumerate}[left = 0pt]\r\n                     \
+    \   \\item[(i)]\r\n                            赤玉を3個と他の色11個のうち1個を取り出す場合\\\\\r\n\
+    \                                \\begin{equation*}\r\n                      \
+    \              \\combination{4}{3} \\times \\combination{11}{1} = 44 \\: 通り\r\n\
+    \                                \\end{equation*}\r\n    \r\n                \
+    \        \\item[(ii)]\r\n                            赤玉を4個取り出す場合\\\\\r\n     \
+    \                           \\begin{equation*}\r\n                           \
+    \         \\combination{4}{4} = 1 \\: 通り\r\n                                \\\
+    end{equation*}\r\n                    \\end{enumerate}\r\n                これらは互いに排反だから,\
+    \ 場合の数は45通り。したがって, 求める確率は\r\n                    \\begin{equation*}\r\n      \
+    \                  \\bunsu{45}{13 \\cdot 7\\cdot 5 \\cdot 3} = \\bunsu{3}{91}\r\
+    \n                    \\end{equation*}\r\n                \r\n            \\item\
+    \ \r\n                赤玉, 白玉, 青玉を4個取り出す場合のそれぞれに分けて考える。\r\n                   \
+    \ \\begin{enumerate}[left = 0pt]\r\n                        \\item[(i)]\r\n  \
+    \                          赤玉を4個取り出す場合\\\\\r\n                               \
+    \ \\begin{equation*}\r\n                                    \\combination{4}{4}\
+    \ = 1 \\: 通り\r\n                                \\end{equation*}\r\n    \r\n \
+    \                       \\item[(ii)]\r\n                            白玉を4個取り出す場合\\\
+    \\\r\n                                \\begin{equation*}\r\n                 \
+    \                   \\combination{5}{4} = 5 \\: 通り\r\n                       \
+    \         \\end{equation*}\r\n    \r\n                        \\item[(iii)]\r\n\
+    \                            青玉を4個取り出す場合\\\\\r\n                             \
+    \   \\begin{equation*}\r\n                                    \\combination{6}{4}\
+    \ = 15 \\: 通り\r\n                                \\end{equation*}\r\n        \
+    \            \\end{enumerate}\r\n                これらは互いに排反だから, 場合の数は21通り。したがって,\
+    \ 求める確率は\r\n                    \\begin{equation*}\r\n                       \
+    \ \\bunsu{21}{13 \\cdot 7\\cdot 5 \\cdot 3} = \\bunsu{1}{65}\r\n             \
+    \       \\end{equation*}\r\n                \r\n            \\item\r\n       \
+    \         赤玉と白玉, 白玉と青玉, 青玉と赤玉のペアで取り出す場合のそれぞれに分けて考える。\r\n                    \\\
+    begin{enumerate}[left = 0pt]\r\n                        \\item[(i)]\r\n      \
+    \                      赤玉と白玉を取り出す場合\\\\\r\n                                \\\
+    begin{equation*}\r\n                                    \\combination{4}{2} \\\
+    times \\combination{5}{2} = 6 \\times 10 = 60 \\: 通り\r\n                     \
+    \           \\end{equation*}\r\n    \r\n                        \\item[(ii)]\r\
+    \n                            白玉を4個取り出す場合\\\\\r\n                            \
+    \    \\begin{equation*}\r\n                                    \\combination{5}{2}\
+    \ \\times \\combination{6}{2} = 10 \\times 15 = 150 \\: 通り\r\n               \
+    \                 \\end{equation*}\r\n    \r\n                        \\item[(iii)]\r\
+    \n                            青玉を4個取り出す場合\\\\\r\n                            \
+    \    \\begin{equation*}\r\n                                    \\combination{6}{2}\
+    \ \\times \\combination{4}{2} = 15 \\times 6 = 90 \\: 通り\r\n                 \
+    \               \\end{equation*}\r\n                    \\end{enumerate}\r\n \
+    \               これらは互いに排反だから, 場合の数は300通り。したがって, 求める確率は\r\n                   \
+    \ \\begin{equation*}\r\n                        \\bunsu{300}{13 \\cdot 7\\cdot\
+    \ 5 \\cdot 3} = \\bunsu{20}{91}\r\n                    \\end{equation*}\r\n  \
+    \  \r\n            \\item \r\n                どの色の玉を2個取り出すかに分けて考える。\r\n      \
+    \              \\begin{enumerate}[left = 0pt]\r\n                        \\item[(i)]\r\
+    \n                            赤玉を2個取り出す場合\\\\\r\n                            \
+    \    \\begin{equation*}\r\n                                    \\combination{4}{2}\
+    \ \\times \\combination{5}{1} \\times \\combination{6}{1} = 6 \\times 5 \\times\
+    \ 6 = 180 \\: 通り\r\n                                \\end{equation*}\r\n    \r\
+    \n                        \\item[(ii)]\r\n                            白玉を2個取り出す場合\\\
+    \\\r\n                                \\begin{equation*}\r\n                 \
+    \                   \\combination{4}{1} \\times \\combination{5}{2} \\times \\\
+    combination{6}{1} = 4 \\times 10 \\times 6 = 240 \\: 通り\r\n                  \
+    \              \\end{equation*}\r\n    \r\n                        \\item[(iii)]\r\
+    \n                            青玉を2個取り出す場合\\\\\r\n                            \
+    \    \\begin{equation*}\r\n                                    \\combination{4}{1}\
+    \ \\times \\combination{5}{1} \\times \\combination{6}{2} = 4 \\times 5 \\times\
+    \ 15 = 300 \\: 通り\r\n                                \\end{equation*}\r\n    \
+    \                \\end{enumerate}\r\n                これらは互いに排反だから, 場合の数は720通り。したがって,\
+    \ 求める確率は\r\n                    \\begin{equation*}\r\n                       \
+    \ \\bunsu{720}{13 \\cdot 7\\cdot 5 \\cdot 3} = \\bunsu{48}{91}\r\n           \
+    \         \\end{equation*}\r\n    \\end{enumerate}"
