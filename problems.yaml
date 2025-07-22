@@ -1129,3 +1129,58 @@
     \\&=e^x(x+1)\r\n        \\end{align*}\r\n        $e^1(1+1)=2e$なので接線の方程式は,\r\n\
     \        \\begin{align*}\r\n            y-e&=2e(x-1)\\\\\r\n            y&=e(2x-1)\r\
     \n        \\end{align*}\r\n\\end{enumerate}"
+- subject: 数学3
+  category: 微分3
+  difficulty: 入門
+  body: "\\section{}\r\n$ \\displaystyle\r\ny=\\frac{x^3}{\\:x^2-1\\:}$ の増減,\\:凹凸を調べ,\\\
+    :その概形を書け。（記述）\\\\"
+  answer: "\\section{}\r\n$ \\displaystyle\r\ny=\\frac{x^3}{\\:x^2-1\\:}$ の増減,\\:凹凸を調べ,\\\
+    :その概形を書け。（記述）\\\\\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\\\\\r\n解説参照\\\\\r\n\r\n\\haiten（20点）\\\\\r\n\\ctext{1}の式に4点,\\:\\\
+    ctext{2}の式に4点\\\\\r\n増減表に6点,\\:グラフに6点\\\\\r\n\r\n\\kouhyou\\\\\r\n曲線のグラフを書く一連の流れを確認した。\r\
+    \n微分の計算量が多くて大変であったかもしれないが,\\:やっていること自体は基礎なのできちんと解けるようにしてほしい。\\\\\r\n\r\n\\kaisetsu\\\
+    \\\r\n\r\n一次導関数, 二次導関数をそれぞれ計算する。\r\n\\begin{align*}\r\n y'&=\\dfrac{\\:(x^2-1)(3x^2)-x^3(2x)\\\
+    :}{(x^2-1)^2}\\\\\r\n&=\\dfrac{\\:3x^2(x^2-1)-2x^4\\:}{(x^2-1)^2}\\\\\r\n&=\\\
+    dfrac{\\:x^2(x^2-3)\\:}{(x^2-1)^2}~~~\\cdots \\ctext{1}\\\\\r\ny'' &= \\dfrac{\\\
+    :(x^2-1)\\left[(4x^3 - 6x)(x^2-1) - 4x(x^4 - 3x^2)\\right]\\:}{(x^2-1)^4}\\\\\r\
+    \n&= \\dfrac{\\:(4x^3 - 6x)(x^2-1) - 4x(x^4 - 3x^2)\\:}{(x^2-1)^3}\\\\\r\n&= \\\
+    dfrac{\\:(4x^5 - 10x^3 + 6x) - (4x^5 - 12x^3) \\:}{(x^2-1)^3}\\\\\r\n&=\\dfrac{\\\
+    :2x(x^2+3)\\:}{(x^2-1)^3}~~~\\cdots \\ctext{2}\\\\\r\n&\\ctext{1},\\:\\ctext{2}より,\\\
+    \\\r\ny'&=0\\iff x=0,\\:\\pm\\sqrt{3}\\\\\r\ny''&=0\\iff x=0\r\n\\end{align*}\r\
+    \nよって増減表は以下のようになる\\\\\r\n\\begin{center}\r\n\\begin{tblr}{\r\n  width = {0.9\\\
+    linewidth},\r\n  hline{1,Z} = {0.08em},  % 上端と下端\r\n  hline{2}   = {0.05em}, \
+    \ % ヘッダー下\r\n  hline{4}   = {0.05em},  % y'行の下だけ\r\n  vlines,\r\n  columns = {halign\
+    \ = c},\r\n}\r\n  $x$     & $-\\infty$ & $\\cdots$ & $-\\sqrt3$ & $\\cdots$ &\
+    \ $-1$     & $\\cdots$ & $0$      & $\\cdots$ & $1$      & $\\cdots$ & $\\sqrt3$\
+    \ & $\\cdots$ & $+\\infty$ \\\\\r\n  $y'$    & $\\times$       &   $+$       &\
+    \ $0$       & $-$      & $\\times$ & $-$      & $0$      & $-$      & $\\times$\
+    \ & $-$      & $0$       & $+$      & $+$        \\\\\r\n  \\hline\r\n  $y''$\
+    \   & $\\times$ & $-$   & $-$          & $-$       & $\\times$      & $+$    \
+    \   & $0$      & $-$      & $\\times$ & $+$      & $+$       & $+$      & $+$\
+    \        \\\\\r\n  $y$  & $-\\!\\infty$  & \\roundedArrowUR & $-\\tfrac{3\\sqrt3}{2}$\
+    \ & \\roundedArrowRD & $\\times$ & \\roundedArrowDR & $0$   & \\roundedArrowRD\
+    \ & $\\times$ & \\roundedArrowDR & $\\tfrac{3\\sqrt3}{2}$ & \\roundedArrowRU &\
+    \ $+\\!\\infty$ \\\\\r\n\\end{tblr}\r\n\\end{center}\r\n\\vskip\\baselineskip\r\
+    \n\\vskip\\baselineskip\r\nここで,\r\n\\begin{alignat*}{2}\r\n    \\lim_{x\\to -1-0}\\\
+    : \\frac{x^3}{\\:x^2-1\\:}&= -\\infty,\\quad &\\lim_{x\\to -1+0}\\: \\frac{x^3}{\\\
+    :x^2-1\\:}&=\\infty\\\\\r\n    \\lim_{x\\to +1-0}\\: \\frac{x^3}{\\:x^2-1\\:}&=-\\\
+    infty, &\\lim_{x\\to +1+0}\\: \\frac{x^3}{\\:x^2-1\\:}&=\\infty\\\\\r\n    \\\
+    lim_{x\\to \\infty}\\: \\frac{x^3}{\\:x^2-1\\:}&=\\infty, &\\lim_{x\\to -\\infty}\\\
+    : \\frac{x^3}{\\:x^2-1\\:}&=-\\infty\r\n\\end{alignat*}\r\n\r\nであることからグラフは下図のようになる。\r\
+    \n\\begin{center}\r\n\\begin{tikzpicture}\r\n  \\begin{axis}[\r\n    width=15cm,\r\
+    \n    height=15cm,\r\n    axis lines = middle,  % ← x軸・y軸を真ん中に自動描画\r\n    ticks\
+    \ = none,\r\n    samples = 200,\r\n    clip=false,\r\n    xmin=-5, xmax=5,\r\n\
+    \    ymin=-12, ymax=12\r\n  ]\r\n    % 関数を3区間で描画\r\n    \\addplot [domain=-5:-1.05,\
+    \ thick] {x^3/(x^2-1)};\r\n    \\addplot [domain=-0.96:0.96, thick] {x^3/(x^2-1)};\r\
+    \n    \\addplot [domain=1.05:5, thick] {x^3/(x^2-1)};\r\n\r\n    % 垂直漸近線 x = ±1\r\
+    \n    \\addplot [dashed] coordinates {(-1,-12) (-1,12)};\r\n    \\addplot [dashed]\
+    \ coordinates {(1,-12) (1,12)};\r\n\r\n    % 軸下に小さいフォントで座標ラベルを追加\r\n    \\node[below\
+    \ left] at (axis cs:0,0) {\\scriptsize O};\r\n    \\node[below left] at (axis\
+    \ cs:-1,0) {\\scriptsize$-1$};\r\n    \\node[below right] at (axis cs:1,0) {\\\
+    scriptsize$1$};\r\n    \\node[right] at (axis cs:5,0) {$x$};\r\n    \\node[above]\
+    \ at (axis cs:0,12) {$y$};\r\n\r\n    % 極値の点を打つ\r\n    \\addplot[only marks, mark=*,\
+    \ mark size=1pt] coordinates\r\n      {(-1.73205, -2.59808) (1.73205, 2.59808)};\r\
+    \n    \\node[above left]  at (axis cs:-1.73205, -2.59808) {\\scriptsize$(-\\sqrt3,\\\
+    ,-\\tfrac{3\\sqrt3}{2})$};\r\n    \\node[below right] at (axis cs: 1.73205,  2.59808)\
+    \ {\\scriptsize$(\\sqrt3,\\,\\tfrac{3\\sqrt3}{2})$};\r\n  \\end{axis}\r\n\\end{tikzpicture}\r\
+    \n\\end{center}"
