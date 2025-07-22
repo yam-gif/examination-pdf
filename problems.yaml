@@ -378,3 +378,62 @@
     begin{align*}\r\n                        n(B) - n(A \\cap B) &= 27 - 14\\\\\r\n\
     \                        &= 13 \\: 人\r\n                    \\end{align*}\r\n\
     \        \\end{enumerate}"
+- subject: 数学A
+  category: 場合の数
+  difficulty: 入門
+  body: "\\section{}\r\n図のような格子状の道路において, 最短距離で点Aから点Bまで行く道順を考える。\r\n    \r\n    \\\
+    begin{wrapfigure}[1]{r}{0pt}\r\n        \\begin{tikzpicture}{scale = 1.2}\r\n\
+    \            \\coordinate [label = left:A](A) at (0,0);\r\n            \\coordinate\
+    \ [label = right:B](B) at (4,5);\r\n            \\coordinate[label = above right:P](P)\
+    \ at (1, 2);\r\n            \\coordinate[label = above right:Q](Q) at (3, 3);\r\
+    \n            \\draw[thick] (A)--(4, 0)--(B)--(0, 5)--cycle;\r\n            \\\
+    draw[thick] (1, 0)--(1, 5);\r\n            \\draw[thick] (2, 0)--(2, 5);\r\n \
+    \           \\draw[thick] (3, 0)--(3, 5);\r\n            \\draw[thick] (4, 0)--(4,\
+    \ 5);\r\n            \\draw[thick] (0, 1)--(4, 1);\r\n            \\draw[thick]\
+    \ (0, 2)--(4, 2);\r\n            \\draw[thick] (0, 3)--(4, 3);\r\n           \
+    \ \\draw[thick] (0, 4)--(4, 4);\r\n            \\fill [black] (A) circle [radius=0.1];\r\
+    \n            \\fill [black] (B) circle [radius=0.1];\r\n            \\fill [black]\
+    \ (P) circle [radius=0.1];\r\n            \\fill [black] (Q) circle [radius=0.1];\r\
+    \n        \\end{tikzpicture}\r\n    \\end{wrapfigure}\r\n~\r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            道順の総数は何通りか。\r\n      \
+    \  \r\n        \\item\r\n            点Pを通過する道順は何通りか。\r\n\r\n        \\item \r\n\
+    \            点Pまたは点Qのどちらか一方を通過する道順は何通りか。\r\n\r\n        \\item\r\n           \
+    \ 点Pも点Qも通過しない道順は何通りか。\r\n    \\end{enumerate}"
+  answer: "\\section{}\r\n図のような格子状の道路において, 最短距離で点Aから点Bまで行く道順を考える。\r\n    \r\n    \\\
+    begin{wrapfigure}[1]{r}{0pt}\r\n        \\begin{tikzpicture}{scale = 1.2}\r\n\
+    \            \\coordinate [label = left:A](A) at (0,0);\r\n            \\coordinate\
+    \ [label = right:B](B) at (4,5);\r\n            \\coordinate[label = above right:P](P)\
+    \ at (1, 2);\r\n            \\coordinate[label = above right:Q](Q) at (3, 3);\r\
+    \n            \\draw[thick] (A)--(4, 0)--(B)--(0, 5)--cycle;\r\n            \\\
+    draw[thick] (1, 0)--(1, 5);\r\n            \\draw[thick] (2, 0)--(2, 5);\r\n \
+    \           \\draw[thick] (3, 0)--(3, 5);\r\n            \\draw[thick] (4, 0)--(4,\
+    \ 5);\r\n            \\draw[thick] (0, 1)--(4, 1);\r\n            \\draw[thick]\
+    \ (0, 2)--(4, 2);\r\n            \\draw[thick] (0, 3)--(4, 3);\r\n           \
+    \ \\draw[thick] (0, 4)--(4, 4);\r\n            \\fill [black] (A) circle [radius=0.1];\r\
+    \n            \\fill [black] (B) circle [radius=0.1];\r\n            \\fill [black]\
+    \ (P) circle [radius=0.1];\r\n            \\fill [black] (Q) circle [radius=0.1];\r\
+    \n        \\end{tikzpicture}\r\n    \\end{wrapfigure}\r\n~\r\n    \\begin{enumerate}[left=0pt,\
+    \ label = (\\arabic*)]\r\n        \\item\r\n            道順の総数は何通りか。\r\n      \
+    \  \r\n        \\item\r\n            点Pを通過する道順は何通りか。\r\n\r\n        \\item \r\n\
+    \            点Pまたは点Qのどちらか一方を通過する道順は何通りか。\r\n\r\n        \\item\r\n           \
+    \ 点Pも点Qも通過しない道順は何通りか。\r\n    \\end{enumerate}\r\n\\vspace{1.8cm}\r\n---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\n     \
+    \   \\item\r\n            126通り\r\n    \r\n        \\item\r\n            60通り\r\
+    \n\r\n        \\item\r\n            93通り\r\n\r\n        \\item\r\n           \
+    \ 33通り\r\n    \\end{enumerate}\r\n    \r\n\\haiten（10点）\\\\\r\n(1)(2)2点, (3)(4)各3点\\\
+    \\\r\n\r\n\\kouhyou\\\\\r\n    本問のような1対1対応（「道順の数と↑→の記号の並び替えは一致する」という考え方）で考える問題は典型問題から難しい問題まで様々。いろいろな問題を解いて考え方に慣れよう。\\\
+    \\\r\n\r\n\\kaisetsu\r\n    \\begin{enumerate}[left = 0pt, label=(\\arabic*)]\r\
+    \n        \\item\r\n            最短距離でAからBまで行くとき, 上に5区画, 右に4区画進めばよい。そのような道順は, 9回の選択のうち,\
+    \ 4回右を選ぶ選択（5回上を選ぶ選択）と1対1対応し,\r\n                \\begin{equation*}\r\n       \
+    \             {}_9 \\mathrm{C}_4 = 126 \\text{通り}\r\n                \\end{equation*}\r\
+    \n    \r\n        \\item\r\n            最短距離でPまで行く道順, PからBまで行く道順を考え, それらは同時に起こるから\r\
+    \n                \\begin{equation*}\r\n                    {}_3 \\mathrm{C}_1\
+    \ \\times {}_6 \\mathrm{C}_3 = 60\\text{通り}\r\n                \\end{equation*}\r\
+    \n\r\n        \\item\r\n            QはPと対称な位置にあるから, Qを通る道順は(2)と同様に60通りである。また,\
+    \ PもQも通る道順は\r\n                \\begin{equation*}\r\n                    {}_3\
+    \ \\mathrm{C}_1 \\times {}_3 \\mathrm{C}_1 \\times {}_3 \\mathrm{C}_1 = 27\\text{通り}\r\
+    \n                \\end{equation*}\r\n            であるから, 求める道順は\r\n          \
+    \      \\begin{equation*}\r\n                    60 + 60 - 27 = 93\\text{通り}\r\
+    \n                \\end{equation*}\r\n\r\n        \\item\r\n            求める道順は(3)の余事象だから\r\
+    \n                \\begin{equation*}\r\n                    126 - 93 = 33 \\text{通り}\r\
+    \n                \\end{equation*}\r\n    \\end{enumerate}"
