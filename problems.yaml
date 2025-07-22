@@ -1246,3 +1246,80 @@
     \n            \\displaystyle \\lim_{x\\to +0}\\: \\frac{\\:\\log(1+x)-x\\:}{x^2}=-\\\
     dfrac{1}{\\:2\\:}\r\n            \\end{equation*}\r\n            ~~が得られる。\r\n\\\
     end{enumerate}"
+- subject: 数学3
+  category: 極限
+  difficulty: 入門
+  body: "\\section{}\r\n次の極限を求めよ。ただし,\\:無限大に発散する場合は$\\infty$と答えよ。（答えのみでよい）\r\n%極限の基本的な公式がちゃんと頭に入っているかの確認\r\
+    \n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n  \
+    \      $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\: 2^n \r\n       \
+    \ $\r\n    \\item\r\n        $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\\
+    : \\left(\\frac{\\:1\\:}{2}\\right)^n\r\n        $\r\n    \\item\r\n       $ \\\
+    displaystyle \r\n         \\lim_{n\\to \\infty} \\: \\frac{\\:4^n-3^n\\:}{5^n}\
+    \  \r\n       $\r\n\r\n    \\item\r\n       $ \\displaystyle \r\n         \\lim_{n\\\
+    to \\infty}  \\: \\frac{\\:6^{n+2}+4^{n-1}\\:}{6^{n-1}-2・3^n} \r\n       $\r\n\
+    %分子の有理化の発想がきちんとできるかの確認\r\n    \\item\r\n       $ \\displaystyle \r\n         \\\
+    lim_{n\\to \\infty}\\:\\left(\\:\\sqrt{n+1}-\\sqrt{n}\\:\\right)\r\n       $\r\
+    \n    \\item\r\n        $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\\
+    : n\\left(\\sqrt{n^2+1}-n\\right)\r\n        $\r\n   \r\n\\end{enumerate}"
+  answer: "\\section{}\r\n次の極限を求めよ。ただし,\\:無限大に発散する場合は$\\infty$と答えよ。（答えのみでよい）\r\n%極限の基本的な公式がちゃんと頭に入っているかの確認\r\
+    \n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\n\r\n    \\item\r\n  \
+    \      $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\: 2^n \r\n       \
+    \ $\r\n    \\item\r\n        $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\\
+    : \\left(\\frac{\\:1\\:}{2}\\right)^n\r\n        $\r\n    \\item\r\n       $ \\\
+    displaystyle \r\n         \\lim_{n\\to \\infty} \\: \\frac{\\:4^n-3^n\\:}{5^n}\
+    \  \r\n       $\r\n\r\n    \\item\r\n       $ \\displaystyle \r\n         \\lim_{n\\\
+    to \\infty}  \\: \\frac{\\:6^{n+2}+4^{n-1}\\:}{6^{n-1}-2・3^n} \r\n       $\r\n\
+    %分子の有理化の発想がきちんとできるかの確認\r\n    \\item\r\n       $ \\displaystyle \r\n         \\\
+    lim_{n\\to \\infty}\\:\\left(\\:\\sqrt{n+1}-\\sqrt{n}\\:\\right)\r\n       $\r\
+    \n    \\item\r\n        $ \\displaystyle \r\n         \\lim_{n\\to \\infty}\\\
+    : n\\left(\\sqrt{n^2+1}-n\\right)\r\n        $\r\n   \r\n\\end{enumerate}\r\n\
+    ---------------------------------------------------------------------------------------------------------------------------\\\
+    \\\r\n\\kai\r\n\\begin{multicols}{2}\r\n    \\begin{enumerate}[left = 0pt, label\
+    \ = (\\arabic*)]\r\n        \\item\r\n            $\\infty$\r\n        \\item\r\
+    \n            0\r\n        \\item\r\n            0\r\n        \\item\r\n     \
+    \       216\r\n        \\item\r\n           0\r\n        \\item\r\n          \
+    \ $\\dfrac{1}{\\:2\\:}$\r\n\r\n    \\end{enumerate}\r\n\\end{multicols}\r\n  \
+    \  \r\n\\haiten（20点）\\\\\r\n(1)〜(4) 各3点\r\n(5)〜(6) 各4点\\\\\r\n\r\n\\kouhyou\\\\\
+    \r\n指数の極限,\\:分子の有理化を必要とする極限についての問題について確認した。いずれも教科書等に載っているような基本的な操作であるためきちんと身につけていただきたい。\\\
+    \\\r\n\r\n\\kaisetsu\\\\\r\n    \\begin{youten}\r\n        {指数関数の極限}{}\r\n   \
+    \         指数同士で構成される数列の極限を求める場合,\\;底が一番大きい指数(例えば,\\:$2^n,\\:3^n,\\:5^nでは5^n$)に着目して変形する。\\\
+    \\\r\n            （それにより1より小さい分数を作り出し極限で0へと持っていく。詳しいやり方は(3)や(4)を参照。）\r\n    \\\
+    end{youten}\r\n    \\begin{youten}\r\n        {$\\sqrt{n+1}-\\sqrt{n}$型の極限}{}\r\
+    \n           $\\sqrt{n+1}-\\sqrt{n}$のような$\\infty-\\infty$型の極限値を求める場合,\\:\\textbf{分子の有理化}をするとうまくいくことがある。\r\
+    \n    \\end{youten}\r\n    \r\n\\begin{enumerate}[left = 0pt, label = (\\arabic*)]\r\
+    \n    \\item\r\n        $ \\displaystyle \\lim_{n\\to \\infty}\\: 2^n =\\infty\
+    \ $\r\n    \\item\r\n        $ \\displaystyle \\lim_{n\\to \\infty}\\: \\left(\\\
+    frac{\\:1\\:}{2}\\right)^n=0$\r\n    \\item \r\n        $ \\displaystyle \\lim_{n\\\
+    to \\infty} \\: \\frac{\\:4^n-3^n\\:}{5^n}$\r\n        $=\\displaystyle \\lim_{n\\\
+    to \\infty} \\: \\left(\\cfrac{\\:4\\:}{5}\\right)^n- \\left(\\cfrac{\\:3\\:}{5}\\\
+    right)^n$\\\\\r\n        $=0-0$\\\\\r\n        $=0$\r\n    \\item \r\n       \
+    \ $\\displaystyle~~~\\lim_{n\\to\\infty} \\cfrac{6^{n+2}+4^{n-1}}{6^{n-1}-2\\\
+    cdot3^n}$\\\\\r\n        $= \\displaystyle\\lim_{n\\to\\infty} \\cfrac{6^{n-1}\\\
+    cdot 6^3+4^{n-1}}{6^{n-1}-2\\cdot3^n}$\r\n        $= \\displaystyle\\lim_{n\\\
+    to\\infty} \\cfrac{216+\\cfrac{4^{n-1}}{6^{n-1}}}{1-2\\cdot\\cfrac{3^n}{6^{n-1}}}$\\\
+    \\\r\n        $= \\displaystyle\\lim_{n\\to\\infty} \\cfrac{216+\\left(\\cfrac{4}{6}\\\
+    right)^{n-1}}{1-2\\cdot\\cfrac{3^n}{6^{n-1}}}$   \r\n        $\\displaystyle=\
+    \ \\lim_{n\\to\\infty} $$\\cfrac{216+\\left(\\cfrac{2}{3}\\right)^{n-1}}{1-12\\\
+    left(\\cfrac{1}{2}\\right)^n}$\\\\\r\n        =$\\cfrac{216+0}{1-0}$\\\\\r\n \
+    \       \r\n        $=216$\r\n\r\n    %\\item\r\n        %\\begin{fleqn}[5pt]\r\
+    \n            %\\begin{align*}\r\n                %\\lim_{n\\to\\infty} \\cfrac{6^{n+2}+4^{n-1}}{6^{n-1}-2\\\
+    cdot3^n}\r\n                %&= \\lim_{n\\to\\infty} \\cfrac{6^{n-1}\\cdot 6^3+4^{n-1}}{6^{n-1}-2\\\
+    cdot3^n}\\\\\r\n                %&= \\lim_{n\\to\\infty} \\cfrac{216+\\cfrac{4^{n-1}}{6^{n-1}}}{1-2\\\
+    cdot\\cfrac{3^n}{6^{n-1}}}\\\\\r\n                %&= \\lim_{n\\to\\infty} \\\
+    cfrac{216+\\left(\\cfrac{4}{6}\\right)^{n-1}}{1-2\\cdot\\cfrac{3^n}{6^{n-1}}}\\\
+    \\        \r\n                %&= \\lim_{n\\to\\infty}\\cfrac{216+\\left(\\cfrac{2}{3}\\\
+    right)^{n-1}}{1-12\\left(\\cfrac{1}{2}\\right)^n}\\\\\r\n                %&=\\\
+    cfrac{216+0}{1-0}\r\n            %\\end{align*}\r\n        %\\end{fleqn}\r\n \
+    \       \r\n    \\item \r\n        $\\displaystyle\\lim_{n\\to \\infty}\\:\\left(\\\
+    :\\sqrt{n+1}-\\sqrt{n}\\:\\right)$\r\n        \r\n        $=\\displaystyle\\lim_{n\\\
+    to \\infty}\\:\\frac{\\left(\\:\\sqrt{n+1}-\\sqrt{n}\\:\\right)\\left(\\:\\sqrt{n+1}+\\\
+    sqrt{n}\\:\\right)}{\\left(\\:\\sqrt{n+1}+\\sqrt{n}\\:\\right)}$~~(分子の有理化)\r\n\
+    \r\n        $=\\displaystyle\\lim_{n\\to \\infty}\\:\\frac{1}{\\:\\sqrt{n+1}+\\\
+    sqrt{n}\\:}=0$\r\n    \\item \r\n        $\\displaystyle\\lim_{n\\to \\infty}\\\
+    :n\\left(\\sqrt{n^2+1}-n\\right)$\r\n\r\n        $=\\displaystyle\\lim_{n\\to\
+    \ \\infty}\\:\\frac{n\\left(\\:\\sqrt{n^2+1}-n\\:\\right)\\left(\\:\\sqrt{n^2+1}+n\\\
+    :\\right)}{\\left(\\:\\sqrt{n^2+1}+n\\:\\right)}$~~(分子の有理化)\r\n\r\n        $=\\\
+    displaystyle\\lim_{n\\to \\infty}\\:\\frac{n}{\\:\\sqrt{n^2+1}+n\\:}$\r\n\r\n\
+    \        $=\\displaystyle\\lim_{n\\to \\infty}\\:\\cfrac{1}{\\:\\sqrt{1+\\cfrac{1}{\\\
+    :n^2\\:}}+1\\:}$\r\n\r\n        $=\\dfrac{1}{\\:\\sqrt{1+0}+1\\:}$\r\n\r\n   \
+    \     $=\\dfrac{1}{\\:2\\:}$\r\n\\end{enumerate}"
