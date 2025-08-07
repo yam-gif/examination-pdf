@@ -23,5 +23,5 @@ COPY . .
 
 
 # gunicorn で起動（Render の PORT をそのまま使用）
-CMD ["gunicorn", "-b", "0.0.0.0:${PORT:-10000}", "app:app"]
+CMD sh -c "gunicorn -b 0.0.0.0:${PORT:-10000} app:app"
 
