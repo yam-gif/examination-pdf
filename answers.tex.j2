@@ -1,0 +1,141 @@
+{% raw %}
+\documentclass[12pt, dvipdfmx]{jarticle}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumitem}
+\usepackage{systeme}
+\usepackage[margin=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb,nccmath}
+\usepackage{tikz}
+\usepackage[labelformat=empty,labelsep=none]{caption}
+\usetikzlibrary{positioning, intersections, calc, arrows.meta, math, through, quotes, angles}
+\tikzset{
+  arrowStyle/.style={ -Straight Barb[], semithick },
+  straightArrow/.style={ arrowStyle, scale=0.35 },
+  roundedArrow/.style={ arrowStyle, scale=0.4, rounded corners=2pt },
+  bentArrow/.style={ arrowStyle, scale=0.4 }
+}
+\usetikzlibrary{backgrounds}    % TikZ の背景レイヤー用
+\usepackage {signchart}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\tcbuselibrary{theorems,breakable}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{tikz-3dplot}
+\usepackage{tabularray}
+\usepgfplotslibrary{fillbetween} % ←★ 追加
+\usetikzlibrary{patterns}
+\tikzset{
+  arrowStyle/.style={ -Straight Barb[], semithick },
+  straightArrow/.style={ arrowStyle, scale=0.35 },
+  roundedArrow/.style={ arrowStyle, scale=0.4, rounded corners=2pt },
+  bentArrow/.style={ arrowStyle, scale=0.4 }
+}
+
+\title{数学\\（解答解説）}
+\date{\empty}
+\setlength{\parindent}{0pt}
+
+\newcommand{\kai}
+{\noindent
+    \begin{tikzpicture}[scale=0.3, baseline=2.8pt]
+        \draw (3.3,1) node{\large\textgt{解 答}};
+        \draw[thick, rounded corners=3pt,] (0,0)--(6.5,0)--(6.5,2.2)--(0,2.2)--cycle;
+    \end{tikzpicture}\;}
+
+\newcommand{\kaisetsu}
+{\noindent
+    \begin{tikzpicture}[scale=0.3, baseline=2.8pt]
+        \draw (3.3,1) node{\textgt{解 説}};
+        \draw[double,thick,rounded corners=3pt,] (0,0)--(6.5,0)--(6.5,2.2)--(0,2.2)--cycle;
+    \end{tikzpicture}\;}
+
+\newcommand{\kouhyou}
+{\noindent
+    \begin{tikzpicture}[scale=0.3, baseline=2.8pt]
+        \draw (6,1) node{\large\textgt{講評}};
+        \fill (0,1)--(1,0)--(2,1)--(1,2)--cycle;
+        \fill[gray] (1,1)--(2,0)--(3,1)--(2,2)--cycle;
+        \fill (2,1)--(3,0)--(4,1)--(3,2)--cycle;
+        \fill (10,1)--(11,0)--(12,1)--(11,2)--cycle;
+        \fill[gray] (9,1)--(10,0)--(11,1)--(10,2)--cycle;
+        \fill (8,1)--(9,0)--(10,1)--(9,2)--cycle;
+    \end{tikzpicture}\;}
+
+\newcommand{\haiten}
+{\noindent
+    \begin{tikzpicture}[scale=0.3, baseline=2.8pt]
+        \fill (0,0)--(6.5,0)--(6.5,2.2)--(0,2.2);
+        \draw (3.3,1) node[white]{\large\textgt{配 点}};
+        \draw[thick] (0,0)--(6.5,0)--(6.5,2.2)--(0,2.2)--cycle;
+    \end{tikzpicture}\;}
+
+\newtcbtheorem[]{shosetsu}{詳説}
+{fonttitle=\gtfamily\sffamily\bfseries\upshape\large,
+colframe=black,colback=black!15!white,
+rightrule=1pt,leftrule=1pt,bottomrule=2pt,
+colbacktitle=black,theorem style=standard,breakable,arc=10pt}
+{tha}
+
+\newtcbtheorem[]{youten}{要点}%
+{fonttitle=\gtfamily\sffamily\bfseries\upshape\large,
+ colframe=black!60,          % 枠線を少し柔らかいグレーに
+ colback=black!5!white,      % ほんのりグレー背景
+ colbacktitle=black,         % タイトル背景は黒
+ coltitle=white,             % タイトル文字色
+ leftrule=3pt,               % 左だけ 3pt のライン
+ rightrule=0pt, toprule=0pt, bottomrule=0pt,
+ arc=4pt,                    % 角丸を控えめに
+ theorem style=standard,
+ enhanced,
+ before skip=8pt, after skip=12pt,
+ breakable                   % 改ページ可
+}{tha}
+
+
+\usepackage{fancybox} %いい感じの枠組み
+%\anaumeで太い枠の穴埋め\sanaumeで細い枠の穴埋め（主に2回目に登場する解答欄で使う）\banaumeで横に長い穴埋め（3桁以上はこれ）\bsanaumeで横に長い細い枠
+\setlength{\fboxsep}{1pt} %枠の大きさ設定
+\newcommand{\anaume}[1]{\setlength{\fboxrule}{1pt} \framebox[40pt][c]{\mbox{\textbf{\large{#1}}}}\setlength{\fboxrule}{0.4pt}}
+\newcommand{\sanaume}[1]{ \framebox[40pt][c]{\mbox{\large{#1}}}}
+\newcommand{\banaume}[1]{\setlength{\fboxrule}{1pt} \fbox{\mbox{\textbf{\large{\phantom{a}#1\phantom{a}}}}}\setlength{\fboxrule}{0.4pt}}
+\newcommand{\sbanaume}[1]{\fbox{\mbox{\large{\phantom{a}#1\phantom{a}}}}}
+\newcommand{\sisuuanaume}[1]{\setlength{\fboxrule}{1pt} \framebox[16pt][c]{\mbox{\textbf{#1}}}\setlength{\fboxrule}{0.4pt}} %\sisuuanaumeで指数の穴埋め
+\newcommand{\ssisuuanaume}[1]{ \framebox[16pt][c]{\mbox{#1}}} %ssisuuanaumeで一度登場した指数の穴埋め
+\newcommand{\senntakuanaume}[1]{\setlength{\fboxrule}{0.6pt} \doublebox{\mbox{\textbf{\phantom{ア}#1\phantom{ア}}}}\setlength{\fboxrule}{0.4pt}} %\senntakuanaumeで選択肢問題の穴埋め
+\newcommand{\ssenntakuanaume}[1]{\doublebox{\mbox{\phantom{ア}#1\phantom{ア}}}} %\ssenntakuanaumeで一度登場した選択肢問題の穴埋め
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+\makeatletter
+\newcommand{\circnum}[1]{%
+  % mathchoice : {display}{text}{script}{scriptscript}
+  \mathchoice
+    % 普通の本文・見出し・ディスプレイ数式
+    {\raise0.2ex\hbox{\textcircled{\normalsize\strut #1}}}%
+    {\raise0.2ex\hbox{\textcircled{\normalsize\strut #1}}}%
+    % 添字などの script / scriptscript は少しだけ小さく
+    {\raise0.15ex\hbox{\textcircled{\footnotesize\strut #1}}}%
+    {\raise0.1ex \hbox{\textcircled{\scriptsize \strut #1}}}}
+\newcommand{\diagonalArrowNE}{\tikz[ baseline={([yshift=-0.6ex]current bounding box.center)} ] \draw[ straightArrow ] (0,0) to (1,1);}
+\newcommand{\diagonalArrowSE}{\tikz[ baseline={([yshift=-0.6ex]current bounding box.center)} ] \draw[ straightArrow ] (0,1) to (1,0);}
+\newcommand{\bunsu}[2]{\displaystyle \frac{\: #1 \:}{\: #2 \:}}
+\newcommand{\combination}[2]{{}_{#1} \mathrm{C}_{#2}}
+\makeatother
+{% endraw %}
+
+\begin{document}
+\maketitle\thispagestyle{empty}
+
+\begin{figure}[b]
+    \begin{center}
+        \includegraphics[scale=0.1]{S__36929550.jpg}
+    \end{center}
+\end{figure}
+\newpage
+
+{% for p in problems %}
+{{ p.answer }}
+\newpage
+{% endfor %}
+
+\end{document}

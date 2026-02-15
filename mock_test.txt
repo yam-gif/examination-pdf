@@ -1,0 +1,152 @@
+
+\documentclass[12pt,dvipdfmx]{jarticle}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{systeme}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{positioning, intersections, calc, arrows.meta, math, through, quotes, angles, patterns}
+\usepackage{signchart}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,breakable}
+\usepackage{wrapfig}
+\usepackage{tabularray}
+\usepackage{nccmath}
+\usepackage{ascmac}
+\usepackage{multicol}
+\usepackage{mathcomp}
+\usepackage{tikz-3dplot}
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+
+
+\begin{document}
+
+
+\title{数学 確認テスト}
+\date{\empty}
+\setlength{\parindent}{0pt}
+
+\maketitle \thispagestyle{empty}
+ 
+    \centerline{\LARGE 試験時間80分} \\
+    \centerline{\LARGE 配点100点}
+\begin{figure}[b]
+    \hspace{5.6cm}
+    \includegraphics[scale=0.1]{S__36929550.jpg}
+\end{figure}
+\newpage
+
+
+\section{}
+$\displaystyle \sum_{k\:=\:0}^n \:(k+1)\cdot3^k$を求めよ。(12点)
+
+\newpage   
+\begin{center}
+        （下書き用紙）
+    \end{center}
+    \vspace{1cm}
+    問題は次に続く。
+
+
+\newpage
+
+\section{}
+曲線D\::\:$y=x^3-x$の点A\:(1,\:0)\:における接線を$m$とする。
+\begin{enumerate}[left=5pt]
+
+    \item[(1)]
+        接線$m$の式を求めよ。(8点）
+    \item[(2)]
+        接線$m$と曲線Dで囲まれる部分の面積を求めよ。(12点）
+\end{enumerate} 
+\newpage   
+\begin{center}
+        （下書き用紙）
+    \end{center}
+    \vspace{1cm}
+    問題は次に続く。
+
+
+\newpage
+
+\section{}
+曲線C\::\:$y=x^3-12x+19$について次の問いに答えよ。
+\begin{enumerate}
+    \item[(1)]
+        $(4,\:3)$から曲線Cに引ける接線の本数は3本存在することを示せ。(8点)
+    \item[(2)]
+        $(a,\:3)$から曲線Cに引いた接線の本数が3本となるような$a$の範囲を求めよ。(12点)
+\end{enumerate}
+
+\newpage   
+\begin{center}
+        （下書き用紙）
+    \end{center}
+    \vspace{1cm}
+    問題は次に続く。
+
+
+\newpage
+
+\section{}
+AB=3, BC=5, CA=4 の直角三角形がある。下図のように長方形APQRを埋め込むとき,
+長方形APQRの面積の最大値を求めよ。(20点）
+\begin{center}
+\begin{tikzpicture}[scale=2]
+  % 直角三角形 ABC の各頂点を定義（A が直角）
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (0,3);
+  \coordinate (P) at (0,1.2);
+  \coordinate (Q) at (2.4,1.2);
+  \coordinate (R) at (2.4,0);
+  % 直角三角形を描画
+  \draw (A) -- (B) -- (C) -- cycle;
+  
+  % 各頂点にラベルを付ける
+  \node[below left] at (A) {A};
+  \node[below right] at (B) {B};
+  \node[above left] at (C) {C};
+  \node[above left] at (P) {P};
+  \node[above] at (Q) {Q};
+  \node[below right] at (R) {R};
+  
+  % 長方形を内接させる（A を共有し、AB, AC に沿う）
+  % ここでは例として、長方形の右下頂点を (2.4,0) とし、
+  % 斜辺上の対応点は (2.4,1.2) となるようにしています
+  \draw (A) rectangle (2.4,1.2);
+\end{tikzpicture}
+\end{center};
+\newpage   
+\begin{center}
+        （下書き用紙）
+    \end{center}
+    \vspace{1cm}
+    問題は次に続く。
+
+
+\newpage
+
+\section{}
+2次方程式$x^2+2ax+\dfrac{1}{\:2\:}=0$が次の条件を満たすような$a$の範囲を求めよ。
+\begin{enumerate}
+    \item[(1)]
+        2つの異なる実数解をもつ。(4点）
+    \item[(2)]
+        1つの解が1より大きく,\:もう1つの解が1より小さい。(8点）
+    \item[(3)]
+        2つの解が0と1の間に存在する。(8点）
+\end{enumerate}
+\newpage   
+\begin{center}
+        （下書き用紙）
+    \end{center}
+    \vspace{1cm}
+    問題は次に続く。
+
+
+\newpage
+
+
+\end{document}

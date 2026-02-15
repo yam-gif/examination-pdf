@@ -1,0 +1,53 @@
+{% raw %}
+\documentclass[12pt,dvipdfmx]{jarticle}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{systeme}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{positioning, intersections, calc, arrows.meta, math, through, quotes, angles, patterns}
+\usepackage{signchart}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems,breakable}
+\usepackage{wrapfig}
+\usepackage{tabularray}
+\usepackage{nccmath}
+\usepackage{ascmac}
+\usepackage{multicol}
+\usepackage{mathcomp}
+\usepackage{tikz-3dplot}
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+\newcommand{\bunsu}[2]{\displaystyle \frac{\: #1 \:}{\: #2 \:}}
+\newcommand{\combination}[2]{{}_{#1} \mathrm{C}_{#2}}
+{% endraw %}
+
+\begin{document}
+%タイトル→数学（単元名）（入門）\\【単元名（項番）】
+\title{数学\\【確認テスト】}
+%"*"は項番の数字を入れる
+\date{\empty}
+\setlength{\parindent}{0pt}
+ 
+ 
+\maketitle \thispagestyle{empty}
+
+\begin{figure}[b]
+    \begin{center}
+        \includegraphics[scale=0.1]{S__36929550.jpg}
+    \end{center}
+\end{figure}
+\newpage
+
+{% for p in problems %}
+{{ p.body }}
+\newpage
+\begin{center}
+    下書き用紙）
+\end{center}
+    \vspace{1cm}
+    問題は次に続く。
+\newpage
+{% endfor %}
+
+\end{document}
