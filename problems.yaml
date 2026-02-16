@@ -133,3 +133,58 @@
   difficulty: "演習問題"
   body: !include src/1A_en_25.tex
   answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_26.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_27.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_28.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_29.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_30.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_31.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_32.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_33.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_34.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_35.tex
+  answer: "no"
+- category: "2次関数"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_36.tex
+  answer: "no"
