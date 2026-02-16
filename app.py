@@ -23,7 +23,7 @@ class Loader(yaml.SafeLoader):
 def construct_include(loader, node):
     filename = os.path.join(loader._root, loader.construct_scalar(node))
     with open(filename, 'r', encoding='utf-8') as f:
-        return yaml.load(f, Loader)
+        return f.read()
 
 yaml.add_constructor('!include', construct_include, Loader)
 

@@ -58,3 +58,78 @@
   difficulty: "演習問題"
   body: !include src/1A_en_12.tex
   answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_12.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_12.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_13.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_14.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_15.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_16.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_17.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_18.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_19.tex
+  answer: "no"
+- category: "数と式"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_20.tex
+  answer: "no"
+- category: "集合と論理"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_21.tex
+  answer: "no"
+- category: "集合と論理"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_22.tex
+  answer: "no"
+- category: "集合と論理"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_23.tex
+  answer: "no"
+- category: "集合と論理"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_24.tex
+  answer: "no"
+- category: "集合と論理"
+  subject: "数学1"
+  difficulty: "演習問題"
+  body: !include src/1A_en_25.tex
+  answer: "no"
