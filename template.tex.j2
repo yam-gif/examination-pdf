@@ -23,31 +23,9 @@
 {% endraw %}
 
 \begin{document}
-%タイトル→数学（単元名）（入門）\\【単元名（項番）】
-\title{数学\\【確認テスト】}
-%"*"は項番の数字を入れる
-\date{\empty}
-\setlength{\parindent}{0pt}
- 
- 
-\maketitle \thispagestyle{empty}
-
-\begin{figure}[b]
-    \begin{center}
-        \includegraphics[scale=0.1]{S__36929550.jpg}
-    \end{center}
-\end{figure}
-\newpage
 
 {% for p in problems %}
 {{ p.body }}
-\newpage
-\begin{center}
-    下書き用紙）
-\end{center}
-    \vspace{1cm}
-    問題は次に続く。
-\newpage
 {% endfor %}
 
 \end{document}

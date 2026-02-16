@@ -3,107 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>模試PDF生成</title>
-
-  <!-- Google Fonts -->
+  <title>基礎問ジェネレーター</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
-
   <style>
     :root{
       --primary:#d4af37;--primary-light:#e6c861;
       --text:#e0e0e0;--text-dim:#b0b0b0;
       --chip-bg:#1b1b1b;--chip-checked:rgba(212,175,55,.15);
     }
-
-    /* ---- base ---- */
     *{box-sizing:border-box;margin:0}
     body{
       min-height:100vh;display:flex;align-items:center;justify-content:center;
       font-family:'Noto Sans JP',sans-serif;color:var(--text);
       background:radial-gradient(circle at 30% 10%,#000,#070707);
     }
-
-    /* ---- glass card ---- */
     .container{
       width:92%;max-width:880px;padding:2.3rem 2.8rem;
-      background:rgba(241,244,241,.24);
+      background:rgba(241,244,241,.08); /* 少し透明度を調整 */
       border:1px solid rgba(255,255,255,.08);
       border-radius:18px;backdrop-filter:blur(18px) saturate(120%);
-      box-shadow:0 0 30px rgba(26,161,19,.4),0 0 25px rgba(212,175,55,.12);
+      box-shadow:0 0 30px rgba(212,175,55,.1),0 0 25px rgba(212,175,55,.05);
       position:relative;
     }
-    .container::before{
-      content:"";position:absolute;inset:0;border-radius:inherit;
-      background:linear-gradient(135deg,rgba(255,255,255,.08) 0%,rgba(255,255,255,0) 60%);
-      pointer-events:none;
-    }
-
-    /* ---- headings ---- */
     h1{margin-bottom:2.2rem;font:700 2rem/1 'Playfair Display',serif;text-align:center;letter-spacing:.04em;color:var(--primary);}
-
-    /* ---- form grid ---- */
     .form{display:grid;gap:1.8rem}
     @media(min-width:640px){.form{grid-template-columns:repeat(2,1fr)} .form .btn-generate{grid-column:span 2;justify-self:center}}
-
     fieldset{border:none;padding:0}
     .field-group{border:1px solid #222;border-radius:10px;padding:1.2rem 1.4rem}
     .field-group legend{font-weight:500;color:var(--primary);padding:0 .2rem}
-
-    /* ---- chip checkboxes ---- */
     .options{display:flex;flex-wrap:wrap;gap:.6rem}
     .options input{display:none}
     .options label{
       position:relative;padding:.55rem .95rem;border-radius:24px;background:var(--chip-bg);color:var(--text-dim);
-      cursor:pointer;font-size:.9rem;transition:background .25s,color .25s,transform .15s;overflow:hidden;
+      cursor:pointer;font-size:.9rem;transition:background .25s,color .25s,transform .15s;
     }
-    @keyframes popIn{0%{transform:scale(.8)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
-    .options label::before{
-      content:"";position:absolute;inset:0;border-radius:inherit;
-      background:linear-gradient(135deg,rgba(212,175,55,.35) 0%,rgba(212,175,55,0) 70%);
-      opacity:0;transition:opacity .35s;
-    }
-    .options input:checked+label{
-      color:var(--primary);background:var(--chip-checked);
-      box-shadow:0 0 4px rgba(212,175,55,.5) inset,0 0 6px rgba(212,175,55,.2);
-      animation:popIn .28s ease-out;
-    }
-    .options input:checked+label::before{opacity:1}
-    .options label:hover{background:#222;color:var(--text)}
-
-    /* ---- buttons ---- */
+    .options input:checked+label{color:var(--primary);background:var(--chip-checked);box-shadow:0 0 4px rgba(212,175,55,.5) inset;}
     .btn{
       display:inline-block;padding:.9rem 1.8rem;border:2px solid var(--primary);
       background:var(--primary);color:#000;font-weight:700;font-size:1rem;
-      border-radius:8px;text-align:center;cursor:pointer;transition:background .25s,transform .1s;
+      border-radius:8px;text-align:center;cursor:pointer;transition:background .25s;
     }
     .btn:hover{background:var(--primary-light)}
-    .btn:active{transform:translateY(1px)}
-    .btn-secondary{background:transparent;color:var(--primary)}
-    .btn-secondary:hover{background:var(--primary);color:#000}
-
-    /* ---- dialog ---- */
-    dialog{border:none;border-radius:16px;padding:0;background:#141414;color:var(--text);width:min(90vw,600px);}
-    dialog::backdrop{background:rgb(0 0 0 /.6)}
-    .dialog-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;border-bottom:1px solid #333;}
-    .dialog-content{padding:1.5rem;}
-    .close-btn{background:transparent;color:var(--text);font-size:1.2rem;border:none;cursor:pointer;}
-
-    /* ---- flash ---- */
-    #copy-msg{display:none;margin-bottom:1.4rem;padding:1rem 1.3rem;border-radius:8px;background:var(--primary);color:#000;font-weight:700;text-align:center}
-
-    /* ---- result ---- */
+    #copy-msg{display:none;position:fixed;top:20px;left:50%;transform:translateX(-50%);padding:1rem 1.3rem;border-radius:8px;background:var(--primary);color:#000;font-weight:700;z-index:1000;}
     .result{margin-top:2.8rem}
     pre{margin-top:1rem;padding:1.2rem 1.4rem;background:#0d0d0d;border:1px solid #222;border-radius:10px;white-space:pre-wrap;line-height:1.55;color:var(--text);overflow-x:auto}
   </style>
 </head>
 <body>
+  <div id="copy-msg">コピーしました！</div>
   <div class="container">
-    <h1>模試PDF生成</h1>
+    <h1>基礎問題精講ジェネレーター</h1>
 
-    <!-- ========= 問題生成フォーム ========= -->
     <form action="/generate" method="post" class="form">
       <fieldset class="field-group">
-        <legend>Subject を選択（複数可）</legend>
+        <legend>科目 を選択</legend>
         <div class="options">
           {% for subj in subjects %}
             <input type="checkbox" id="s{{ loop.index }}" name="subject" value="{{ subj }}" {% if subj in selected_subjects %}checked{% endif %}>
@@ -113,7 +66,7 @@
       </fieldset>
 
       <fieldset class="field-group">
-        <legend>Category を選択（複数可）</legend>
+        <legend>単元 を選択</legend>
         <div class="options">
           {% for cat in categories %}
             <input type="checkbox" id="c{{ loop.index }}" name="category" value="{{ cat }}" {% if cat in selected_categories %}checked{% endif %}>
@@ -123,7 +76,7 @@
       </fieldset>
 
       <fieldset class="field-group">
-        <legend>Difficulty を選択（複数可）</legend>
+        <legend>問題形式 を選択</legend>
         <div class="options">
           {% for diff in difficulties %}
             <input type="checkbox" id="d{{ loop.index }}" name="difficulty" value="{{ diff }}" {% if diff in selected_difficulties %}checked{% endif %}>
@@ -133,7 +86,7 @@
       </fieldset>
 
       <fieldset class="field-group">
-        <legend>出題数を選択</legend>
+        <legend>出題数</legend>
         <div class="options">
           {% for n in num_choices %}
             <input type="radio" id="n{{ n }}" name="num_questions" value="{{ n }}" {% if n == selected_num %}checked{% endif %}>
@@ -143,62 +96,27 @@
       </fieldset>
 
       <button type="submit" class="btn btn-generate">問題を生成</button>
-      <button type="button" id="openAddBtn" class="btn btn-secondary" style="margin-top:-.5rem;">＋ 新しい問題を登録</button>
     </form>
-
-    <a href="https://ja.overleaf.com/login" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top:1.8rem;display:inline-block;">Overleafへ移動</a>
 
     {% if latex %}
     <div class="result">
-      <button id="copy-prob-btn" class="btn" style="margin-top:.8rem;">問題をコピー</button>
-    </div>
-
-    <div class="result">
-      <button id="copy-ans-btn" class="btn" style="margin-top:.8rem;">解答をコピー</button>
-      
-    </div>
-
-    <div class="result">
-      <h2>問題用 LaTeX コード</h2>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <h2>問題用 LaTeX コード</h2>
+        <button id="copy-prob-btn" class="btn" style="padding:0.5rem 1rem; font-size:0.8rem;">コピー</button>
+      </div>
       <pre id="prob-code">{{ latex | e }}</pre>
-      <h2>解答用 LaTeX コード</h2>
-      <pre id="ans-code">{{ answers_latex | e }}</pre>
     </div>
     {% endif %}
   </div>
 
-  <!-- ========= 新規問題登録ダイアログ ========= -->
-  <dialog id="addDialog">
-    <div class="dialog-header">
-      <h3 style="margin:0;color:var(--primary);">新しい問題を登録</h3>
-      <button class="close-btn" id="closeAddBtn">✕</button>
-    </div>
-    <div class="dialog-content">
-      <form id="createForm">
-        <div style="display:grid;gap:1rem;margin-bottom:1rem;">
-          <input name="subject" placeholder="科目" required>
-          <input name="category" placeholder="カテゴリ" required>
-          <input name="difficulty" placeholder="難易度" required>
-        </div>
-        <textarea name="body" placeholder="本文 (TeX)" required style="width:100%;height:6rem;margin-bottom:1rem;"></textarea>
-        <textarea name="answer" placeholder="解答 (TeX)" required style="width:100%;height:6rem;"></textarea>
-        <div style="text-align:right;margin-top:1.2rem;">
-          <button type="submit" class="btn">追加</button>
-        </div>
-      </form>
-    </div>
-  </dialog>
-
-  <div id="copy-msg">コピーしました！</div>
-
   <script>
-    // ----- コピー機能 -----
     const setupCopy = (btnId, preId) => {
       const btn = document.getElementById(btnId);
-      if(!btn) return;
+      const pre = document.getElementById(preId);
+      if(!btn || !pre) return;
       btn.addEventListener('click', async () => {
         try{
-          await navigator.clipboard.writeText(document.getElementById(preId).innerText);
+          await navigator.clipboard.writeText(pre.innerText);
           const m = document.getElementById('copy-msg');
           m.style.display='block';
           setTimeout(()=>{m.style.display='none';},2000);
@@ -206,25 +124,6 @@
       });
     };
     setupCopy('copy-prob-btn','prob-code');
-    setupCopy('copy-ans-btn','ans-code');
-
-    // ----- 新規問題登録 -----
-    const dlg = document.getElementById('addDialog');
-    document.getElementById('openAddBtn').addEventListener('click',()=>dlg.showModal());
-    document.getElementById('closeAddBtn').addEventListener('click',()=>dlg.close());
-
-    document.getElementById('createForm').addEventListener('submit',async e=>{
-      e.preventDefault();
-      const fd = new FormData(e.target);
-      const res = await fetch('/add_problem',{method:'POST',body:fd});
-      const json = await res.json();
-      if(json.ok){
-        alert('追加しました 🎉');
-        location.reload(); // ページ再読み込みで選択肢更新
-      }else{
-        alert('失敗: '+(json.msg||'不明エラー'));
-      }
-    });
   </script>
 </body>
 </html>

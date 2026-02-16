@@ -2,9 +2,9 @@ version: "3.9"
 services:
   web:
     build: .
-    container_name: mock-test-dev3
+    containdocker infoer_name: mock-test-dev4
     ports:
-      - "2956:5000"
+      - "1832:5000"
     volumes:
       - .:/app
     environment:

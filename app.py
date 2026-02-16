@@ -15,12 +15,24 @@ lock = threading.Lock()  # ファイル同時書き込み対策
 # ----------------------------------------------------------------------
 # データ読み込み & ヘルパ
 # ----------------------------------------------------------------------
+class Loader(yaml.SafeLoader):
+    def __init__(self, stream):
+        self._root = os.path.split(stream.name)[0]
+        super(Loader, self).__init__(stream)
 
+def construct_include(loader, node):
+    filename = os.path.join(loader._root, loader.construct_scalar(node))
+    with open(filename, 'r', encoding='utf-8') as f:
+        return yaml.load(f, Loader)
+
+yaml.add_constructor('!include', construct_include, Loader)
+
+# ✅ 修正後のコード
 def load_problems():
-    """YAML から全問題を読み込む。空の場合は空リストを返す。"""
     try:
-        with open(YAML_PATH, encoding='utf-8') as fp:
-            return yaml.safe_load(fp) or []
+        with open(YAML_PATH, 'r', encoding='utf-8') as fp:
+            # safe_load ではなく、独自の Loader を指定して load を使う
+            return yaml.load(fp, Loader) or []
     except FileNotFoundError:
         return []
 
@@ -67,7 +79,7 @@ ALL_PROBLEMS = load_problems()
 refresh_sets()
 
 DEFAULT_NUM  = 5
-CHOICES_NUM  = [1, 3, 5]
+CHOICES_NUM  = [1, 2, 3, 5]
 
 # ----------------------------------------------------------------------
 # ルーティング
@@ -162,6 +174,6 @@ def add_problem():
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
     # PaaS 環境の PORT またはローカルの 2956 を使用
-    port = int(os.environ.get("PORT", 2956))
+    port = int(os.environ.get("PORT", 1832))
     debug_flag = os.environ.get("FLASK_DEBUG", "0") == "1"
     app.run(host="0.0.0.0", port=port, debug=debug_flag)
