@@ -1,0 +1,44 @@
+\subsection*{1A~演習問題第45問}
+下のグラフは,\:関数$y=ax^2+bx+c$のグラフの概形である。このとき,\:各式の符号を調べよ。
+\begin{center}
+    \begin{tikzpicture}
+\begin{axis}[
+    axis lines = middle,
+    xlabel = {$x$},
+    ylabel = {$y$},
+    xmin = -5, xmax = 2,
+    ymin = -3.5, ymax = 3,
+    xtick = \empty,
+    ytick = \empty,
+    width = 10cm,
+    height = 8cm,
+    every axis x label/.style={at={(current axis.right of origin)}, anchor=north},
+    every axis y label/.style={at={(current axis.above origin)}, anchor=east},
+    ]
+    \addplot [
+        domain=-4.5:1.5, 
+        samples=100,
+        thick,
+    ] {-(x + 1)*(x + 3)};
+    \node at (axis cs:-2, 0) [below] {$-1$};
+    \draw [dashed, gray] (axis cs:-2, 0) -- (axis cs:-2, 1);
+    \node at (axis cs:0,0) [anchor=north west] {O};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\begin{multicols}{3}
+    \begin{enumerate}[left=0pt]
+    \item [(1)]
+        $a$
+    \item [(4)]
+        $b^2-4ac$
+    \item [(2)]
+        $b$
+    \item [(5)]
+         $a+b+c$
+    \item [(3)]
+       $c$
+    \item [(6)]
+        $4a-2b+c$
+\end{enumerate}
+\end{multicols}

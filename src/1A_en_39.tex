@@ -1,0 +1,24 @@
+\subsection*{1A~演習問題第39問}
+下図のように,\:壁Wと$100$mの金網を使って長方形の資材置場を作る。このとき,\:資材置場の面積Sの最大値と,\:そのときの$x$の値を求めよ。
+\begin{center}
+    \begin{tikzpicture}[scale=1]
+      % 壁
+      \fill[gray!30] (-1,2) rectangle (5,2.3);
+      \draw[thick] (-1,2) -- (5,2);
+      \node at (2, 2.15) {壁};
+    
+      % ロープ
+      \draw[very thick] (0,2) -- (0,0) -- (4,0) -- (4,2);
+      
+      % ラベル
+      \node[left] at (0,1) {$x$};
+      \node[right] at (4,1) {$x$};
+      \node[below] at (2,0) {金網};
+      
+      % 頂点（任意）
+      \fill (0,2) circle (2pt);
+      \fill (4,2) circle (2pt);
+      \fill (0,0) circle (2pt);
+      \fill (4,0) circle (2pt);
+    \end{tikzpicture}
+\end{center}

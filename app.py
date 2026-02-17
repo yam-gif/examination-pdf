@@ -27,7 +27,7 @@ def construct_include(loader, node):
 
 yaml.add_constructor('!include', construct_include, Loader)
 
-# ✅ 修正後のコード
+
 def load_problems():
     try:
         with open(YAML_PATH, 'r', encoding='utf-8') as fp:
@@ -173,7 +173,7 @@ def add_problem():
 
 # ----------------------------------------------------------------------
 if __name__ == "__main__":
-    # PaaS 環境の PORT またはローカルの 2956 を使用
+    # PaaS 環境の PORT またはローカルの 1832 を使用
     port = int(os.environ.get("PORT", 1832))
     debug_flag = os.environ.get("FLASK_DEBUG", "0") == "1"
     app.run(host="0.0.0.0", port=port, debug=debug_flag)
